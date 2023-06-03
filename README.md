@@ -26,6 +26,8 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
 
+ANGULAR FIRE
+ng add @angular/fire --verbose
 
 PROCESO PARA DESPLEGAR AL DOMINIO GITHUB
 (Instalar):
@@ -33,3 +35,4 @@ npm i angular-cli-ghpages --save
 
 (Deploy en dominio):
 ng deploy --base-href https://2014maximo.github.io/estadisticas/
+
