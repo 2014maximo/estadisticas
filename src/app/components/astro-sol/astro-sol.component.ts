@@ -10,10 +10,10 @@ export class AstroSolComponent {
 
   constructor( private estadisticaService: EstadisticasService ){}
 
-  ngOnInit(): void {
+/*   ngOnInit(): void {
     this.estadisticaService.getData('todos-los-grupos').then( resp => {
       console.log(resp)
     })
-  }
+  } */
 
 }

@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Firestore, collection, addDoc, getDoc} from '@angular/fire/firestore';
+import { Firestore, collection, addDoc, getDoc, collectionData,getFirestore} from '@angular/fire/firestore';
 
 @Injectable({
   providedIn: 'root'
@@ -23,7 +23,14 @@ export class EstadisticasService {
 
   async getData(collections: any){
     try {
-      return await getDoc(collections)
+    const collectionsInstance = collection(this.firestore, collections);
+    return collectionData(collectionsInstance).subscribe({
+      next:(resp)=>{
+        console.log(resp, 'RESPUESTA');
+      }
+    })
+
+      // return await getDoc(collections)
     } catch(error){
       console.error(error);
       return null

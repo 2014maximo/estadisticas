@@ -6,7 +6,8 @@ import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 
 // Firebase
-
+import { getAuth, provideAuth } from '@angular/fire/auth';
+import { getStorage, provideStorage } from '@angular/fire/storage'; 
 
 import { AstroSolComponent } from './components/astro-sol/astro-sol.component';
 import { HomeComponent } from './components/home/home.component';
@@ -29,7 +30,9 @@ import { provideFirestore,getFirestore } from '@angular/fire/firestore';
     RouterModule.forRoot (ROUTES),
     AppRoutingModule,
     provideFirebaseApp(() => initializeApp(environment.firebase)),
-    provideFirestore(() => getFirestore())
+    provideFirestore(() => getFirestore()),
+    provideAuth(() => getAuth()),  
+    provideStorage(() => getStorage()),
   ],
   providers: [],
   bootstrap: [AppComponent]
