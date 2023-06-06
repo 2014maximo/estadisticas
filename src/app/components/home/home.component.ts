@@ -3,6 +3,7 @@ import { EstadisticasService } from 'src/app/services/estadisticas.service';
 
 import { Firestore, collectionData, collection } from '@angular/fire/firestore';
 import { Observable } from 'rxjs';
+import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-home',
@@ -11,8 +12,11 @@ import { Observable } from 'rxjs';
 })
 export class HomeComponent {
 
+  formIngreso: FormGroup;
+
   item$: Observable<any[]>;
-  constructor(private firestore: Firestore) {
+  constructor(private firestore: Firestore, private fb: FormBuilder) {
+    this.formIngreso = this.crearFormulario();
     const collections = collection(this.firestore, 'todos-los-grupos');
 
     this.item$ = collectionData(collections);
@@ -26,6 +30,13 @@ export class HomeComponent {
         }
       })
     //this.estadisticaService.getData('todos-los-grupos');
+  }
+
+  private crearFormulario():FormGroup{
+    return this.fb.group({
+      email:['', [Validators.required]],
+      password: ['', [Validators.required]]
+    });
   }
 
 }

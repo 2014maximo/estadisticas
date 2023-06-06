@@ -5,6 +5,6 @@ import { AstroSolComponent } from './components/astro-sol/astro-sol.component';
 
 export const ROUTES: Routes = [
     { path: '', pathMatch: 'full', redirectTo: 'home'},
-    { path: 'casa', component: HomeComponent },
+    { path: 'home', component: HomeComponent },
     { path: 'astrosol', component: AstroSolComponent }
 ]
