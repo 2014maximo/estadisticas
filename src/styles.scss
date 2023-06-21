@@ -1,1 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
+.l-menu{
+    height: 45px;
+    white-space: pre;
+    text-align: center;
+    margin: 1px;
+    -moz-box-shadow:5px 5px 5px #000000;
+    -webkit-box-shadow:5px 5px 5px #000000;
+    box-shadow:5px 5px 5px #000000;
+}
+.l-menu a {
+    text-decoration: none;
+    font-family: var(--fuente-seis);
+    font-size: 30px;
+}
+.l-menu a:hover {
+    color:#010101
+}

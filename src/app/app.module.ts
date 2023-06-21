@@ -17,6 +17,8 @@ import { environment } from '../environments/environment';
 import { provideFirestore,getFirestore } from '@angular/fire/firestore';
 
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { IngresoDatosComponent } from './shared/ingreso-datos/ingreso-datos.component';
+import { SharedModule } from './shared/shared.module';
 
 
 
@@ -24,13 +26,15 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
   declarations: [
     AppComponent,
     AstroSolComponent,
-    HomeComponent
+    HomeComponent,
+    IngresoDatosComponent
   ],
   imports: [
     BrowserModule,
     // AngularFireModule.initializeApp(environment.firebase, 'estadisticas'),
     RouterModule.forRoot (ROUTES),
     AppRoutingModule,
+    SharedModule,
     provideFirebaseApp(() => initializeApp(environment.firebase)),
     provideFirestore(() => getFirestore()),
     provideAuth(() => getAuth()),  

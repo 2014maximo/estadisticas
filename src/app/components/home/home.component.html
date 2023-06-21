@@ -1,9 +1,11 @@
 <div class="bg-dark">
-    <div class="row">
+  <app-header *ngIf="!mostrarLogin"></app-header>
+    <div  *ngIf="mostrarLogin" class="row">
         <div class="col-md-4"></div>
         <div class="col-md-4">
+
             <div class="espaciado"></div>
-            <div *ngIf="mostrarLogin" class="card p-5 bg-dark shadow">
+            <div class="card p-5 bg-dark shadow">
 
                 <form [formGroup]="formIngreso" (submit)="enviar()" class="f-merriweather fs-15 lh-15">
                     <div class="form-group">
@@ -22,20 +24,45 @@
                     </div>
                     <button type="submit" class="btn btn-primary">Ingresar</button>
                 </form>
-            </div>
-            <div *ngIf="!mostrarLogin" class="card p-5 bg-dark shadow">
-              <form [formGroup]="formGrupos" (submit)="enviarGrupos()" class="f-merriweather fs-15 lh-15">
-                <select name="select" class="w-100">
-                  <option value="value1">Value 1</option>
-                  <option value="value2" selected>Value 2</option>
-                  <option value="value3">Value 3</option>
-                </select>
-              </form>
-            </div>
-            <div class="espaciado"></div>
-            <div class="espaciado"></div>
-            <div class="espaciado"></div>
+              </div>
+              <div class="espaciado"></div>
+              <div class="espaciado"></div>
+              <div class="espaciado"></div>
+          </div>
+          <div class="col-md-4"></div>
         </div>
-        <div class="col-md-4"></div>
-    </div>
+        
+        <div *ngIf="!mostrarLogin" class="p-5 bg-dark">
+          <div class="espaciado"></div>
+          <div class="espaciado"></div>
+          <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-10">
+              <div class="row f-shadow-into-l">
+                <div class="col l-menu bg-white">
+                  <a href="">
+                    <p>
+                      INGRESAR SORTEOS
+                    </p>
+                  </a>
+                </div>
+                <div class="col l-menu bg-white">
+                  <a href="">
+                    <p>
+                      VER ESTADISTICAS
+                    </p>
+
+                  </a>
+                </div>
+    
+              </div>
+              <div class="espaciado"></div>
+              <div class="espaciado"></div>
+              <div class="espaciado"></div>
+
+            </div>
+            <div class="col-md-1"></div>
+          </div>
+        </div>
+
 </div>

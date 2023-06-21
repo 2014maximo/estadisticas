@@ -1,15 +1,18 @@
 import { Component } from '@angular/core';
 import { EstadisticasService } from 'src/app/services/estadisticas.service';
 
-import { Firestore, collectionData, collection, addDoc, CollectionReference } from '@angular/fire/firestore';
+import { Firestore, collectionData, collection, addDoc, CollectionReference, WithFieldValue } from '@angular/fire/firestore';
 import { Observable } from 'rxjs';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
+import { doc, setDoc } from 'firebase/firestore';
+import { CityRef } from 'src/app/models/sorteo.model';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss']
 })
+
 export class HomeComponent {
 
   formIngreso: FormGroup;
@@ -23,9 +26,8 @@ export class HomeComponent {
     this.formIngreso = this.crearFormulario();
     this.formGrupos = this.crearFormularioGrupos();
     const collections = collection(this.firestore, 'todos-los-grupos');
-    let reference: CollectionReference<any>
     
-    let data = {
+    let data: WithFieldValue<any> = {
       "uno": 4,
       "cuatro": 7,
       "dos": 5,
@@ -34,6 +36,8 @@ export class HomeComponent {
       "fecha": "2023-03-02",
       "tres": 7
   }
+
+    // setDoc(CityRef, { capital: true }, { merge: true });
 
     this.item$ = collectionData(collections);
 
@@ -45,8 +49,11 @@ export class HomeComponent {
         next:(resp)=>{
           console.log(resp)
         }
-      })
-    //this.estadisticaService.getData('todos-los-grupos');
+      });
+
+/*       const cityRef = doc(this.firestore, 'todos-los-grupos', 'astro-luna');
+setDoc(cityRef, { capital: true }, { merge: true }); */
+
 
   }
 
@@ -56,6 +63,7 @@ export class HomeComponent {
       password: ['', [Validators.required]]
     });
   }
+
   private crearFormularioGrupos():FormGroup{
     return this.fb.group({
       grupos:['', [Validators.required]]
