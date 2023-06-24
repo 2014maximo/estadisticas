@@ -21,6 +21,9 @@
                       </div>
                     </div>
                     <button type="submit" class="btn btn-primary fondo-oro borde-oro w-100 shadow">Ingresar</button>
+                    <div *ngIf="!errorClave" class="color-oro font-italic" role="alert">
+                      <small>Clave o usuario incorrecto</small>
+                    </div>
                 </form>
               </div>
               <div class="espaciado"></div>
@@ -37,7 +40,7 @@
             <div class="col-md-10">
               <div class="row f-shadow-into-l">
                 <div class="col l-menu bg-dark">
-                  <a href="">
+                  <a href="ingreso-datos">
                     <p class="color-oro">
                       INGRESAR SORTEOS
                     </p>

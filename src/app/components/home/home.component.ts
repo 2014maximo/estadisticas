@@ -18,6 +18,7 @@ export class HomeComponent {
   formIngreso: FormGroup;
   formGrupos: FormGroup;
   mostrarLogin: boolean;
+  errorClave: boolean;
 
   item$: Observable<any[]>;
 
@@ -42,6 +43,7 @@ export class HomeComponent {
     this.item$ = collectionData(collections);
 
     this.mostrarLogin = true;
+    this.errorClave = true;
   }
 
     ngOnInit(): void {
@@ -73,7 +75,10 @@ setDoc(cityRef, { capital: true }, { merge: true }); */
   enviar(){
     if(this.formIngreso.value.email === 'alexuriel.777@gmail.com' &&
        this.formIngreso.value.password === 'Desarrollo2023$'){
-        this.mostrarLogin = false;
+         this.mostrarLogin = false;
+         this.errorClave = true;
+    } else {
+      this.errorClave = false;
     }
   }
 
