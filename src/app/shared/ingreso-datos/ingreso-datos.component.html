@@ -6,14 +6,28 @@
         <div class="col-md-10">
             <div class="row">
                 <div class="col-md-4"></div>
-                <div class="col-md-4 shadow p-5">
+                <div class="col-md-4 shadow p-5 f-merriweather">
                     <select name="" id="" class="w-100" (change)="grupoSeleccionado($event)">
-                        <option value="Astro Sol">Astro Sol</option>
-                        <option value="Astro Luna">Astro Luna</option>
+                        <option value="default">---</option>
+                        <option *ngFor="let chance of chances" value="chance.referencia">{{ chance.referencia }}</option>
                     </select>
                 </div>
                 <div class="col-md-4"></div>
             </div>
+            <div class="espacio"></div>
+            <div class="text-center" *ngIf="logo">
+                <img src="assets/img/logos{{this.logo}}" alt="" height="60" width="auto">
+            </div>
+            <form action="">
+                <div class="row">
+                    <div class="col">
+                        <input>
+                        <select name="" id="">
+                            <option value=""></option>
+                        </select>
+                    </div>
+                </div>
+            </form>
         </div>
         <div class="col-md-1"></div>
     </div>

@@ -5,7 +5,8 @@ import { Firestore, collectionData, collection, addDoc, CollectionReference, Wit
 import { Observable } from 'rxjs';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { doc, setDoc } from 'firebase/firestore';
-import { CityRef } from 'src/app/models/sorteo.model';
+import { SuperAstroModel } from 'src/app/models/sorteo.model';
+import { MENU } from 'src/app/constants/menu.constant';
 
 @Component({
   selector: 'app-home',
@@ -19,6 +20,7 @@ export class HomeComponent {
   formGrupos: FormGroup;
   mostrarLogin: boolean;
   errorClave: boolean;
+  menu = MENU;
 
   item$: Observable<any[]>;
 
@@ -27,34 +29,28 @@ export class HomeComponent {
     this.formIngreso = this.crearFormulario();
     this.formGrupos = this.crearFormularioGrupos();
     const collections = collection(this.firestore, 'todos-los-grupos');
-    
-    let data: WithFieldValue<any> = {
-      "uno": 4,
-      "cuatro": 7,
-      "dos": 5,
-      "sorteo": 1233,
-      "signo": 12,
-      "fecha": "2023-03-02",
-      "tres": 7
-  }
-
-    // setDoc(CityRef, { capital: true }, { merge: true });
 
     this.item$ = collectionData(collections);
 
     this.mostrarLogin = true;
     this.errorClave = true;
+
+    
   }
 
     ngOnInit(): void {
       this.item$.subscribe({
         next:(resp)=>{
-          console.log(resp)
+          console.log(resp, 'HABER PUES')
         }
       });
 
-/*       const cityRef = doc(this.firestore, 'todos-los-grupos', 'astro-luna');
-setDoc(cityRef, { capital: true }, { merge: true }); */
+
+    let numeroAleatorio = Math.floor(Math.random() * 9000000000) + 1000000000;
+
+/*     const cityRef = doc(this.firestore, 'todos-los-grupos', 'astro-sol')
+    setDoc(cityRef, {20230632:sorteoDia}, { merge: true }); */
+
 
 
   }

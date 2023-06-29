@@ -39,30 +39,13 @@
             <div class="col-md-1"></div>
             <div class="col-md-10">
               <div class="row f-shadow-into-l">
-                <div class="col l-menu bg-dark">
-                  <a href="ingreso-datos">
+                <div *ngFor="let opcion of menu" class="col l-menu bg-dark">
+                  <a href="{{ opcion.ruta }}">
                     <p class="color-oro">
-                      INGRESAR SORTEOS
+                      {{ opcion.nombre }}
                     </p>
                   </a>
                 </div>
-                <div class="col l-menu bg-dark">
-                  <a href="">
-                    <p class="color-oro">
-                      ESTADISTICAS
-                    </p>
-
-                  </a>
-                </div>
-                <div class="col l-menu bg-dark">
-                  <a href="">
-                    <p class="color-oro">
-                      TABLA ACIERTOS
-                    </p>
-
-                  </a>
-                </div>
-    
               </div>
               <div class="espaciado"></div>
               <div class="espaciado"></div>

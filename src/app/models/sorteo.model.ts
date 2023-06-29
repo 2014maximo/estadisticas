@@ -1,8 +1,3 @@
-export class CityRef{
-    capital: boolean = false;
-    merge: boolean = false;
-
-}
 
 export class SuperAstroModel {
     fecha: string;
@@ -12,7 +7,6 @@ export class SuperAstroModel {
     tres: number;
     cuatro: number;
     signo: string;
-
     constructor(){
         this.fecha = '';
         this.sorteo = 0;
@@ -21,5 +15,51 @@ export class SuperAstroModel {
         this.tres = 0;
         this.cuatro = 0;
         this.signo = '';
+    }
+}
+
+export class SorteoChanceModel {
+    fecha: string;
+    sorteo: number;
+    nUno: number;
+    nDos: number;
+    nTres: number;
+    nCuatro: number;
+
+    constructor(){
+        this.fecha = '';
+        this.sorteo = 0;
+        this.nUno = 0;
+        this.nDos = 0;
+        this.nTres = 0;
+        this.nCuatro = 0;
+    }
+}
+
+export class CampoModel {
+    campo: string;
+    tipo: string;
+    ancho: string;
+    maxlength: string;
+    minlength: string;
+    clase: string;
+
+    constructor(){
+        this.campo = '';
+        this.ancho = '';
+        this.tipo  = '';
+        this.maxlength = '';
+        this.minlength = '';
+        this.clase = '';
+    }
+}
+
+export class GrupoModel{
+    referencia: string;
+    grupos: CampoModel[];
+
+    constructor(){
+        this.referencia = '';
+        this.grupos = [];
     }
 }
