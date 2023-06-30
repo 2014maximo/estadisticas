@@ -43,6 +43,7 @@ export class CampoModel {
     maxlength: string;
     minlength: string;
     clase: string;
+    nombreCampo: string;
 
     constructor(){
         this.campo = '';
@@ -51,15 +52,18 @@ export class CampoModel {
         this.maxlength = '';
         this.minlength = '';
         this.clase = '';
+        this.nombreCampo = '';
     }
 }
 
 export class GrupoModel{
     referencia: string;
+    premios: string[];
     grupos: CampoModel[];
 
     constructor(){
         this.referencia = '';
         this.grupos = [];
+        this.premios = [];
     }
 }

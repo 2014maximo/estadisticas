@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { FormArray, FormBuilder, FormControl, FormGroup } from '@angular/forms';
 import { CHANCES } from 'src/app/constants/chances.constant';
+import { CampoModel, GrupoModel } from 'src/app/models/sorteo.model';
 
 @Component({
   selector: 'app-ingreso-datos',
@@ -9,9 +10,10 @@ import { CHANCES } from 'src/app/constants/chances.constant';
 })
 export class IngresoDatosComponent {
 
-  public form: FormGroup;
-  public logo: string;
-  public chances = CHANCES;
+  form: FormGroup;
+  logo: string;
+  chances = CHANCES;
+  formularioSeleccionado: CampoModel[] = []
 
   constructor(private fb:FormBuilder){
     this.form = this.crearFormulario();
@@ -20,24 +22,35 @@ export class IngresoDatosComponent {
 
   grupoSeleccionado(e: any){
     console.log(e.target.value);
+    let formulario: GrupoModel[] = [];
+    formulario = this.chances.filter((element:GrupoModel) => {
+      console.log(element.referencia);
+      return element.referencia.includes(e.target.value)
+    });
+    this.formularioSeleccionado = formulario[0].grupos;
+    console.log(formulario, 'HABER PUES')
     
   }
 
   crearFormulario():FormGroup{
     return this.fb.group({
-      campo1: new FormControl({ value: '', disabled: true }),
-      campo2: new FormControl({ value: '', disabled: true }),
-      campo3: new FormControl({ value: '', disabled: true }),
-      campo4: new FormControl({ value: '', disabled: true }),
-      campo5: new FormControl({ value: '', disabled: true }),
-      campo6: new FormControl({ value: '', disabled: true }),
-      campo7: new FormControl({ value: '', disabled: true }),
-      campo8: new FormControl({ value: '', disabled: true }),
-      campo9: new FormControl({ value: '', disabled: true }),
-      campo10: new FormControl({ value: '', disabled: true }),
-      campo11: new FormControl({ value: '', disabled: true }),
-      campo12: new FormControl({ value: '', disabled: true }),
+      campo1: new FormControl({ value: '', disabled: false }),
+      campo2: new FormControl({ value: '', disabled: false }),
+      campo3: new FormControl({ value: '', disabled: false }),
+      campo4: new FormControl({ value: '', disabled: false }),
+      campo5: new FormControl({ value: '', disabled: false }),
+      campo6: new FormControl({ value: '', disabled: false }),
+      campo7: new FormControl({ value: '', disabled: false }),
+      campo8: new FormControl({ value: '', disabled: false }),
+      campo9: new FormControl({ value: '', disabled: false }),
+      campo10: new FormControl({ value: '', disabled: false }),
+      campo11: new FormControl({ value: '', disabled: false }),
+      campo12: new FormControl({ value: '', disabled: false }),
     })
+  }
+
+  guardarSorteo(){
+    console.log(this.form, 'HABER PUEST');
   }
 
 }

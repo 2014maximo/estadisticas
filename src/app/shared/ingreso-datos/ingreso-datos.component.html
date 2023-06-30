@@ -9,7 +9,7 @@
                 <div class="col-md-4 shadow p-5 f-merriweather">
                     <select name="" id="" class="w-100" (change)="grupoSeleccionado($event)">
                         <option value="default">---</option>
-                        <option *ngFor="let chance of chances" value="chance.referencia">{{ chance.referencia }}</option>
+                        <option *ngFor="let chance of chances" value="{{chance.referencia}}">{{ chance.referencia }}</option>
                     </select>
                 </div>
                 <div class="col-md-4"></div>
@@ -18,15 +18,18 @@
             <div class="text-center" *ngIf="logo">
                 <img src="assets/img/logos{{this.logo}}" alt="" height="60" width="auto">
             </div>
-            <form action="">
+            <form action="" [formGroup]="form" (submit)="guardarSorteo()">
                 <div class="row">
-                    <div class="col">
-                        <input>
-                        <select name="" id="">
+                    <div *ngFor="let campo of formularioSeleccionado" class="col">
+                        <input *ngIf="campo.tipo==='text' || campo.tipo === 'date'" type="{{campo.tipo}}" placeholder="{{campo.campo}}" class="{{campo.clase}}" formControlName="{{campo.nombreCampo}}">
+                        <select name="" id=""  *ngIf="campo.tipo==='lista'">
                             <option value=""></option>
                         </select>
                     </div>
                 </div>
+                <button type="submit" class="mt-5">
+                    Guardar
+                </button>
             </form>
         </div>
         <div class="col-md-1"></div>
