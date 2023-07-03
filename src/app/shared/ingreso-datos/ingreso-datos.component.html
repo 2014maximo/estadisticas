@@ -7,7 +7,7 @@
             <div class="row">
                 <div class="col-md-4"></div>
                 <div class="col-md-4 shadow p-5 f-merriweather">
-                    <select name="" id="" class="w-100" (change)="grupoSeleccionado($event)">
+                    <select name="" id="" class="w-100" (change)="seleccionarGrupo($event)">
                         <option value="default">---</option>
                         <option *ngFor="let chance of chances" value="{{chance.referencia}}">{{ chance.referencia }}</option>
                     </select>
@@ -16,25 +16,73 @@
             </div>
             <div class="espacio"></div>
             <div class="text-center" *ngIf="logo">
-                <img src="assets/img/logos{{this.logo}}" alt="" height="60" width="auto">
+                <img src="assets/img/logos/{{this.logo}}" alt="" height="50" width="auto" class="drop">
             </div>
-            <form action="" [formGroup]="form" (submit)="guardarSorteo()">
-                <div class="row">
+            <div class="espacio"></div>
+            <form action="" [formGroup]="form" (submit)="guardarSorteo()" class="shadow p-5">
+                <div class="row text-center">
                     <div *ngFor="let campo of formularioSeleccionado" class="col">
-                        <input *ngIf="campo.tipo==='text' || campo.tipo === 'date'" type="{{campo.tipo}}" placeholder="{{campo.campo}}" class="{{campo.clase}}" formControlName="{{campo.nombreCampo}}">
-                        <select name="" id=""  *ngIf="campo.tipo==='lista'">
-                            <option value=""></option>
+                        <input *ngIf="campo.tipo==='text' || campo.tipo === 'date'"
+                                type="{{campo.tipo}}"
+                                maxlength="{{campo.maxlength}}"
+                                minlength="{{ campo.minlength}}"
+                                placeholder="{{campo.campo}}"
+                                class="{{campo.clase}}"
+                                formControlName="{{campo.nombreCampo}}">
+                        <select name="" id="" *ngIf="campo.tipo==='select'" formControlName="{{campo.nombreCampo}}" class="{{campo.clase}}">
+                            <option value="defecto">Seleccione</option>
+                            <option *ngFor="let list of campo.lista"
+                                    value="{{list}}">{{ list }}</option>
                         </select>
                     </div>
                 </div>
-                <button type="submit" class="mt-5">
-                    Guardar
-                </button>
+                <div class="text-center">
+                    <button *ngIf="this.form.valid && permitirGuardar" type="submit" class="mt-5 btn btn-info fondo-oro borde-oro shadow" style="width: 150px;">
+                        Guardar
+                    </button>
+                    
+                </div>
             </form>
         </div>
         <div class="col-md-1"></div>
     </div>
     <div class="espaciado"></div>
+    <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-10">
+            <table class="table table-dark shadow table-sm">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">First</th>
+                    <th scope="col">Last</th>
+                    <th scope="col">Handle</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>Larry</td>
+                    <td>the Bird</td>
+                    <td>@twitter</td>
+                  </tr>
+                </tbody>
+              </table>
+        </div>
+        <div class="col-md-1"></div>
+    </div>
     <div class="espaciado"></div>
     <div class="espaciado"></div>
 

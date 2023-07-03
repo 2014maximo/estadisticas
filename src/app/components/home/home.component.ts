@@ -21,8 +21,7 @@ export class HomeComponent {
   mostrarLogin: boolean;
   errorClave: boolean;
   menu = MENU;
-
-  item$: Observable<any[]>;
+  item$: Observable<any[]> = new Observable();
 
   constructor(private firestore: Firestore, private fb: FormBuilder) {
 

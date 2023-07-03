@@ -1,3 +1,4 @@
+import { FormGroup, Validators } from "@angular/forms";
 
 export class SuperAstroModel {
     fecha: string;
@@ -44,6 +45,7 @@ export class CampoModel {
     minlength: string;
     clase: string;
     nombreCampo: string;
+    lista?:any[];
 
     constructor(){
         this.campo = '';
@@ -60,6 +62,7 @@ export class GrupoModel{
     referencia: string;
     premios: string[];
     grupos: CampoModel[];
+    formulario?: FormGroup;
 
     constructor(){
         this.referencia = '';
