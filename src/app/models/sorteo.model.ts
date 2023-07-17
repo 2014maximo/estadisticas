@@ -1,21 +1,35 @@
 import { FormGroup, Validators } from "@angular/forms";
 
-export class SuperAstroModel {
+export class AstroSolModel {
     fecha: string;
     sorteo: number;
+    numero: NumeroAstroSolModel;
+    signo: string;
+
+    constructor(){
+        this.numero = {
+            uno: 0,
+            dos: 0,
+            tres: 0,
+            cuatro: 0
+        };
+        this.fecha = '';
+        this.sorteo = 0;
+        this.signo = '';
+    }
+}
+
+export class NumeroAstroSolModel{
     uno: number;
     dos: number;
     tres: number;
     cuatro: number;
-    signo: string;
+
     constructor(){
-        this.fecha = '';
-        this.sorteo = 0;
         this.uno = 0;
         this.dos = 0;
         this.tres = 0;
         this.cuatro = 0;
-        this.signo = '';
     }
 }
 
@@ -63,10 +77,22 @@ export class GrupoModel{
     premios: string[];
     grupos: CampoModel[];
     formulario?: FormGroup;
+    titulos: string[];
 
     constructor(){
         this.referencia = '';
         this.grupos = [];
         this.premios = [];
+        this.titulos = [];
+    }
+}
+
+export class TablaModel {
+    keys: string[];
+    grupos: any[];
+
+    constructor(){
+        this.keys = [];
+        this.grupos = [];
     }
 }

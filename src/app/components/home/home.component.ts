@@ -5,7 +5,6 @@ import { Firestore, collectionData, collection, addDoc, CollectionReference, Wit
 import { Observable } from 'rxjs';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { doc, setDoc } from 'firebase/firestore';
-import { SuperAstroModel } from 'src/app/models/sorteo.model';
 import { MENU } from 'src/app/constants/menu.constant';
 
 @Component({

@@ -2,8 +2,8 @@ import { Component } from '@angular/core';
 import { Firestore, collectionData, collection, addDoc, CollectionReference, WithFieldValue } from '@angular/fire/firestore';
 import { FormBuilder, FormControl, FormGroup } from '@angular/forms';
 import { CHANCES } from 'src/app/constants/chances.constant';
-import { CampoModel, GrupoModel } from 'src/app/models/sorteo.model';
-import { doc, setDoc, getDoc } from 'firebase/firestore';
+import { CampoModel, GrupoModel, TablaModel } from 'src/app/models/sorteo.model';
+import { doc, setDoc, getDoc, getDocs } from 'firebase/firestore';
 import { Observable } from 'rxjs';
 
 @Component({
@@ -21,16 +21,29 @@ export class IngresoDatosComponent {
   formularioSeleccionado: CampoModel[] = []
   grupoSeleccionado: GrupoModel = new GrupoModel();
   item$: Observable<any[]> = new Observable();
+  querySnapshot: any;
+  scientists: any;
+  elementosTabla = new TablaModel();
+
+  gruposTabla:any[]=[];
+  retornoGruposTabla:any[]=[];
+
 
   constructor(private fb:FormBuilder, private firestore: Firestore,){
     this.form = this.crearFormulario();
     this.logo = '';
   }
 
+  ngOnInit(): void {
+    //Called after the constructor, initializing input properties, and the first call to ngOnChanges.
+    //Add 'implements OnInit' to the class.
+    const collections = collection(this.firestore, 'todos-los-grupos');
+    this.item$ = collectionData(collections);
+  }
+
   seleccionarGrupo(e: any){
     let formulario: GrupoModel[] = [];
     formulario = this.chances.filter((element:GrupoModel) => {
-      console.log(element.referencia);
       return element.referencia.includes(e.target.value)
     });
     this.logo = `${e.target.value.split(' ').join('')}.png`;
@@ -38,14 +51,45 @@ export class IngresoDatosComponent {
     this.grupoSeleccionado = formulario[0];
     this.form = formulario[0].formulario ? formulario[0].formulario : this.crearFormulario();
     this.permitirGuardar = true;
-    this.respuesta = this.getDocument();
-    console.log(this.respuesta, '')
+
+    this.recargaTabla();
   }
 
-  async getDocument(){
-    let grupo =  this.grupoSeleccionado.referencia.toLowerCase().split(' ').join('-');
-    let docSnap = await getDoc(doc(this.firestore, 'todos-los-grupos', grupo));
-    return docSnap.data();
+
+
+  recargaTabla(){
+    let p = {
+      f: this.firestore,
+      b: 'todos-los-grupos',
+      r: this.grupoSeleccionado.referencia.toLowerCase().split(' ').join('-')
+    }
+    const docRef = doc(p.f, p.b, p.r);
+    const docSnap = getDoc(docRef);
+
+    docSnap.then( resp => {
+      let datos:any = resp.data();
+      this.elementosTabla.grupos = this.mapearGruposTablas(Object.values(datos));
+      this.elementosTabla.grupos = this.elementosTabla.grupos.sort((x:any,y:any) => y.sorteo - x.sorteo)
+      this.elementosTabla.keys = Object.keys(this.elementosTabla.grupos[0]);
+    });
+  }
+
+  mapearGruposTablas(grupos:any[]):any[]{
+    let grupoRetorno = new Object();
+    
+    grupos.forEach( (grupo:any,i:number) => {
+      let cif:string='';
+      let referencias = Object.keys(grupo).sort();
+      let contador = -1;
+
+      referencias.forEach((e, i) => {
+        e.includes('cifra')? cif = cif+grupo[e] : this.gruposTabla[++contador] = {[e]:grupo[e]};
+      })
+      this.gruposTabla[contador+1] = {numero:cif}
+      grupoRetorno = Object.assign({}, ...this.gruposTabla);
+      this.retornoGruposTabla[i] = grupoRetorno;
+    });
+    return this.retornoGruposTabla
   }
 
   crearFormulario():FormGroup{
@@ -73,7 +117,18 @@ export class IngresoDatosComponent {
     let sorteo = {
       [id]: this.form.value
     }
-    setDoc(cityRef, sorteo, { merge: true });
+    setDoc(cityRef, sorteo, { merge: true }).then((res:any) => {
+        this.recargaTabla();
+        this.form.reset();
+    });
+  }
+
+  entregarValor(DatosSorteo:any): any[]{
+    let grupoValoresSorteo: string[]=[];
+    Object.values(DatosSorteo).forEach((e:any, i:number, grupo:any) => {
+      grupoValoresSorteo[i] = DatosSorteo[this.grupoSeleccionado.titulos[i]];        //   this.grupoSeleccionado.titulos[i]
+    });
+    return grupoValoresSorteo
   }
 
 }
