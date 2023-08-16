@@ -19,6 +19,7 @@ import { provideFirestore,getFirestore } from '@angular/fire/firestore';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { IngresoDatosComponent } from './shared/ingreso-datos/ingreso-datos.component';
 import { SharedModule } from './shared/shared.module';
+import { AnalisisComponent } from './components/analisis/analisis.component';
 
 
 
@@ -27,7 +28,8 @@ import { SharedModule } from './shared/shared.module';
     AppComponent,
     AstroSolComponent,
     HomeComponent,
-    IngresoDatosComponent
+    IngresoDatosComponent,
+    AnalisisComponent
   ],
   imports: [
     BrowserModule,
