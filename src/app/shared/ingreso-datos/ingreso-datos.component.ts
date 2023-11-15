@@ -58,6 +58,8 @@ export class IngresoDatosComponent {
 
 
   recargaTabla(){
+    this.elementosTabla.grupos = [];
+    console.log(this.elementosTabla.grupos, 'THIS. ELEMENTOS TABLA');
     let p = {
       f: this.firestore,
       b: 'todos-los-grupos',
@@ -66,9 +68,11 @@ export class IngresoDatosComponent {
     const docRef = doc(p.f, p.b, p.r);
     const docSnap = getDoc(docRef);
 
+    
     docSnap.then( resp => {
       let datos:any = resp.data();
-      this.elementosTabla.grupos = this.mapearGruposTablas(Object.values(datos));
+      console.log(datos,'COMO VIENEN LOS DATOS');
+      this.elementosTabla.grupos = Object.assign([], this.mapearGruposTablas(Object.values(datos)));
       this.elementosTabla.grupos = this.elementosTabla.grupos.sort((x:any,y:any) => y.sorteo + x.sorteo)
       this.elementosTabla.keys = Object.keys(this.elementosTabla.grupos[0]);
     });
