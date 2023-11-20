@@ -17,7 +17,7 @@
             <div class="espacio"></div>
             <div class="text-center" *ngIf="logo">
                 <img src="assets/img/logos/{{this.logo}}" alt="" height="50" width="auto" class="drop mr-5">
-                <button routerLink="/astro-sol">
+                <button (click)="exportable()">
                     <i class="fa fa-share" aria-hidden="true"></i>
                 </button>
             </div>

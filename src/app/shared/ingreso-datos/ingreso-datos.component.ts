@@ -6,6 +6,7 @@ import { CampoModel, GrupoModel, TablaModel } from 'src/app/models/sorteo.model'
 import { doc, setDoc, getDoc, getDocs } from 'firebase/firestore';
 import { Observable } from 'rxjs';
 import { Router } from '@angular/router';
+import { EstadisticasService } from 'src/app/services/estadisticas.service';
 
 @Component({
   selector: 'app-ingreso-datos',
@@ -25,12 +26,13 @@ export class IngresoDatosComponent {
   querySnapshot: any;
   scientists: any;
   elementosTabla = new TablaModel();
+  tabla:any[]=[];
 
   gruposTabla:any[]=[];
   retornoGruposTabla:any[]=[];
 
 
-  constructor(private fb:FormBuilder, private firestore: Firestore, private router:Router){
+  constructor(private fb:FormBuilder, private firestore: Firestore, private router:Router, private estadisticaService: EstadisticasService){
     this.form = this.crearFormulario();
     this.logo = '';
   }
@@ -60,7 +62,6 @@ export class IngresoDatosComponent {
 
   recargaTabla(){
     this.elementosTabla.grupos = [];
-    console.log(this.elementosTabla.grupos, 'THIS. ELEMENTOS TABLA');
     let p = {
       f: this.firestore,
       b: 'todos-los-grupos',
@@ -72,9 +73,9 @@ export class IngresoDatosComponent {
     
     docSnap.then( resp => {
       let datos:any = resp.data();
-      console.log(datos,'COMO VIENEN LOS DATOS');
       this.elementosTabla.grupos = Object.assign([], this.mapearGruposTablas(Object.values(datos)));
-      this.elementosTabla.grupos = this.elementosTabla.grupos.sort((x:any,y:any) => y.sorteo + x.sorteo)
+      this.elementosTabla.grupos = this.elementosTabla.grupos.sort((x:any,y:any) => y.sorteo - x.sorteo);
+      this.tabla = this.elementosTabla.grupos.sort((x:any,y:any) => y.sorteo + x.sorteo);
       this.elementosTabla.keys = Object.keys(this.elementosTabla.grupos[0]);
     });
   }
@@ -134,6 +135,11 @@ export class IngresoDatosComponent {
       grupoValoresSorteo[i] = DatosSorteo[this.grupoSeleccionado.titulos[i]];        //   this.grupoSeleccionado.titulos[i]
     });
     return grupoValoresSorteo
+  }
+
+  exportable(){
+    this.estadisticaService.grupo = this.elementosTabla.grupos;
+    this.router.navigate(['/', 'astro-sol']);
   }
 
 }
