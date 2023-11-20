@@ -74,6 +74,7 @@ export class CampoModel {
 
 export class GrupoModel{
     referencia: string;
+    ruta:string;
     premios: string[];
     grupos: CampoModel[];
     formulario?: FormGroup;
@@ -81,6 +82,7 @@ export class GrupoModel{
 
     constructor(){
         this.referencia = '';
+        this.ruta = '';
         this.grupos = [];
         this.premios = [];
         this.titulos = [];

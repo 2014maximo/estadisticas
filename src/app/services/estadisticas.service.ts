@@ -6,6 +6,8 @@ import { Firestore, collection, addDoc, getDoc, collectionData,getFirestore} fro
 })
 export class EstadisticasService {
 
+  public grupo:any[]=[]
+
   constructor( private firestore: Firestore ){}
 
 

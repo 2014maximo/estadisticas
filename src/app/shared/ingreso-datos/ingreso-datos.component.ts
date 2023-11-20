@@ -5,6 +5,7 @@ import { CHANCES } from 'src/app/constants/chances.constant';
 import { CampoModel, GrupoModel, TablaModel } from 'src/app/models/sorteo.model';
 import { doc, setDoc, getDoc, getDocs } from 'firebase/firestore';
 import { Observable } from 'rxjs';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-ingreso-datos',
@@ -29,7 +30,7 @@ export class IngresoDatosComponent {
   retornoGruposTabla:any[]=[];
 
 
-  constructor(private fb:FormBuilder, private firestore: Firestore,){
+  constructor(private fb:FormBuilder, private firestore: Firestore, private router:Router){
     this.form = this.crearFormulario();
     this.logo = '';
   }

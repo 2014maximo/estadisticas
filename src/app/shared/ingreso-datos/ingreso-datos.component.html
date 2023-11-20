@@ -16,7 +16,10 @@
             </div>
             <div class="espacio"></div>
             <div class="text-center" *ngIf="logo">
-                <img src="assets/img/logos/{{this.logo}}" alt="" height="50" width="auto" class="drop">
+                <img src="assets/img/logos/{{this.logo}}" alt="" height="50" width="auto" class="drop mr-5">
+                <button routerLink="/astro-sol">
+                    <i class="fa fa-share" aria-hidden="true"></i>
+                </button>
             </div>
             <div class="espacio"></div>
             <form action="" [formGroup]="form" (submit)="guardarSorteo()" class="shadow p-5">
@@ -47,6 +50,8 @@
         <div class="col-md-1"></div>
     </div>
     <div class="espaciado"></div>
+
+
     <div class="row">
         <div class="col-md-1"></div>
         <div class="col-md-10">
