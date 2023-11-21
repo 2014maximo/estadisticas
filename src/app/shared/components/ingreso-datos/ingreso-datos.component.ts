@@ -54,6 +54,7 @@ export class IngresoDatosComponent {
     this.grupoSeleccionado = formulario[0];
     this.form = formulario[0].formulario ? formulario[0].formulario : this.crearFormulario();
     this.permitirGuardar = true;
+    this.elementosTabla.grupos = [];
 
     this.recargaTabla();
   }
@@ -138,8 +139,9 @@ export class IngresoDatosComponent {
   }
 
   exportable(){
+    let componente = this.grupoSeleccionado.referencia.toLowerCase().split(' ').join('-');
     this.estadisticaService.grupo = this.elementosTabla.grupos;
-    this.router.navigate(['/', 'astro-sol']);
+    this.router.navigate(['/', componente]);
   }
 
 }

@@ -3,16 +3,13 @@ import { EstadisticasService } from 'src/app/services/estadisticas.service';
 import { cambiarFechas, numeroSigno } from 'src/app/shared/constants/funciones.constant';
 
 @Component({
-  selector: 'app-astro-sol',
-  templateUrl: './astro-sol.component.html',
-  styleUrls: ['./astro-sol.component.scss']
+  selector: 'app-astro-luna',
+  templateUrl: './astro-luna.component.html',
+  styleUrls: ['./astro-luna.component.scss']
 })
-export class AstroSolComponent {
+export class AstroLunaComponent {
 
-  constructor( public estadisticaService: EstadisticasService ){}
-
-  ngOnInit(): void {
-  }
+  constructor(public estadisticaService: EstadisticasService){}
 
   cambiarFechas(fecha: string):string{
     return cambiarFechas(fecha);

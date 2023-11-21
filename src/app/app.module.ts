@@ -17,9 +17,10 @@ import { environment } from '../environments/environment';
 import { provideFirestore,getFirestore } from '@angular/fire/firestore';
 
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { IngresoDatosComponent } from './shared/ingreso-datos/ingreso-datos.component';
+import { IngresoDatosComponent } from './shared/components/ingreso-datos/ingreso-datos.component';
 import { SharedModule } from './shared/shared.module';
 import { AnalisisComponent } from './components/analisis/analisis.component';
+import { AstroLunaComponent } from './components/astro-luna/astro-luna.component';
 
 
 
@@ -29,7 +30,8 @@ import { AnalisisComponent } from './components/analisis/analisis.component';
     AstroSolComponent,
     HomeComponent,
     IngresoDatosComponent,
-    AnalisisComponent
+    AnalisisComponent,
+    AstroLunaComponent
   ],
   imports: [
     BrowserModule,
