@@ -26,7 +26,6 @@ export class IngresoDatosComponent {
   querySnapshot: any;
   scientists: any;
   elementosTabla = new TablaModel();
-  tabla:any[]=[];
 
   gruposTabla:any[]=[];
   retornoGruposTabla:any[]=[];
@@ -76,7 +75,6 @@ export class IngresoDatosComponent {
       let datos:any = resp.data();
       this.elementosTabla.grupos = Object.assign([], this.mapearGruposTablas(Object.values(datos)));
       this.elementosTabla.grupos = this.elementosTabla.grupos.sort((x:any,y:any) => y.sorteo - x.sorteo);
-      this.tabla = this.elementosTabla.grupos.sort((x:any,y:any) => y.sorteo + x.sorteo);
       this.elementosTabla.keys = Object.keys(this.elementosTabla.grupos[0]);
     });
   }

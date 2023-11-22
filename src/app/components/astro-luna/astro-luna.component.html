@@ -13,7 +13,7 @@
 					</tr>
 				</thead>
 				<tbody>
-					<tr *ngFor="let contenido of estadisticaService.grupo">
+					<tr *ngFor="let contenido of estadisticaService.grupo.reverse()">
 						<td>
 							{{cambiarFechas(contenido.fecha)}},{{separarNumeros(contenido.numero)}},{{numeroSigno(contenido.signo)}}
 						</td>
