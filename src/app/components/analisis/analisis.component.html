@@ -3,23 +3,63 @@
     <div class="row">
         <div class="col-md-1"></div>
         <div class="col-md-10">
+
             <div class="espaciado"></div>
             <h2 class="f-merriweather fs-50 text-light">
                 ANÁLISIS
             </h2>
             <div class="espacio"></div>
+            <h3 class="text-light f-merriweather">CAUSAS CONSTANTES</h3>
             <div class="row">
-                <div class="col-md-6">
-                    <p class="text-light f-merriweather">CAUSAS CONSTANTES</p>
-                    <ul class="text-light f-merriweather">
-                        <li>El patrón que cae un día, no es muy es viable de volverse a repetir al día siguiente, o en los siguientes días.</li>
-                        <li>Los números que estan en favoritos vuelven a caer pero no es muy viable que sea juntos.</li>
-                        <li></li>
-                    </ul>
-
+                <div class="col p-2" *ngFor="let tarjeta of tarjetas">
+                    <p class="text-light f-merriweather p-3 border">
+                        {{ tarjeta.descripcion }}
+                    </p>
                 </div>
                 <div class="col-md-6"></div>
             </div>
+
+            <div class="espacio"></div>
+
+            <form [formGroup]="form" action="" (submit)="generarGrupos()">
+                <div class="row">
+                    <div class="col-md-2">
+                        <input formControlName="col1" type="text" class="w-100 bg-transparent border rounded">
+                    </div>
+                    <div class="col-md-2">
+                        <input formControlName="col2" type="text" class="w-100 bg-transparent border rounded">
+                    </div>
+                    <div class="col-md-2">
+                        <input formControlName="col3" type="text" class="w-100 bg-transparent border rounded">
+                    </div>
+                    <div class="col-md-2">
+                        <input formControlName="col4" type="text" class="w-100 bg-transparent border rounded">
+                    </div>
+                    <div class="col-md-2">
+                        <input formControlName="col5" type="text" class="w-100 bg-transparent border rounded">
+                    </div>
+                    <div class="col-md-2">
+                        <button type="submit" class="p-1 f-merriweather shadow">
+                            GENERAR
+                        </button>
+                    </div>
+                </div>
+            </form>
+            <div class="espacio"></div>
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="m-3 text-light fs-30" *ngIf="gruposFormados.length > 0">{{ gruposFormados.length }}</p>
+                    <span class="text-light f-merriweather" *ngFor="let grupo of gruposFormados">
+                        {{ grupo }}
+                    </span>
+                </div>
+                <div class="col-md-6">
+                    <span class="text-light f-merriweather" *ngFor="let numero of numeros">
+                        {{ numero }}
+                    </span>
+                </div>
+            </div>
+            <div class="espaciado"></div>
         </div>
         <div class="col-md-1"></div>
     </div>

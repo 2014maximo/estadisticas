@@ -12,7 +12,9 @@
                         <option *ngFor="let chance of chances" value="{{chance.referencia}}">{{ chance.referencia }}</option>
                     </select>
                 </div>
-                <div class="col-md-4"></div>
+                <div class="col-md-4">
+                    <button (click)="pasoAnalisis()">ANÁLISIS</button>
+                </div>
             </div>
             <div class="espacio"></div>
             <div class="text-center" *ngIf="logo">
