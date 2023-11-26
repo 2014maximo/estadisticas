@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup } from '@angular/forms';
 import { TARJETAS } from './constants/analisis.constant';
 import { EstadisticasService } from 'src/app/services/estadisticas.service';
+import { ClasificacionParesModel, ParesArmadosModel } from './models/analisis.model';
 
 @Component({
     selector: 'app-analisis',
@@ -13,6 +14,9 @@ export class AnalisisComponent implements OnInit {
     form: FormGroup;
     tarjetas = TARJETAS;
     gruposFormados:string[]=[];
+    paresFormados = new ParesArmadosModel();
+    clasificacionParesIz:ClasificacionParesModel[]=[];
+    clasificacionParesDer:ClasificacionParesModel[]=[];
     numeros:string[]=[];
 
 
@@ -71,7 +75,47 @@ export class AnalisisComponent implements OnInit {
                 });
             });
         });
+
+        grupos.grupo1.forEach((e:any, i:number) => {
+            grupos.grupo2.forEach((f:any, fi:number) => {
+                let armado = `${e}${f}`
+                this.paresFormados.derecha.push(armado);
+            });
+        });
+        grupos.grupo2.forEach((e:any, i:number) => {
+            grupos.grupo3.forEach((f:any, fi:number) => {
+                let armado = `${e}${f}`
+                this.paresFormados.izquierda.push(armado);
+            });
+        });
+
+        this.clasificacionParesIz = (this.clasificandoPares(this.paresFormados.izquierda)).sort(this.compararPorEdad);
+        this.clasificacionParesDer = (this.clasificandoPares(this.paresFormados.derecha)).sort(this.compararPorEdad);
+        
     }
+
+    compararPorEdad(a:ClasificacionParesModel, b:ClasificacionParesModel) {
+        return a.cantidad - b.cantidad;
+    }
+
+    clasificandoPares(grupoPares:string[]):ClasificacionParesModel[]{
+        let clasificar:ClasificacionParesModel[]=[];
+        grupoPares.forEach(e => {
+            let contaParesIz:number=0;
+            this.numeros.forEach(f => {
+                if(f.includes(e)){
+                    contaParesIz++;
+                }
+            });
+            let clasificado = {
+                numero: e,
+                cantidad: contaParesIz
+            }
+            clasificar.push(clasificado);
+        });
+        return clasificar;
+    }
+
     guardarStorage(grupos:Object) {
         const datosFormularioJSON = JSON.stringify(grupos);
         localStorage.setItem('grupos', datosFormularioJSON);

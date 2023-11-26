@@ -33,6 +33,6 @@ PROCESO PARA DESPLEGAR AL DOMINIO GITHUB
 (Instalar):
 npm i angular-cli-ghpages --save
 
-(Deploy en dominio):
+(Deploy en dominio) "PRIMERO HACER PUSH A LA RAMA ORIGEN":
 ng deploy --base-href https://2014maximo.github.io/estadisticas/
 

@@ -48,10 +48,25 @@
             <div class="espacio"></div>
             <div class="row">
                 <div class="col-md-6">
-                    <p class="m-3 text-light fs-30" *ngIf="gruposFormados.length > 0">{{ gruposFormados.length }}</p>
-                    <span class="text-light f-merriweather" *ngFor="let grupo of gruposFormados">
-                        {{ grupo }}
-                    </span>
+                    <p class="m-3 text-light fs-35" *ngIf="clasificacionParesIz.length > 0">{{ paresFormados.izquierda.length }} IZQUIERDA</p>
+                    <div class="border p-3 row">
+                        <span class="col text-light f-merriweather" *ngFor="let pariz of this.clasificacionParesIz.reverse()">
+                            <p><span class="fs-18">{{pariz.numero}}</span>:<small class="tc-blue-two">{{ pariz.cantidad }}</small></p>
+                        </span>
+                    </div>
+                    <p class="m-3 text-light fs-35" *ngIf="clasificacionParesDer.length > 0">{{ paresFormados.derecha.length }} DERECHA</p>
+                    <div class="border p-3 row">
+                        <span class="col text-light f-merriweather" *ngFor="let parder of this.clasificacionParesDer.reverse()">
+                            <p><span class="fs-18">{{parder.numero}}</span>:<small class="tc-blue-two">{{ parder.cantidad }}</small></p>
+                        </span>
+                    </div>
+
+                    <div class="border p-3">
+                        <p class="m-3 text-light fs-30" *ngIf="gruposFormados.length > 0">{{ gruposFormados.length }}</p>
+                        <span class="text-light f-merriweather" *ngFor="let grupo of gruposFormados">
+                            {{ grupo }}
+                        </span>
+                    </div>
                 </div>
                 <div class="col-md-6">
                     <span class="text-light f-merriweather" *ngFor="let numero of numeros">
