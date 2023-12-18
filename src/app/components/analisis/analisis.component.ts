@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup } from '@angular/forms';
 import { TARJETAS } from './constants/analisis.constant';
 import { EstadisticasService } from 'src/app/services/estadisticas.service';
-import { ClasificacionParesModel, ParesArmadosModel } from './models/analisis.model';
+import { ClasificacionParesModel, HistorialModel, ParesArmadosModel } from './models/analisis.model';
 
 @Component({
     selector: 'app-analisis',
@@ -17,7 +17,8 @@ export class AnalisisComponent implements OnInit {
     paresFormados = new ParesArmadosModel();
     clasificacionParesIz:ClasificacionParesModel[]=[];
     clasificacionParesDer:ClasificacionParesModel[]=[];
-    numeros:string[]=[];
+    numeros:HistorialModel[]=[];
+
 
 
     constructor(private fb: FormBuilder, private estadisticaService: EstadisticasService) {
@@ -30,8 +31,8 @@ export class AnalisisComponent implements OnInit {
     }
 
     cargarNumeros(){
-        this.estadisticaService.pasoAnalisis.forEach(e =>{
-            this.numeros.push(e.numero);
+        this.estadisticaService.pasoAnalisis.forEach((e:any) =>{
+            this.numeros.push(e.numero)
         });
     }
 
@@ -103,7 +104,7 @@ export class AnalisisComponent implements OnInit {
         grupoPares.forEach(e => {
             let contaParesIz:number=0;
             this.numeros.forEach(f => {
-                if(f.includes(e)){
+                if(f.toString().includes(e)){
                     contaParesIz++;
                 }
             });

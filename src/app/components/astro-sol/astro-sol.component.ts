@@ -8,8 +8,11 @@ import { cambiarFechas, numeroSigno } from 'src/app/shared/constants/funciones.c
   styleUrls: ['./astro-sol.component.scss']
 })
 export class AstroSolComponent {
+  public grupos: any[]=[];
 
-  constructor( public estadisticaService: EstadisticasService ){}
+  constructor( public estadisticaService: EstadisticasService ){
+    this.grupos = this.estadisticaService.grupo.reverse();
+  }
 
   ngOnInit(): void {
   }

@@ -17,3 +17,13 @@ export class ClasificacionParesModel{
         this.cantidad = 0;
     }
 }
+
+export class HistorialModel {
+    numeros:string;
+    serie:string;
+
+    constructor(){
+        this.numeros = '';
+        this.serie = '';
+    }
+}

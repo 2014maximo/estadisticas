@@ -37,8 +37,6 @@ export class IngresoDatosComponent {
 	}
 
 	ngOnInit(): void {
-		//Called after the constructor, initializing input properties, and the first call to ngOnChanges.
-		//Add 'implements OnInit' to the class.
 		const collections = collection(this.firestore, 'todos-los-grupos');
 		this.item$ = collectionData(collections);
 	}
