@@ -59,8 +59,8 @@ export const CHANCES: GrupoModel[] = [
         titulos: ['fecha', 'sorteo', 'numero', 'signo']
     },
     {
-        referencia: 'Chontico',
-        ruta: 'chontico',
+        referencia: 'Chontico noche',
+        ruta: 'chontico-noche',
         premios: [],
         titulos: [],
         grupos: [
