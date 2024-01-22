@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { FormularioDinamicoComponent } from './components/formulario-dinamico/formulario-dinamico.component';
+import { ClientesComponent } from './components/clientes/clientes.component';
 
 
 
@@ -10,7 +11,8 @@ import { FormularioDinamicoComponent } from './components/formulario-dinamico/fo
   declarations: [
     HeaderComponent,
     FooterComponent,
-    FormularioDinamicoComponent
+    FormularioDinamicoComponent,
+    ClientesComponent
   ],
   imports: [
     CommonModule
