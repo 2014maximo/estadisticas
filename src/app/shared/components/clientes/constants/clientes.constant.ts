@@ -205,13 +205,61 @@ export const CLIENTES: ClienteModel[] = [
         maps:'https://maps.app.goo.gl/i97Are6VWKgcz4TU6',
         referenciaUbicacion:'',
         telefono:'3146264292'
+    },
+    {
+        id:18,
+        nombre:'Daniela Lujan',
+        barrio:'Andalucia la Francia',
+        categoriaSector:'',
+        ciudad:'Medellín',
+        departamento:'Antioquia',
+        direccion:'Calle 110 # 46-35',
+        maps:'https://maps.app.goo.gl/hDZTMFnP2dbuQsNn6',
+        referenciaUbicacion:'',
+        telefono:'3126213542'
+    },
+    {
+        id:19,
+        nombre:'Estefania Ospina',
+        barrio:'Castilla',
+        categoriaSector:'',
+        ciudad:'Medellín',
+        departamento:'Antioquia',
+        direccion:'Carrera 66 # 94-51',
+        maps:'https://maps.app.goo.gl/cY5dJAh6k7rM2TGL9',
+        referenciaUbicacion:'',
+        telefono:'3126201863'
+    },
+    {
+        id:20,
+        nombre:'Manuela Correa',
+        barrio:'Robledo Miramar',
+        categoriaSector:'',
+        ciudad:'Medellín',
+        departamento:'Antioquia',
+        direccion:'Calle 92 # 77-30',
+        maps:'https://maps.app.goo.gl/iXZYn6oHixA4PmDB8',
+        referenciaUbicacion:'',
+        telefono:'3106400070'
+    },
+    {
+        id:21,
+        nombre:'Katherin Marcano',
+        barrio:'Calazans',
+        categoriaSector:'',
+        ciudad:'Medellín',
+        departamento:'Antioquia',
+        direccion:'Calle 54a 80-13',
+        maps:'https://maps.app.goo.gl/v689vQtChNE4ZyGs7',
+        referenciaUbicacion:'',
+        telefono:'3117675208'
     }
 ]
 
 export const SECTOR: ReferenciaModel[]=[
     {
         id:1,
-        nombre: 'Robledo Kenedy'
+        nombre: 'Robledo Miramar'
     },
     {
         id:2,
@@ -264,6 +312,18 @@ export const SECTOR: ReferenciaModel[]=[
     {
         id:14,
         nombre:'Gratamira'
+    },
+    {
+        id:15,
+        nombre:'Andalucia la Francia'
+    },
+    {
+        id:16,
+        nombre:'Castilla'
+    },
+    {
+        id:17,
+        nombre:'Calazans'
     }
 ]
 
