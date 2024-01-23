@@ -3,8 +3,12 @@ export class ClienteModel {
     nombre: string;
     direccion: string;
     barrio: string;
+    referenciaUbicacion: string;
     telefono: string;
     categoriaSector: string;
+    ciudad: string;
+    departamento: string;
+    maps:string;
 
     constructor(){
         this.id = 0;
@@ -13,5 +17,9 @@ export class ClienteModel {
         this.barrio = '';
         this.telefono = '';
         this.categoriaSector = '';
+        this.ciudad = '';
+        this.departamento = '';
+        this.maps = '';
+        this.referenciaUbicacion = '';
     }
 }

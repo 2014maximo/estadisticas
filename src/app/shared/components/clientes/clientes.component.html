@@ -3,21 +3,33 @@
     <div class="row">
         <div class="col-md-1"></div>
         <div class="col-md-10">
-            <div class="row">
+            <div class="row mb-5">
                 <div class="col-md-2"></div>
                 <div class="col-md-8">
                     <form>
                         <div class="form-group">
                           <label for="inp-search" class="text-light">Buscar</label>
-                          <input type="search" class="form-control" id="inp-search">
+                          <input type="search" class="form-control" (click)="borrarBusqueda($event)" id="inp-search" (keydown)="buscarTermino($event)">
                         </div>
-                        <button type="submit" class="btn btn-primary">Buscar</button>
                     </form>
                 </div>
                 <div class="col-md-2"></div>
             </div>
             <div class="row">
-                <div class="col-md-4">
+                <div *ngFor="let cliente of clientes" class="col-md-4 mb-5">
+                    <div class="card">
+                        <div class="card-header">
+                          <b>{{ cliente.barrio }}</b><br>
+                          <span class="text-uppercase text-primary"><small>{{ cliente.ciudad }} - {{ cliente.departamento }}</small> </span>
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title">{{ cliente.nombre }}</h5>
+                          <p class="card-text">{{ cliente.direccion }}</p>
+                          <p class="card-text">{{ cliente.telefono }}</p>
+
+                          <a (click)="copiarAlPortapapeles(cliente)" class="btn btn-primary cursor-p">Copiar datos</a>
+                        </div>
+                      </div>
                     
                 </div>
             </div>
