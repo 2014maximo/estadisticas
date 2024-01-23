@@ -32,9 +32,11 @@ export class ClientesComponent {
 	}
 
 	public copiarAlPortapapeles(cadenaAlclipboard: ClienteModel) {
-		const jsonString = JSON.stringify(cadenaAlclipboard, null, 2);
+		const jsonString = JSON.stringify(cadenaAlclipboard, null, 1);
 		let limpiarCadena = jsonString.replace("{", "");
 		limpiarCadena = limpiarCadena.replace("}", "");
+		limpiarCadena = limpiarCadena.replace(/"/g, '');
+		limpiarCadena = limpiarCadena.replace(/,/g, '');
 		copiarAlPortapapeles(limpiarCadena);
 	  }
 	
