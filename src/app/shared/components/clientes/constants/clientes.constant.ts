@@ -43,12 +43,48 @@ export const CLIENTES: ClienteModel[] = [
         nombre: 'Valentina Garcia',
         ciudad: 'Envigado',
         departamento: 'Antioquia',
-        barrio: 'Envigado',
-        direccion: 'Transversal 34 c sur # 33-15 barrio obrero',
+        barrio: 'Barrio Obrero',
+        direccion: 'Transversal 34 c sur # 33-15',
         referenciaUbicacion: 'Primer piso - El local se llama uñas mágicas',
         telefono: '3008828621',
         categoriaSector:'Lejos-normal',
         maps:''
+    },
+    {
+        id:5,
+        nombre: 'Slendy',
+        barrio: 'San Javier',
+        direccion: 'Cl 49 # 102BB 35',
+        categoriaSector:'',
+        telefono:'3042890062',
+        ciudad: 'Medellín',
+        departamento:'Antioquia',
+        maps:'',
+        referenciaUbicacion:''
+    },
+    {
+        id:6,
+        nombre:'Diana Aristizabal',
+        barrio:'Manrique San Pablo',
+        categoriaSector:'',
+        ciudad:'Medellín',
+        departamento:'Antioquia',
+        direccion:'Cr 35a #99-56',
+        maps:'',
+        referenciaUbicacion:'',
+        telefono:'3016056759'
+    },
+    {
+        id:7,
+        nombre:'Adriana Vasquez',
+        barrio:'La Milagrosa',
+        categoriaSector:'',
+        ciudad:'Medellín',
+        departamento:'Antioquia',
+        direccion:'Cr 28A # 38f 33',
+        maps:'https://maps.app.goo.gl/x1UbTyyRf7WJfWbcA',
+        referenciaUbicacion:'',
+        telefono: '3024017191'
     }
 ]
 
@@ -60,6 +96,18 @@ export const SECTOR: ReferenciaModel[]=[
     {
         id:2,
         nombre: 'Doce de octubre'
+    },
+    {
+        id:3,
+        nombre: 'San Javier'
+    },
+    {
+        id:4,
+        nombre: 'Manrique San Pablo'
+    },
+    {
+        id:5,
+        nombre: 'La Milagrosa'
     }
 ]
 

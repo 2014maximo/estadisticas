@@ -1,4 +1,4 @@
-<div class="bg-dark">
+<div class="bg-dark m-0 p-0 overflow-hidden">
     <div class="espaciado"></div>
     <div class="row">
         <div class="col-md-1"></div>
@@ -6,7 +6,7 @@
             <div class="row mb-5">
                 <div class="col-md-2"></div>
                 <div class="col-md-8">
-                    <form>
+                    <form class="p-3">
                         <div class="form-group">
                           <label for="inp-search" class="text-light">Buscar</label>
                           <input type="search" class="form-control" (click)="borrarBusqueda($event)" id="inp-search" (keydown)="buscarTermino($event)">
@@ -30,7 +30,6 @@
                           <a (click)="copiarAlPortapapeles(cliente)" class="btn btn-primary cursor-p">Copiar datos</a>
                         </div>
                       </div>
-                    
                 </div>
             </div>
         </div>
