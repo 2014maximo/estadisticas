@@ -253,6 +253,114 @@ export const CLIENTES: ClienteModel[] = [
         maps:'https://maps.app.goo.gl/v689vQtChNE4ZyGs7',
         referenciaUbicacion:'',
         telefono:'3117675208'
+    },
+    {
+        id:22,
+        nombre: 'Luisa María Londoño Cañas',
+        barrio:'',
+        categoriaSector:'',
+        ciudad:'San José de la Montaña',
+        departamento:'Antioquia',
+        direccion:'Carrera 20 # 20-15 piso 4',
+        maps:'',
+        referenciaUbicacion:'',
+        telefono:'3127646908'
+    },
+    {
+        id:23,
+        nombre:'Alejandra acosta',
+        barrio:'',
+        categoriaSector:'',
+        ciudad:'Popayan',
+        departamento:'Cauca',
+        direccion:'Carrera 11 # 19n 50',
+        referenciaUbicacion:'CATAY Apto 1',
+        maps:'',
+        telefono:'3044574072 '
+    },
+    {
+        id:24,
+        nombre:'Central de belleza',
+        barrio:'La Candelaria',
+        categoriaSector:'',
+        ciudad:'Medellín',
+        departamento:'Antioquia',
+        direccion:'Cl. 49 #52-60',
+        maps:'https://maps.app.goo.gl/NoeNWwh9BdjbXAqg6',
+        referenciaUbicacion:'local 117, Segundo piso preguntar por sol',
+        telefono:''
+    },
+    {
+        id:25,
+        nombre:'Yesenia Hernadez',
+        barrio:'Aranjuez',
+        categoriaSector:'',
+        ciudad:'Medellín',
+        departamento:'Antioquia',
+        direccion:'Cra 49 b # 95-56 int 401',
+        maps:'https://maps.app.goo.gl/JdShTG4mmCFMCAAf8',
+        referenciaUbicacion:'',
+        telefono:'3043961578'
+    },
+    {
+        id:26,
+        nombre:'Ana María Orozco',
+        barrio:'Buenos Aires',
+        categoriaSector:'',
+        ciudad:'Medellín',
+        departamento:'Antioquia',
+        direccion:'Carrera 27 # 45-51 apt 301',
+        maps:'https://maps.app.goo.gl/SxxXYVxM665JkKncA',
+        referenciaUbicacion:'',
+        telefono:'3059168175'
+    },
+    {
+        id:27,
+        nombre:'Jesica Osorio',
+        barrio:'Laureles',
+        categoriaSector:'',
+        ciudad:'Medellín',
+        departamento:'Antioquia',
+        direccion:'Carrera 79 # 34a 105',
+        maps:'https://maps.app.goo.gl/E5XPCqatNHtpXqqh9',
+        referenciaUbicacion:'',
+        telefono:'3002325120'
+    },
+    {
+        id:28,
+        nombre:'Katherine Andrade',
+        barrio:'San Javier',
+        categoriaSector:'',
+        ciudad:'Medellín',
+        departamento:'Antioquia',
+        direccion:'Carrera 107 # 38-23',
+        maps:'https://maps.app.goo.gl/ix2khvQh87NX6a2t6',
+        referenciaUbicacion:'',
+        telefono:'3165864367'
+    },
+    {
+        id:29,
+        nombre:'Evelin Arboleda',
+        barrio:'Manrique',
+        categoriaSector:'',
+        ciudad:'Medellín',
+        departamento:'Antioquia',
+        direccion:'Carrera 35 99-39(interior 201)',
+        maps:'https://maps.app.goo.gl/ZTuhQeSa3FfQ5Rgs8',
+        referenciaUbicacion:'',
+        telefono:'3115662684'
+    },
+    {
+        id:30,
+        nombre:'Valeria Ocampo Higuita',
+        barrio:'Villatina',
+        categoriaSector:'',
+        ciudad:'Medellín',
+        departamento:'Antioquia',
+        direccion:'Diagonal 17 C cll 56 A 31',
+        maps:'https://maps.app.goo.gl/iLw3hGRjHc6ZXwb47',
+        referenciaUbicacion:'',
+        telefono:'3023507294'
     }
 ]
 
@@ -324,6 +432,22 @@ export const SECTOR: ReferenciaModel[]=[
     {
         id:17,
         nombre:'Calazans'
+    },
+    {
+        id:18,
+        nombre:'La Candelaria'
+    },
+    {
+        id:19,
+        nombre:'Buenos Aires'
+    },
+    {
+        id:20,
+        nombre:'Laureles'
+    },
+    {
+        id:21,
+        nombre:'Villatina'
     }
 ]
 

@@ -4,6 +4,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { FormularioDinamicoComponent } from './components/formulario-dinamico/formulario-dinamico.component';
 import { ClientesComponent } from './components/clientes/clientes.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 
@@ -15,7 +16,8 @@ import { ClientesComponent } from './components/clientes/clientes.component';
     ClientesComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    ReactiveFormsModule
   ],
   exports: [
     HeaderComponent,

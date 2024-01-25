@@ -12,6 +12,14 @@
                           <input type="search" class="form-control" (click)="borrarBusqueda($event)" id="inp-search" (keydown)="buscarTermino($event)">
                         </div>
                     </form>
+                    <div class="form-group col-md-4">
+                        <form [formGroup]="formFiltrado">
+                            <label for="opciones" class="text-light">Por sector:</label>
+                            <select id="opciones" formControlName="barrio" (change)="busquedaSector()" class="form-control">
+                              <option *ngFor="let opcion of sectores" [value]="opcion.nombre">{{ opcion.nombre }}</option>
+                            </select>
+                        </form>
+                    </div>
                 </div>
                 <div class="col-md-2"></div>
             </div>
