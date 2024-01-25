@@ -361,6 +361,78 @@ export const CLIENTES: ClienteModel[] = [
         maps:'https://maps.app.goo.gl/iLw3hGRjHc6ZXwb47',
         referenciaUbicacion:'',
         telefono:'3023507294'
+    },
+    {
+        id:31,
+        nombre:'Angel Colina',
+        barrio:'',
+        categoriaSector:'',
+        ciudad:'',
+        departamento:'Bucaramanga',
+        direccion:'Calle 42 #36-31 cabecera',
+        maps:'',
+        referenciaUbicacion:'',
+        telefono:'3046453981'
+    },
+    {
+        id:32,
+        nombre:'Sara Rodriguez',
+        barrio:'Poblado',
+        categoriaSector:'',
+        ciudad:'Medellín',
+        departamento:'Antioquia',
+        direccion:'Cll 7 #39-107',
+        maps:'https://maps.app.goo.gl/fMosiiA424miygVn7',
+        referenciaUbicacion:'Edificio medical',
+        telefono:'3235264956'
+    },
+    {
+        id:33,
+        nombre:'Mary luz Ceballos Montoya',
+        barrio:'',
+        categoriaSector:'',
+        ciudad:'Campamento',
+        departamento:'Antioquia',
+        direccion:'',
+        maps:'',
+        referenciaUbicacion:'',
+        telefono:'3145558335'
+    },
+    {
+        id:34,
+        nombre:'Alexandra',
+        barrio:'Santander',
+        categoriaSector:'',
+        ciudad:'Medellín',
+        departamento:'Antioquia',
+        direccion:'Carrera 76d # 108a 40',
+        maps:'https://maps.app.goo.gl/3RvZzWuxGgM14xKE8',
+        referenciaUbicacion:'',
+        telefono:'3022428375'
+    },
+    {
+        id:35,
+        nombre:'Juliana cano',
+        barrio:'San Javier',
+        categoriaSector:'',
+        ciudad:'Medellín',
+        departamento:'Antioquia',
+        direccion:'Calle 40 # 104-4 apto 401',
+        maps:'https://maps.app.goo.gl/iWA8uQt9ujiBUDj88',
+        referenciaUbicacion:'',
+        telefono:'3059060090'
+    },
+    {
+        id:36,
+        nombre:'Naomi Álvarez',
+        barrio:'',
+        categoriaSector:'',
+        ciudad:'Itagüí',
+        departamento:'Antioquia',
+        direccion:'Carrera 50 # 48-18',
+        maps:'https://maps.app.goo.gl/DR2WRHRnK9TJbS2c7',
+        referenciaUbicacion:'',
+        telefono:'3116302277'
     }
 ]
 
@@ -448,6 +520,10 @@ export const SECTOR: ReferenciaModel[]=[
     {
         id:21,
         nombre:'Villatina'
+    },
+    {
+        id:22,
+        nombre:'Poblado'
     }
 ]
 
