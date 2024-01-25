@@ -433,6 +433,151 @@ export const CLIENTES: ClienteModel[] = [
         maps:'https://maps.app.goo.gl/DR2WRHRnK9TJbS2c7',
         referenciaUbicacion:'',
         telefono:'3116302277'
+    },
+    {
+        id:37,
+        nombre:'María Lorena Cano',
+        barrio:'Belencito',
+        categoriaSector:'',
+        ciudad:'Medellín',
+        departamento:'Antioquia',
+        direccion:'Calle 34b # 106-83 int 304',
+        maps:'https://maps.app.goo.gl/6yi9TaNqccMVK6fx9',
+        referenciaUbicacion:'',
+        telefono:'3136219584'
+    },
+    {
+        id:38,
+        nombre:'Diana Delgado González',
+        barrio:'El Cerro',
+        categoriaSector:'',
+        ciudad:'Barrancabermeja',
+        departamento:'Santander',
+        direccion:'Calle 29b # 37-07',
+        maps:'',
+        referenciaUbicacion:'',
+        telefono:'3125250978'
+    },
+    {
+        id:39,
+        nombre:'Carolina Mira',
+        barrio:'',
+        categoriaSector:'',
+        ciudad:'Remedios',
+        departamento:'Antioquia',
+        direccion:'',
+        maps:'',
+        referenciaUbicacion:'',
+        telefono:'3146958231'
+    },
+    {
+        id:40,
+        nombre:'Laura Restrepo',
+        barrio:'Floresta',
+        categoriaSector:'',
+        ciudad:'Medellín',
+        departamento:'Antioquia',
+        direccion:'Calle 45f # 80-16',
+        maps:'https://maps.app.goo.gl/YULqGCytb3AtY7Aq9',
+        referenciaUbicacion:'Al frente de las canchas sintéticas',
+        telefono:'3002020861'
+    },
+    {
+        id:41,
+        nombre:'María Paulina Quintero',
+        barrio:'Belén',
+        categoriaSector:'',
+        ciudad:'Medellín',
+        departamento:'Antioquia',
+        direccion:'Carrera 89A # 31-39',
+        maps:'https://maps.app.goo.gl/DpWU7VWhBGN3BWaX7',
+        referenciaUbicacion:'Siempre hay un señor sentado',
+        telefono:'3023611750'
+    },
+    {
+        id:42,
+        nombre:'Maryory Osorio',
+        barrio:'Belén',
+        categoriaSector:'',
+        ciudad:'Medellín',
+        departamento:'Antioquia',
+        direccion:'Calle 19 # 70-75',
+        maps:'https://maps.app.goo.gl/mPQfYaegioyDSxgY6',
+        referenciaUbicacion:'Diagonal al Aeroparque',
+        telefono:'3027000905'
+    },
+    {
+        id:43,
+        nombre:'Isabella',
+        barrio:'Manrique',
+        categoriaSector:'',
+        ciudad:'Medellín',
+        departamento:'Antioquia',
+        direccion:'Calle 78 # 42-82',
+        maps:'https://maps.app.goo.gl/cFUnrJX1Nsx6eXN78',
+        referenciaUbicacion:'',
+        telefono:'3016548352'
+    },
+    {
+        id:44,
+        nombre:'Sofia Rincon',
+        barrio:'Buenos Aires',
+        categoriaSector:'',
+        ciudad:'Medellín',
+        departamento:'Antioquia',
+        direccion:'Calle 50a # 20-56',
+        maps:'https://maps.app.goo.gl/qJQbNNExhqXbXRBu6',
+        referenciaUbicacion:'Unidad cerrada, detrás del centro comercial la central',
+        telefono:'3196347277'
+    },
+    {
+        id:43,
+        nombre:'Manuela Perez',
+        barrio:'Bomboná',
+        categoriaSector:'',
+        ciudad:'Medellín',
+        departamento:'Antioquia',
+        direccion:'Carrera 40 # 48-95 Local 0169',
+        maps:'https://maps.app.goo.gl/2HbfNi1ppixPV4ct7',
+        referenciaUbicacion:'En el centro comercial Tranvía Plaza Local 0169',
+        telefono:'3045239933'
+    },
+    {
+        id:44,
+        nombre:'Maria Isabel',
+        barrio:'Boyacá las Brisas',
+        categoriaSector:'',
+        ciudad:'Medellín',
+        departamento:'Antioquia',
+        direccion:'Calle 112a # 64d 60',
+        maps:'https://maps.app.goo.gl/T8RLgDiN8zZ35J9F8',
+        referenciaUbicacion:'Por la estación de policía carabineros',
+        telefono:'3128882333'
+    },
+    {
+        id:45,
+        nombre:'Adriana Labrador',
+        barrio:'Floresta',
+        categoriaSector:'Estrato alto',
+        ciudad:'Medellín',
+        departamento:'Antioquia',
+        direccion:'Calle 48a 81a 50',
+        maps:'https://maps.app.goo.gl/3tj9c75pwYRQqzAk9',
+        referenciaUbicacion:'En todo el parque John F. Kennedy, parque del amor',
+        telefono:'3197523370'
+    },
+    {
+        id:46,
+        nombre:'Santiago Muñoz',
+        barrio:'Belén Rosales',
+        categoriaSector:'Estrato alto',
+        ciudad:'Medellín',
+        departamento:'Antioquia',
+        direccion:'Carrera 73 # 30b 17',
+        maps:'https://maps.app.goo.gl/cQLvV42VPY9T3cWs9',
+        referenciaUbicacion:'',
+        telefono:'3135282884'
+
     }
 ]
 
@@ -524,6 +669,26 @@ export const SECTOR: ReferenciaModel[]=[
     {
         id:22,
         nombre:'Poblado'
+    },
+    {
+        id:23,
+        nombre: 'Belencito'
+    },
+    {
+        id:24,
+        nombre:'Floresta'
+    },
+    {
+        id:25,
+        nombre:'Belén'
+    },
+    {
+        id:26,
+        nombre:'Boyacá las Brisas'
+    },
+    {
+        id:27,
+        nombre:'Belén Rosales'
     }
 ]
 
@@ -539,5 +704,9 @@ export const CATEGORIA_SECTOR: ReferenciaModel[]=[
     {
         id:3,
         nombre:'Arriba-no-peligroso'
+    },
+    {
+        id:4,
+        nombre:'Estrato alto'
     }
 ]
