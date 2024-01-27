@@ -5,6 +5,7 @@ export const CLIENTES: ClienteModel[] = [
     {
         id:1,
         nombre: 'Manuela Espinal',
+        numeroDocumento:'',
         direccion: 'Carrera 76 # 91 a 22',
         referenciaUbicacion: '',
         barrio: 'Robledo Kenedy',
@@ -17,6 +18,7 @@ export const CLIENTES: ClienteModel[] = [
     {
         id:2,
         nombre: 'Ana María Arango',
+        numeroDocumento:'',
         direccion: 'Carrera 78 # 104 c 14',
         referenciaUbicacion: '',
         barrio: 'Doce de octubre',
@@ -29,6 +31,7 @@ export const CLIENTES: ClienteModel[] = [
     {
         id:3,
         nombre:'Luisa Fernanda coronel',
+        numeroDocumento:'',
         departamento:'Norte de Santander',
         ciudad:'Ocaña',
         direccion: 'Calle 15 10a 88',
@@ -41,6 +44,7 @@ export const CLIENTES: ClienteModel[] = [
     {
         id:4,
         nombre: 'Valentina Garcia',
+        numeroDocumento:'',
         ciudad: 'Envigado',
         departamento: 'Antioquia',
         barrio: 'Barrio Obrero',
@@ -53,6 +57,7 @@ export const CLIENTES: ClienteModel[] = [
     {
         id:5,
         nombre: 'Slendy',
+        numeroDocumento:'',
         barrio: 'San Javier',
         direccion: 'Calle 49 # 102bb 35',
         categoriaSector:'',
@@ -65,6 +70,7 @@ export const CLIENTES: ClienteModel[] = [
     {
         id:6,
         nombre:'Diana Aristizabal',
+        numeroDocumento:'',
         barrio:'Manrique San Pablo',
         categoriaSector:'',
         ciudad:'Medellín',
@@ -77,6 +83,7 @@ export const CLIENTES: ClienteModel[] = [
     {
         id:7,
         nombre:'Adriana Vasquez',
+        numeroDocumento:'',
         barrio:'La Milagrosa',
         categoriaSector:'',
         ciudad:'Medellín',
@@ -89,6 +96,7 @@ export const CLIENTES: ClienteModel[] = [
     {
         id:8,
         nombre:'Paula Meza',
+        numeroDocumento:'',
         barrio:'',
         categoriaSector:'',
         ciudad:'Girón',
@@ -101,6 +109,7 @@ export const CLIENTES: ClienteModel[] = [
     {
         id:9,
         nombre:'Sofia',
+        numeroDocumento:'',
         barrio:'Aranjuez',
         categoriaSector:'',
         ciudad:'Medellín',
@@ -113,6 +122,7 @@ export const CLIENTES: ClienteModel[] = [
     {
         id:10,
         nombre:'Adela Montoya',
+        numeroDocumento:'',
         barrio:'Robledo Kennedy',
         categoriaSector:'',
         ciudad:'Medellín',
@@ -125,6 +135,7 @@ export const CLIENTES: ClienteModel[] = [
     {
         id:11,
         nombre:'Mary Quiñones',
+        numeroDocumento:'',
         barrio:'Santander',
         categoriaSector:'',
         ciudad:'Medellín',
@@ -137,6 +148,7 @@ export const CLIENTES: ClienteModel[] = [
     {
         id:12,
         nombre:'Carolina Galeano',
+        numeroDocumento:'',
         barrio:'Belén la Nubia',
         categoriaSector:'',
         ciudad:'Medellín',
@@ -149,6 +161,7 @@ export const CLIENTES: ClienteModel[] = [
     {
         id:13,
         nombre:'Nasa Roman',
+        numeroDocumento:'',
         barrio:'Urbanización Mantia',
         categoriaSector:'',
         ciudad:'Itagüí',
@@ -161,6 +174,7 @@ export const CLIENTES: ClienteModel[] = [
     {
         id:14,
         nombre:'Ana Maria',
+        numeroDocumento:'',
         barrio:'Quintas de la Quinta',
         categoriaSector:'',
         ciudad:'La Estrella',
@@ -173,6 +187,7 @@ export const CLIENTES: ClienteModel[] = [
     {
         id:15,
         nombre:'Lorena',
+        numeroDocumento:'',
         barrio:'Manrique',
         categoriaSector:'',
         ciudad:'Medellín',
@@ -185,6 +200,7 @@ export const CLIENTES: ClienteModel[] = [
     {
         id:16,
         nombre:'Yassiry Gonzalez',
+        numeroDocumento:'',
         barrio:'Enciso',
         categoriaSector:'',
         ciudad:'Medellín',
@@ -197,6 +213,7 @@ export const CLIENTES: ClienteModel[] = [
     {
         id:17,
         nombre:'Nataly Martinez',
+        numeroDocumento:'',
         barrio:'Gratamira',
         categoriaSector:'',
         ciudad:'Medellín',
@@ -209,6 +226,7 @@ export const CLIENTES: ClienteModel[] = [
     {
         id:18,
         nombre:'Daniela Lujan',
+        numeroDocumento:'',
         barrio:'Andalucia la Francia',
         categoriaSector:'',
         ciudad:'Medellín',
@@ -221,6 +239,7 @@ export const CLIENTES: ClienteModel[] = [
     {
         id:19,
         nombre:'Estefania Ospina',
+        numeroDocumento:'',
         barrio:'Castilla',
         categoriaSector:'',
         ciudad:'Medellín',
@@ -233,6 +252,7 @@ export const CLIENTES: ClienteModel[] = [
     {
         id:20,
         nombre:'Manuela Correa',
+        numeroDocumento:'',
         barrio:'Robledo Miramar',
         categoriaSector:'',
         ciudad:'Medellín',
@@ -245,6 +265,7 @@ export const CLIENTES: ClienteModel[] = [
     {
         id:21,
         nombre:'Katherin Marcano',
+        numeroDocumento:'',
         barrio:'Calazans',
         categoriaSector:'',
         ciudad:'Medellín',
@@ -257,6 +278,7 @@ export const CLIENTES: ClienteModel[] = [
     {
         id:22,
         nombre: 'Luisa María Londoño Cañas',
+        numeroDocumento:'',
         barrio:'',
         categoriaSector:'',
         ciudad:'San José de la Montaña',
@@ -269,6 +291,7 @@ export const CLIENTES: ClienteModel[] = [
     {
         id:23,
         nombre:'Alejandra acosta',
+        numeroDocumento:'',
         barrio:'',
         categoriaSector:'',
         ciudad:'Popayan',
@@ -281,6 +304,7 @@ export const CLIENTES: ClienteModel[] = [
     {
         id:24,
         nombre:'Central de belleza',
+        numeroDocumento:'',
         barrio:'La Candelaria',
         categoriaSector:'',
         ciudad:'Medellín',
@@ -293,6 +317,7 @@ export const CLIENTES: ClienteModel[] = [
     {
         id:25,
         nombre:'Yesenia Hernadez',
+        numeroDocumento:'',
         barrio:'Aranjuez',
         categoriaSector:'',
         ciudad:'Medellín',
@@ -305,6 +330,7 @@ export const CLIENTES: ClienteModel[] = [
     {
         id:26,
         nombre:'Ana María Orozco',
+        numeroDocumento:'',
         barrio:'Buenos Aires',
         categoriaSector:'',
         ciudad:'Medellín',
@@ -317,6 +343,7 @@ export const CLIENTES: ClienteModel[] = [
     {
         id:27,
         nombre:'Jesica Osorio',
+        numeroDocumento:'',
         barrio:'Laureles',
         categoriaSector:'',
         ciudad:'Medellín',
@@ -329,6 +356,7 @@ export const CLIENTES: ClienteModel[] = [
     {
         id:28,
         nombre:'Katherine Andrade',
+        numeroDocumento:'',
         barrio:'San Javier',
         categoriaSector:'',
         ciudad:'Medellín',
@@ -341,6 +369,7 @@ export const CLIENTES: ClienteModel[] = [
     {
         id:29,
         nombre:'Evelin Arboleda',
+        numeroDocumento:'',
         barrio:'Manrique',
         categoriaSector:'',
         ciudad:'Medellín',
@@ -353,6 +382,7 @@ export const CLIENTES: ClienteModel[] = [
     {
         id:30,
         nombre:'Valeria Ocampo Higuita',
+        numeroDocumento:'',
         barrio:'Villatina',
         categoriaSector:'',
         ciudad:'Medellín',
@@ -365,6 +395,7 @@ export const CLIENTES: ClienteModel[] = [
     {
         id:31,
         nombre:'Angel Colina',
+        numeroDocumento:'',
         barrio:'',
         categoriaSector:'',
         ciudad:'',
@@ -377,6 +408,7 @@ export const CLIENTES: ClienteModel[] = [
     {
         id:32,
         nombre:'Sara Rodriguez',
+        numeroDocumento:'',
         barrio:'Poblado',
         categoriaSector:'',
         ciudad:'Medellín',
@@ -389,6 +421,7 @@ export const CLIENTES: ClienteModel[] = [
     {
         id:33,
         nombre:'Mary luz Ceballos Montoya',
+        numeroDocumento:'',
         barrio:'',
         categoriaSector:'',
         ciudad:'Campamento',
@@ -401,6 +434,7 @@ export const CLIENTES: ClienteModel[] = [
     {
         id:34,
         nombre:'Alexandra',
+        numeroDocumento:'',
         barrio:'Santander',
         categoriaSector:'',
         ciudad:'Medellín',
@@ -413,6 +447,7 @@ export const CLIENTES: ClienteModel[] = [
     {
         id:35,
         nombre:'Juliana cano',
+        numeroDocumento:'',
         barrio:'San Javier',
         categoriaSector:'',
         ciudad:'Medellín',
@@ -425,6 +460,7 @@ export const CLIENTES: ClienteModel[] = [
     {
         id:36,
         nombre:'Naomi Álvarez',
+        numeroDocumento:'',
         barrio:'',
         categoriaSector:'',
         ciudad:'Itagüí',
@@ -437,6 +473,7 @@ export const CLIENTES: ClienteModel[] = [
     {
         id:37,
         nombre:'María Lorena Cano',
+        numeroDocumento:'',
         barrio:'Belencito',
         categoriaSector:'',
         ciudad:'Medellín',
@@ -449,6 +486,7 @@ export const CLIENTES: ClienteModel[] = [
     {
         id:38,
         nombre:'Diana Delgado González',
+        numeroDocumento:'',
         barrio:'El Cerro',
         categoriaSector:'',
         ciudad:'Barrancabermeja',
@@ -461,6 +499,7 @@ export const CLIENTES: ClienteModel[] = [
     {
         id:39,
         nombre:'Carolina Mira',
+        numeroDocumento:'',
         barrio:'',
         categoriaSector:'',
         ciudad:'Remedios',
@@ -473,6 +512,7 @@ export const CLIENTES: ClienteModel[] = [
     {
         id:40,
         nombre:'Laura Restrepo',
+        numeroDocumento:'',
         barrio:'Floresta',
         categoriaSector:'',
         ciudad:'Medellín',
@@ -485,6 +525,7 @@ export const CLIENTES: ClienteModel[] = [
     {
         id:41,
         nombre:'María Paulina Quintero',
+        numeroDocumento:'',
         barrio:'Belén',
         categoriaSector:'',
         ciudad:'Medellín',
@@ -497,6 +538,7 @@ export const CLIENTES: ClienteModel[] = [
     {
         id:42,
         nombre:'Maryory Osorio',
+        numeroDocumento:'',
         barrio:'Belén',
         categoriaSector:'',
         ciudad:'Medellín',
@@ -509,6 +551,7 @@ export const CLIENTES: ClienteModel[] = [
     {
         id:43,
         nombre:'Isabella',
+        numeroDocumento:'',
         barrio:'Manrique',
         categoriaSector:'',
         ciudad:'Medellín',
@@ -521,6 +564,7 @@ export const CLIENTES: ClienteModel[] = [
     {
         id:44,
         nombre:'Sofia Rincon',
+        numeroDocumento:'',
         barrio:'Buenos Aires',
         categoriaSector:'',
         ciudad:'Medellín',
@@ -533,6 +577,7 @@ export const CLIENTES: ClienteModel[] = [
     {
         id:43,
         nombre:'Manuela Perez',
+        numeroDocumento:'',
         barrio:'Bomboná',
         categoriaSector:'',
         ciudad:'Medellín',
@@ -545,6 +590,7 @@ export const CLIENTES: ClienteModel[] = [
     {
         id:44,
         nombre:'Maria Isabel',
+        numeroDocumento:'',
         barrio:'Boyacá las Brisas',
         categoriaSector:'',
         ciudad:'Medellín',
@@ -557,6 +603,7 @@ export const CLIENTES: ClienteModel[] = [
     {
         id:45,
         nombre:'Adriana Labrador',
+        numeroDocumento:'',
         barrio:'Floresta',
         categoriaSector:'Estrato alto',
         ciudad:'Medellín',
@@ -569,6 +616,7 @@ export const CLIENTES: ClienteModel[] = [
     {
         id:46,
         nombre:'Santiago Muñoz',
+        numeroDocumento:'',
         barrio:'Belén Rosales',
         categoriaSector:'Estrato alto',
         ciudad:'Medellín',
@@ -577,7 +625,188 @@ export const CLIENTES: ClienteModel[] = [
         maps:'https://maps.app.goo.gl/cQLvV42VPY9T3cWs9',
         referenciaUbicacion:'',
         telefono:'3135282884'
-
+    },
+    {
+        id:47,
+        nombre:'María Camila Bustamante Giraldo',
+        numeroDocumento:'1097040760',
+        barrio:'',
+        categoriaSector:'',
+        ciudad:'Quimbaya',
+        departamento:'Quindio',
+        direccion:'Calle 14 # 7-28 local 4',
+        maps:'',
+        referenciaUbicacion:'',
+        telefono:'3204363897'
+    },
+    {
+        id:48,
+        nombre:'Daniela Ruiz',
+        barrio:'Villahermosa',
+        categoriaSector:'Centro-alto',
+        ciudad:'Medellín',
+        departamento:'Antioquia',
+        direccion:'Calle 66D # 40-30',
+        maps:'https://maps.app.goo.gl/1AbhmiRrsAPtAuM68',
+        numeroDocumento:'',
+        referenciaUbicacion:'Cerca del batallón Girardot',
+        telefono:'3158788669'
+    },
+    {
+        id:49,
+        nombre:'María José Taborda',
+        barrio:'Castilla',
+        categoriaSector:'Norte centro',
+        ciudad:'Medellín',
+        departamento:'Antioquia',
+        direccion:'Carrera 69 # 97-87',
+        maps:'https://maps.app.goo.gl/ZErUaAVXBYShaUG36',
+        numeroDocumento:'',
+        referenciaUbicacion:'',
+        telefono:'3205859204'
+    },
+    {
+        id:50,
+        nombre:'Dahia Ramirez',
+        barrio:'Caicedo',
+        categoriaSector:'Centro-bajo',
+        ciudad:'Medellín',
+        departamento:'Antioquia',
+        direccion:'Calle 53 # 27-18',
+        maps:'https://maps.app.goo.gl/W96YcqPLh9rduak1A',
+        numeroDocumento:'',
+        referenciaUbicacion:'',
+        telefono:'3007147970'
+    },
+    {
+        id:51,
+        nombre:'Valentina Penagos',
+        barrio:'Robledo Kennedy',
+        categoriaSector:'',
+        ciudad:'Medellín',
+        departamento:'Antioquia',
+        direccion:'Carrera 77 # 89 - 111',
+        maps:'https://maps.app.goo.gl/5CqgVVk8AFAPMuby6',
+        numeroDocumento:'',
+        referenciaUbicacion:'',
+        telefono:'3002389085'
+    },
+    {
+        id:52,
+        nombre:'Daniela Ospina',
+        barrio:'Alfonso Lopez',
+        categoriaSector:'Normal en día',
+        ciudad:'Medellín',
+        departamento:'Antioquia',
+        direccion:'Carrera 69 # 91-8',
+        maps:'https://maps.app.goo.gl/ctaA35vaLyFvDDsz7',
+        numeroDocumento:'',
+        referenciaUbicacion:'',
+        telefono:'3012975585'
+    },
+    {
+        id:53,
+        nombre:'Juliana Salazar',
+        barrio:'Lopez de Mesa',
+        categoriaSector:'Normal en día',
+        ciudad:'Medellín',
+        departamento:'Antioquia',
+        direccion:'Carrera 74a # 80b 45',
+        maps:'https://maps.app.goo.gl/1RNQa6cvLsDzSowE8',
+        numeroDocumento:'',
+        referenciaUbicacion:'',
+        telefono:'3003620485'
+    },
+    {
+        id:54,
+        nombre:'Manuela Muñeton Vásquez',
+        barrio:'',
+        categoriaSector:'',
+        ciudad:'Vegachi',
+        departamento:'Antioquia',
+        direccion:'',
+        maps:'',
+        numeroDocumento:'1007222946',
+        referenciaUbicacion:'',
+        telefono:'3116041945'
+    },
+    {
+        id:55,
+        nombre:'Ximena Villa',
+        barrio:'Doce de Octubre',
+        categoriaSector:'Normal en día',
+        ciudad:'Medellín',
+        departamento:'Antioquia',
+        direccion:'Carrera 80 # 107a 11',
+        maps:'https://maps.app.goo.gl/CC6zuM8Zi2p6BEQK9',
+        numeroDocumento:'',
+        referenciaUbicacion:'Dos cuadras arriba de la biblioteca',
+        telefono:'3017442700'
+    },
+    {
+        id:56,
+        nombre:'Valentina Patio',
+        barrio:'Alfonso Lopez',
+        categoriaSector:'Normal en día',
+        ciudad:'Medellín',
+        departamento:'Antioquia',
+        direccion:'Carrera 74 # 89a 51',
+        maps:'https://maps.app.goo.gl/KjReqjB6GoH3CMDLA',
+        numeroDocumento:'',
+        referenciaUbicacion:'',
+        telefono:'3006610129'
+    },
+    {
+        id:57,
+        nombre:'Jasmin Morales',
+        barrio:'Santander',
+        categoriaSector:'Normal en día',
+        ciudad:'Medellín',
+        departamento:'Antioquia',
+        direccion:'Calle 115 # 77-62',
+        maps:'https://maps.app.goo.gl/UZCGdBLdqKQceBWGA',
+        numeroDocumento:'',
+        referenciaUbicacion:'',
+        telefono:'3043854791'
+    },
+    {
+        id:58,
+        nombre:'Isabella',
+        barrio:'Belén las Mercedez',
+        categoriaSector:'',
+        ciudad:'Medellín',
+        departamento:'Antioquia',
+        direccion:'Calle 31d # 87c 11',
+        maps:'https://maps.app.goo.gl/e8Eepy9ooxyPaZT48',
+        numeroDocumento:'',
+        referenciaUbicacion:'',
+        telefono:'3043881035'
+    },
+    {
+        id:59,
+        nombre:'Laura',
+        barrio:'Belén la Gloria',
+        categoriaSector:'',
+        ciudad:'Medellín',
+        departamento:'Antioquia',
+        direccion:'Carrera 80aa # 19a - 26',
+        maps:'https://maps.app.goo.gl/pwfcaGU7mWEpS9Wx8',
+        numeroDocumento:'',
+        referenciaUbicacion:'A la vuelta de Migración Colombia',
+        telefono:'3005686921'
+    },
+    {
+        id:60,
+        nombre:'Xiomara Giraldo',
+        barrio:'La Milagrosa',
+        categoriaSector:'Normal en día',
+        ciudad:'Medellín',
+        departamento:'Antioquia',
+        direccion:'Carrera 28b # 38f 228',
+        maps:'https://maps.app.goo.gl/uAWrEvVRuHU91KbZ7',
+        numeroDocumento:'',
+        referenciaUbicacion:'',
+        telefono:'3016602400'
     }
 ]
 
@@ -689,6 +918,26 @@ export const SECTOR: ReferenciaModel[]=[
     {
         id:27,
         nombre:'Belén Rosales'
+    },
+    {
+        id:28,
+        nombre:'Villahermosa'
+    },
+    {
+        id:29,
+        nombre:'Alfonso Lopez'
+    },
+    {
+        id:30,
+        nombre:'Lopez de Mesa'
+    },
+    {
+        id:31,
+        nombre:'Belén las Mercedez'
+    },
+    {
+        id:32,
+        nombre:'Belén la Gloria'
     }
 ]
 
@@ -708,5 +957,17 @@ export const CATEGORIA_SECTOR: ReferenciaModel[]=[
     {
         id:4,
         nombre:'Estrato alto'
+    },
+    {
+        id:5,
+        nombre:'Centro-alto'
+    },
+    {
+        id:6,
+        nombre:'Norte centro'
+    },
+    {
+        id:7,
+        nombre:'Normal en día'
     }
 ]

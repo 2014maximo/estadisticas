@@ -1,6 +1,7 @@
 export class ClienteModel {
     id:number;
     nombre: string;
+    numeroDocumento:string;
     direccion: string;
     barrio: string;
     referenciaUbicacion: string;
@@ -21,5 +22,6 @@ export class ClienteModel {
         this.departamento = '';
         this.maps = '';
         this.referenciaUbicacion = '';
+        this.numeroDocumento = '';
     }
 }
