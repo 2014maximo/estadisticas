@@ -642,7 +642,7 @@ export const CLIENTES: ClienteModel[] = [
     {
         id:48,
         nombre:'Daniela Ruiz',
-        barrio:'Villahermosa',
+        barrio:'Villa Hermosa',
         categoriaSector:'Centro-alto',
         ciudad:'Medellín',
         departamento:'Antioquia',
@@ -807,29 +807,198 @@ export const CLIENTES: ClienteModel[] = [
         numeroDocumento:'',
         referenciaUbicacion:'',
         telefono:'3016602400'
+    },
+    {
+        id:61,
+        nombre:'Marian Betancur',
+        barrio:'Santa Cruz',
+        categoriaSector:'Extremo Medellín - parte baja - normal en día',
+        ciudad:'Medellín',
+        departamento:'Antioquia',
+        direccion:'Calle 99 # 50b 07',
+        maps:'https://maps.app.goo.gl/khtrY2BY1rtLKRN39',
+        numeroDocumento:'',
+        referenciaUbicacion:'',
+        telefono:'3002477456'
+    },
+    {
+        id:62,
+        nombre:'Luz Edilma Jaramillo',
+        barrio:'',
+        categoriaSector:'',
+        ciudad:'Remedios',
+        departamento:'Antioquia',
+        direccion:'',
+        maps:'',
+        numeroDocumento:'32212568',
+        referenciaUbicacion:'',
+        telefono:'3148503475'
+    },
+    {
+        id:63,
+        nombre:'Diana Builes',
+        barrio:'La Milagrosa',
+        categoriaSector:'Medio alto - normal en día',
+        ciudad:'Medellín',
+        departamento:'Antioquia',
+        direccion:'Carrera 28 # 40a 20',
+        maps:'https://maps.app.goo.gl/HCrtpFbcA35b6EkNA',
+        numeroDocumento:'',
+        referenciaUbicacion:'',
+        telefono:'3006806537'
+    },
+    {
+        id:64,
+        nombre:'Viviana Mazo',
+        barrio:'Robledo las Margaritas',
+        categoriaSector:'Arriba alto - normal en día',
+        ciudad:'Medellín',
+        departamento:'Antioquia',
+        direccion:'Calle 62ab # 108 39',
+        maps:'https://maps.app.goo.gl/Nodsa31tPsnuSVeh9',
+        numeroDocumento:'',
+        referenciaUbicacion:'En toda la cancha de robledo las margaritas',
+        telefono:'3005497792'
+    },
+    {
+        id:65,
+        nombre:'Esmeralda',
+        barrio:'Doce de octubre',
+        categoriaSector:'',
+        ciudad:'Medellín',
+        departamento:'Antioquia',
+        direccion:'Carrera 82 # 106c 08',
+        maps:'https://maps.app.goo.gl/91yPdF5RbZ83Wi8SA',
+        numeroDocumento:'',
+        referenciaUbicacion:'Al frente de una virgencita',
+        telefono:'3244720049'
+    },
+    {
+        id:66,
+        nombre:'Katherine Jaramillo',
+        barrio:'Aranjuez',
+        categoriaSector:'',
+        ciudad:'Medellín',
+        departamento:'Antioquia',
+        direccion:'Calle 85a 52a -25',
+        maps:'https://maps.app.goo.gl/PBB8WVWFrf61KWxo6',
+        numeroDocumento:'',
+        referenciaUbicacion:'',
+        telefono:'3112164629'
+    },
+    {
+        id:67,
+        nombre:'Yuliana Arboleda',
+        barrio:'San Javier',
+        categoriaSector:'',
+        ciudad:'Medellín',
+        departamento:'Antioquia',
+        direccion:'Calle 44 # 101 69',
+        maps:'https://maps.app.goo.gl/2Fo2LziZh4JyrbiR8',
+        numeroDocumento:'',
+        referenciaUbicacion:'',
+        telefono:'3127307092'
+    },
+    {
+        id:68,
+        nombre:'Emily',
+        barrio:'Laureles',
+        categoriaSector:'',
+        ciudad:'Medellín',
+        departamento:'Antioquia',
+        direccion:'Carrera 81a # 33aa 93',
+        maps:'https://maps.app.goo.gl/JcJT4nCEaYWhypk8A',
+        numeroDocumento:'',
+        referenciaUbicacion:'',
+        telefono:'3044574511'
+    },
+    {
+        id:69,
+        nombre:'Libanes Castro',
+        barrio:'Belén',
+        categoriaSector:'',
+        ciudad:'Medellín',
+        departamento:'Antioquia',
+        direccion:'Carrera 80c # 18-63',
+        maps:'https://maps.app.goo.gl/NwhJpJqXZvDhnfqy8',
+        numeroDocumento:'',
+        referenciaUbicacion:'',
+        telefono:'3142014480'
+    },
+    {
+        id:70,
+        nombre:'Yormary Gudiño',
+        barrio:'Villa Hermosa',
+        categoriaSector:'',
+        ciudad:'Medellín',
+        departamento:'Antioquia',
+        direccion:'Calle 66 # 39A 51 local 9',
+        maps:'https://maps.app.goo.gl/FEv6x6mvizD9cyvZA',
+        numeroDocumento:'',
+        referenciaUbicacion:'Frente a la parada de los buses del parque Villa hermosa',
+        telefono:'3053001863'
+    },
+    {
+        id:71,
+        nombre:'Emily Garcia',
+        barrio:'Laureles',
+        categoriaSector:'',
+        ciudad:'Medellín',
+        departamento:'Antioquia',
+        direccion:'Carrera 82A # 35-45',
+        maps:'https://maps.app.goo.gl/Uv6rArSGHZf1TdvR9',
+        numeroDocumento:'',
+        referenciaUbicacion:'Simón Bolívar',
+        telefono:'3186023027'
+    },
+    {
+        id:72,
+        nombre:'Vanessa Ospina',
+        barrio:'Castilla',
+        categoriaSector:'',
+        ciudad:'Medellín',
+        departamento:'Antioquia',
+        direccion:'Carrera 72 # 99-48',
+        maps:'https://maps.app.goo.gl/xabtfJaVD661uyik9',
+        numeroDocumento:'',
+        referenciaUbicacion:'',
+        telefono:'3014219444'
+    },
+    {
+        id:73,
+        nombre:'Alejandra Muñoz Romero',
+        barrio:'',
+        categoriaSector:'',
+        ciudad:'Puerto Boyacá',
+        departamento:'Boyacá',
+        direccion:'Carrera 5 # 30 a-17',
+        maps:'',
+        numeroDocumento:'1018423245',
+        referenciaUbicacion:'',
+        telefono:'3028517605'
     }
 ]
 
 export const SECTOR: ReferenciaModel[]=[
     {
         id:1,
-        nombre: 'Robledo Miramar'
+        nombre:'Robledo Miramar'
     },
     {
         id:2,
-        nombre: 'Doce de octubre'
+        nombre:'Doce de octubre'
     },
     {
         id:3,
-        nombre: 'San Javier'
+        nombre:'San Javier'
     },
     {
         id:4,
-        nombre: 'Manrique San Pablo'
+        nombre:'Manrique San Pablo'
     },
     {
         id:5,
-        nombre: 'La Milagrosa'
+        nombre:'La Milagrosa'
     },
     {
         id:6,
@@ -921,7 +1090,7 @@ export const SECTOR: ReferenciaModel[]=[
     },
     {
         id:28,
-        nombre:'Villahermosa'
+        nombre:'Villa Hermosa'
     },
     {
         id:29,
@@ -938,6 +1107,14 @@ export const SECTOR: ReferenciaModel[]=[
     {
         id:32,
         nombre:'Belén la Gloria'
+    },
+    {
+        id:33,
+        nombre:'Santa Cruz'
+    },
+    {
+        id:34,
+        nombre:'Robledo las Margaritas'
     }
 ]
 
@@ -969,5 +1146,13 @@ export const CATEGORIA_SECTOR: ReferenciaModel[]=[
     {
         id:7,
         nombre:'Normal en día'
+    },
+    {
+        id:8,
+        nombre:'Medio alto - normal en día'
+    },
+    {
+        id:9,
+        nombre:'Arriba alto - normal en día'
     }
 ]
