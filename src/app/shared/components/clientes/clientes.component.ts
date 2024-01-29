@@ -20,6 +20,18 @@ export class ClientesComponent {
 		this.formFiltrado = this.fb.group({
 			barrio: [''] // Puedes establecer un valor predeterminado si lo deseas
 		});
+		this.sectores = SECTOR.sort((a, b) => {
+			const nombreA = a.nombre.toLowerCase(); // Convierte a minúsculas para ordenar sin distinguir mayúsculas y minúsculas
+			const nombreB = b.nombre.toLowerCase();
+		  
+			if (nombreA < nombreB) {
+			  return -1; // Si el nombre de 'a' es menor, lo coloca antes en el orden
+			}
+			if (nombreA > nombreB) {
+			  return 1; // Si el nombre de 'b' es menor, lo coloca antes en el orden
+			}
+			return 0; // Si los nombres son iguales, no cambia el orden
+		  });
 	}
 
 	public buscarTermino(e: any) {

@@ -976,6 +976,123 @@ export const CLIENTES: ClienteModel[] = [
         numeroDocumento:'1018423245',
         referenciaUbicacion:'',
         telefono:'3028517605'
+    },
+    {
+        id:74,
+        nombre:'Laura Castrillon',
+        barrio:'Suramericana',
+        categoriaSector:'',
+        ciudad:'Medellín',
+        departamento:'Antioquia',
+        direccion:'Carrera 66 # 49B-20 Centro Comercial Los Sauces',
+        maps:'https://maps.app.goo.gl/oKyKFzNcSBb7at8N9',
+        numeroDocumento:'',
+        referenciaUbicacion:'Centro Comercial Los Sauces, Bloque A - Consultorio 222, cerca al exito de Colombia',
+        telefono:'3166517965'
+    },
+    {
+        id:75,
+        nombre:'Valentina Restrepo',
+        barrio:'Belén',
+        categoriaSector:'',
+        ciudad:'Medellín',
+        departamento:'Antioquia',
+        direccion:'Calle 31 bb # 89 dd 57',
+        maps:'https://maps.app.goo.gl/etYPwnSDAUusWawd9',
+        numeroDocumento:'',
+        referenciaUbicacion:'Altos del Castillo etapa 2',
+        telefono:'3173215402'
+    },
+    {
+        id:78,
+        nombre:'Laura Vergara',
+        barrio:'Belén',
+        categoriaSector:'',
+        ciudad:'Medellín',
+        departamento:'Antioquia',
+        direccion:'Carrera 85 # 19 a 34',
+        maps:'https://maps.app.goo.gl/zEpyqFmBiWH33crk8',
+        numeroDocumento:'',
+        referenciaUbicacion:'',
+        telefono:'3054399258'
+    },
+    {
+        id:79,
+        nombre:'Nataly Castaño',
+        barrio:'Boston',
+        categoriaSector:'',
+        ciudad:'Medellín',
+        departamento:'Antioquia',
+        direccion:'Calle 50 # 38-12 apt 504',
+        maps:'https://maps.app.goo.gl/P9Nr3nc37eZCYyVJA',
+        numeroDocumento:'',
+        referenciaUbicacion:'Unidad Belgica Plaza',
+        telefono:'3216392558'
+    },
+    {
+        id:80,
+        nombre:'Sara Arango',
+        barrio:'Calasanz',
+        categoriaSector:'',
+        ciudad:'Medellín',
+        departamento:'Antioquia',
+        direccion:'Carrera 98 # 50a-30',
+        maps:'https://maps.app.goo.gl/kLfjgsYzA2ihMCKM7',
+        numeroDocumento:'',
+        referenciaUbicacion:'Urbanizacion Girasoles ',
+        telefono:'3126769801'
+    },
+    {
+        id:81,
+        nombre:'Valentina Aguirre Zafra',
+        barrio:'Belén',
+        categoriaSector:'',
+        ciudad:'Medellín',
+        departamento:'Antioquia',
+        direccion:'Carrera 81 # 26-18',
+        maps:'https://maps.app.goo.gl/T7NjbSX9id9Lzt6DA',
+        numeroDocumento:'',
+        referenciaUbicacion:'Sobre toda la avenida 80',
+        telefono:'3004174080'
+    },
+    {
+        id:82,
+        nombre:'Estefania Parra',
+        barrio:'Florencia',
+        categoriaSector:'',
+        ciudad:'Medellín',
+        departamento:'Antioquia',
+        direccion:'Calle 111a # 68a-93 piso 1',
+        maps:'https://maps.app.goo.gl/PjRcLXytMsXuQ2vS9',
+        numeroDocumento:'',
+        referenciaUbicacion:'',
+        telefono:'3106634395'
+    },
+    {
+        id:83,
+        nombre:'Elimar Cedeño',
+        barrio:'Las Palmas',
+        categoriaSector:'',
+        ciudad:'Medellín',
+        departamento:'Antioquia',
+        direccion:'Carrera 35 # 15b-35 local 107',
+        maps:'https://maps.app.goo.gl/86TZjn1no57UvRRX7',
+        numeroDocumento:'',
+        referenciaUbicacion:'Centro de negocios Prisma',
+        telefono:'3026414685'
+    },
+    {
+        id:84,
+        nombre:'Javier Pinto',
+        barrio:'Poblado',
+        categoriaSector:'',
+        ciudad:'Medellín',
+        departamento:'Antioquia',
+        direccion:'Calle 10 a # 41-3',
+        maps:'https://maps.app.goo.gl/FgKSNGbbXkT1gt8V8',
+        numeroDocumento:'',
+        referenciaUbicacion:'',
+        telefono:'3186583205'
     }
 ]
 
@@ -1115,6 +1232,14 @@ export const SECTOR: ReferenciaModel[]=[
     {
         id:34,
         nombre:'Robledo las Margaritas'
+    },
+    {
+        id:35,
+        nombre:'Boston'
+    },
+    {
+        id:36,
+        nombre:'Las Palmas'
     }
 ]
 
