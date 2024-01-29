@@ -21,7 +21,7 @@ export const CLIENTES: ClienteModel[] = [
         numeroDocumento:'',
         direccion: 'Carrera 78 # 104 c 14',
         referenciaUbicacion: '',
-        barrio: 'Doce de octubre',
+        barrio: 'Doce de Octubre',
         telefono: '3126093901',
         categoriaSector:'Lejos-medio',
         ciudad: 'Medellín',
@@ -863,7 +863,7 @@ export const CLIENTES: ClienteModel[] = [
     {
         id:65,
         nombre:'Esmeralda',
-        barrio:'Doce de octubre',
+        barrio:'Doce de Octubre',
         categoriaSector:'',
         ciudad:'Medellín',
         departamento:'Antioquia',
@@ -1093,6 +1093,149 @@ export const CLIENTES: ClienteModel[] = [
         numeroDocumento:'',
         referenciaUbicacion:'',
         telefono:'3186583205'
+    },
+    {
+        id:85,
+        nombre:'Michelle',
+        barrio:'Alfonso Lopez',
+        categoriaSector:'',
+        ciudad:'Medellín',
+        departamento:'Antioquia',
+        direccion:'Calle 91 # 74-40',
+        maps:'https://maps.app.goo.gl/m5a2UhvFTHKAn93KA',
+        numeroDocumento:'',
+        referenciaUbicacion:'Clienta mala clase',
+        telefono:'3167460252'
+    },
+    {
+        id:86,
+        nombre:'Reinel Sanchez',
+        barrio:'Belén',
+        categoriaSector:'',
+        ciudad:'Medellín',
+        departamento:'Antioquia',
+        direccion:'Calle 30A # 82A-27 interior 301',
+        maps:'https://maps.app.goo.gl/irfLynwFmFGbeKCK6',
+        numeroDocumento:'',
+        referenciaUbicacion:'Al frente del centro comercial los molinos',
+        telefono:'3245269408'
+    },
+    {
+        id:87,
+        nombre:'Ana Maria Salazar',
+        barrio:'Belén',
+        categoriaSector:'',
+        ciudad:'Medellín',
+        departamento:'Antioquia',
+        direccion:'Calle 31 # 80a-48',
+        maps:'https://maps.app.goo.gl/p3UuS3Nzin2RC3Ex9',
+        numeroDocumento:'',
+        referenciaUbicacion:'',
+        telefono:'3024527462'
+    },
+    {
+        id:88,
+        nombre:'Natalia Hincapié',
+        barrio:'Belén Buena Vista',
+        categoriaSector:'',
+        ciudad:'Medellín',
+        departamento:'Antioquia',
+        direccion:'Carrera 88 # 18a 44',
+        maps:'https://maps.app.goo.gl/5ipWTGejNXdd2ZQZ7',
+        numeroDocumento:'',
+        referenciaUbicacion:'',
+        telefono:'3108588028'
+    },
+    {
+        id:89,
+        nombre:'Sara Sofia Pulgarín',
+        barrio:'Robledo Pilarica',
+        categoriaSector:'',
+        ciudad:'Medellín',
+        departamento:'Antioquia',
+        direccion:'Calle 75 # 75-88 apto 405',
+        maps:'https://maps.app.goo.gl/pb4uowcph5NyvWNx7',
+        numeroDocumento:'',
+        referenciaUbicacion:'Edificio Guacarí',
+        telefono:'3013431338'
+    },
+    {
+        id:90,
+        nombre:'Maria Camila Correa',
+        barrio:'Doce de Octubre',
+        categoriaSector:'',
+        ciudad:'Medellín',
+        departamento:'Antioquia',
+        direccion:'Calle 106 # 78c 31',
+        maps:'https://maps.app.goo.gl/CgziVMNTzazBeLFv9',
+        numeroDocumento:'',
+        referenciaUbicacion:'Callejones sin acceso a moto',
+        telefono:'3017742615'
+    },
+    {
+        id:91,
+        nombre:'Stefany Muñoz',
+        barrio:'Manrique',
+        categoriaSector:'',
+        ciudad:'Medellín',
+        departamento:'Antioquia',
+        direccion:'Calle 100 # 35 a 10',
+        maps:'https://maps.app.goo.gl/RYnqgvKnE6VnHeYY7',
+        numeroDocumento:'',
+        referenciaUbicacion:'',
+        telefono:'3193448950'
+    },
+    {
+        id:92,
+        nombre:'Ana Sofía Londoño',
+        barrio:'San Javier',
+        categoriaSector:'',
+        ciudad:'Medellín',
+        departamento:'Antioquia',
+        direccion:'Calle 43b # 120-57 Unidad Quintas de San Javier',
+        maps:'https://maps.app.goo.gl/gXTF2erJq2nSXooMA',
+        numeroDocumento:'',
+        referenciaUbicacion:'manzana p, casa 7 primer piso',
+        telefono:'3126140431'
+    },
+    {
+        id:93,
+        nombre:'Astrid Carolina Joya Mercado',
+        barrio:'La Milagrosa',
+        categoriaSector:'',
+        ciudad:'Zulia',
+        departamento:'Norte de Santander',
+        direccion:'Avenida 3 # 1-220',
+        maps:'',
+        numeroDocumento:'1090364276',
+        referenciaUbicacion:'',
+        telefono:'3118858083'
+    },
+    {
+        id:94,
+        nombre:'Camila',
+        barrio:'La Milagrosa',
+        categoriaSector:'',
+        ciudad:'Medellín',
+        departamento:'Antioquia',
+        direccion:'Carrera 28 # 40a-20',
+        maps:'https://maps.app.goo.gl/6Tx87V8Wofb8xwbS7',
+        numeroDocumento:'',
+        referenciaUbicacion:'Misma ubicación de Diana Builes',
+        telefono:'3244989468'
+    },
+    {
+        id:95,
+        nombre:'Yised Velez',
+        barrio:'Laureles',
+        categoriaSector:'',
+        ciudad:'Medellín',
+        departamento:'Antioquia',
+        direccion:'Carrera 78 # 35-98',
+        maps:'https://maps.app.goo.gl/dCKepkqz3N9x97xp7',
+        numeroDocumento:'',
+        referenciaUbicacion:'En toda una equina de romboy',
+        telefono:'3003867635'
     }
 ]
 
@@ -1103,7 +1246,7 @@ export const SECTOR: ReferenciaModel[]=[
     },
     {
         id:2,
-        nombre:'Doce de octubre'
+        nombre:'Doce de Octubre'
     },
     {
         id:3,
@@ -1240,6 +1383,14 @@ export const SECTOR: ReferenciaModel[]=[
     {
         id:36,
         nombre:'Las Palmas'
+    },
+    {
+        id:37,
+        nombre:'Belén Buena Vista'
+    },
+    {
+        id:38,
+        nombre:'Robledo Pilarica'
     }
 ]
 
