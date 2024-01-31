@@ -20,7 +20,12 @@ export class ClientesComponent {
 		this.formFiltrado = this.fb.group({
 			barrio: [''] // Puedes establecer un valor predeterminado si lo deseas
 		});
-		this.sectores = SECTOR.sort((a, b) => {
+		this.sectores = this.ordenar(SECTOR);
+		this.clientes = this.ordenar(CLIENTES);
+	}
+
+	private ordenar(grupo:any){
+		return grupo.sort((a:any, b:any) => {
 			const nombreA = a.nombre.toLowerCase(); // Convierte a minúsculas para ordenar sin distinguir mayúsculas y minúsculas
 			const nombreB = b.nombre.toLowerCase();
 		  

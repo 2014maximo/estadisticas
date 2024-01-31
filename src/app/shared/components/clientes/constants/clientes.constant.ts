@@ -745,7 +745,7 @@ export const CLIENTES: ClienteModel[] = [
     },
     {
         id:56,
-        nombre:'Valentina Patio',
+        nombre:'Valentina Patiño',
         barrio:'Alfonso Lopez',
         categoriaSector:'Normal en día',
         ciudad:'Medellín',
@@ -1236,6 +1236,201 @@ export const CLIENTES: ClienteModel[] = [
         numeroDocumento:'',
         referenciaUbicacion:'En toda una equina de romboy',
         telefono:'3003867635'
+    },
+    {
+        id:96,
+        nombre:'Angie Ramirez',
+        barrio:'Manrique',
+        categoriaSector:'',
+        ciudad:'Medellín',
+        departamento:'Antioquia',
+        direccion:'Calle 73#45-61 apto 301',
+        maps:'https://maps.app.goo.gl/WAPsumFuuRnHQvxi7',
+        numeroDocumento:'',
+        referenciaUbicacion:'',
+        telefono:'3126156273'
+    },
+    {
+        id:97,
+        nombre:'Iraida Rojas',
+        barrio:'Poblado',
+        categoriaSector:'',
+        ciudad:'Medellín',
+        departamento:'Antioquia',
+        direccion:'Calle 10 # 42-45',
+        maps:'https://maps.app.goo.gl/rKyukvXVVbqbSQVa9',
+        numeroDocumento:'',
+        referenciaUbicacion:'Edificio la plaza del poblado, local 263 segundo piso',
+        telefono:'3024091201'
+    },
+    {
+        id:98,
+        nombre:'Estefany',
+        barrio:'Robledo Kennedy',
+        categoriaSector:'',
+        ciudad:'Medellín',
+        departamento:'Antioquia',
+        direccion:'Carrera 75b # 91a 41',
+        maps:'https://maps.app.goo.gl/oj3U4h6v6xLUn3oL9',
+        numeroDocumento:'',
+        referenciaUbicacion:'Normal en día',
+        telefono:'3205553559'
+    },
+    {
+        id:99,
+        nombre:'Yenifer Córdoba',
+        barrio:'Enciso',
+        categoriaSector:'',
+        ciudad:'Medellín',
+        departamento:'Antioquia',
+        direccion:'Cl 56 fb # 18 bb 16',
+        maps:'https://maps.app.goo.gl/93QdjxQpc4f79RiB9',
+        numeroDocumento:'',
+        referenciaUbicacion:'',
+        telefono:'3233077839'
+    },
+    {
+        id:100,
+        nombre:'Melisa Alvarez',
+        barrio:'Villa Paula',
+        categoriaSector:'',
+        ciudad:'Itagüí',
+        departamento:'Antioquia',
+        direccion:'Calle 55 # 50-94',
+        maps:'https://maps.app.goo.gl/arjAXYyaBcU3vWpb6',
+        numeroDocumento:'',
+        referenciaUbicacion:'',
+        telefono:'3196414303'
+    },
+    {
+        id:101,
+        nombre:'Estefany Villegas ',
+        barrio:'Guayabal',
+        categoriaSector:'',
+        ciudad:'Medellín',
+        departamento:'Antioquia',
+        direccion:'Cra 54 #4-79',
+        maps:'https://maps.app.goo.gl/L6HVDgctKuiWTtWt7',
+        numeroDocumento:'',
+        referenciaUbicacion:'Campo Amor',
+        telefono:'3245074832'
+    },
+    {
+        id:102,
+        nombre:'Brenda Guerra Argoti',
+        barrio:'Buenos Aires',
+        categoriaSector:'',
+        ciudad:'Medellín',
+        departamento:'Antioquia',
+        direccion:'Carrera 11C # 45cc 05',
+        maps:'https://maps.app.goo.gl/eiN3dZ8mvGgJyc6K9',
+        numeroDocumento:'',
+        referenciaUbicacion:'Al lado del supermercado de la pastora ',
+        telefono:''
+    },
+    {
+        id:103,
+        nombre:'Paula Ramírez',
+        barrio:'San Germán',
+        categoriaSector:'',
+        ciudad:'Medellín',
+        departamento:'Antioquia',
+        direccion:'Carrera 77 # 60-70 urbanización citrino apto 411',
+        maps:'https://maps.app.goo.gl/9EAa6nRDfv6jxjR49',
+        numeroDocumento:'',
+        referenciaUbicacion:'',
+        telefono:'3194020963'
+    },
+    {
+        id:104,
+        nombre:'Ana María',
+        barrio:'San Javier',
+        categoriaSector:'',
+        ciudad:'Medellín',
+        departamento:'Antioquia',
+        direccion:'Carrera 107 # 35-79',
+        maps:'https://maps.app.goo.gl/d5upz7vEAiuEfxof8',
+        numeroDocumento:'',
+        referenciaUbicacion:'',
+        telefono:'3217698890'
+    },
+    {
+        id:105,
+        nombre:'Anderson',
+        barrio:'Buenos Aires',
+        categoriaSector:'',
+        ciudad:'Medellín',
+        departamento:'Antioquia',
+        direccion:'Calle 48 # 30-05',
+        maps:'https://maps.app.goo.gl/KgKEewjKCsJGeaHV8',
+        numeroDocumento:'',
+        referenciaUbicacion:'',
+        telefono:'3004575802'
+    },
+    {
+        id:106,
+        nombre:'Mariana',
+        barrio:'Poblado',
+        categoriaSector:'',
+        ciudad:'Medellín',
+        departamento:'Antioquia',
+        direccion:'Calle 23 sur número 25b 114 Casa 103',
+        maps:'https://maps.app.goo.gl/uGgcDrEWi9e72tyB6',
+        numeroDocumento:'',
+        referenciaUbicacion:'Montjuic, al frente del mall Distrito Avignon',
+        telefono:'3135563868'
+    },
+    {
+        id:107,
+        nombre:'Natalia Ocampo',
+        barrio:'Belén',
+        categoriaSector:'',
+        ciudad:'Medellín',
+        departamento:'Antioquia',
+        direccion:'Carrera 70 # 26A 28',
+        maps:'https://maps.app.goo.gl/borJs2Rt2GCxVSk78',
+        numeroDocumento:'',
+        referenciaUbicacion:'El local se llama Vanidad Divina spa al lado del edificio el candil',
+        telefono:''
+    },
+    {
+        id:108,
+        nombre:'Malanie Rios Gonzalez ',
+        barrio:'Cr 17#15-21 edificio ltts 15 apto1203',
+        categoriaSector:'',
+        ciudad:'Pereira',
+        departamento:'Risaralda',
+        direccion:'',
+        maps:'',
+        numeroDocumento:'1193214172',
+        referenciaUbicacion:'',
+        telefono:'3217575996'
+    },
+    {
+        id:109,
+        nombre:'Ingrid Rozo',
+        barrio:'',
+        categoriaSector:'',
+        ciudad:'Villavicencio',
+        departamento:'Meta',
+        direccion:'Calle 17b #4-50 villa helena o Danubio',
+        maps:'',
+        numeroDocumento:'1121930909',
+        referenciaUbicacion:'',
+        telefono:'3142198497'
+    },
+    {
+        id:110,
+        nombre:'María Fernanda',
+        barrio:'Robledo',
+        categoriaSector:'',
+        ciudad:'Medellín',
+        departamento:'Antioquia',
+        direccion:'Carrera 86 # 77e-03',
+        maps:'https://maps.app.goo.gl/7PuvdjeQMLeaX5kd6',
+        numeroDocumento:'',
+        referenciaUbicacion:'',
+        telefono:'3016576809 '
     }
 ]
 
@@ -1330,7 +1525,7 @@ export const SECTOR: ReferenciaModel[]=[
     },
     {
         id:23,
-        nombre: 'Belencito'
+        nombre:'Belencito'
     },
     {
         id:24,
@@ -1391,6 +1586,38 @@ export const SECTOR: ReferenciaModel[]=[
     {
         id:38,
         nombre:'Robledo Pilarica'
+    },
+    {
+        id:39,
+        nombre:'Villa Paula'
+    },
+    {
+        id:40,
+        nombre:'San Germán'
+    },
+    {
+        id:41,
+        nombre:'Campo Valdez'
+    },
+    {
+        id:42,
+        nombre:'Loreto'
+    },
+    {
+        id:43,
+        nombre:'Caicedo'
+    },
+    {
+        id:44,
+        nombre:'Robledo Diamante'
+    },
+    {
+        id:45,
+        nombre:'Belén las Violetas'
+    },
+    {
+        id:46,
+        nombre:'Juan XXIII'
     }
 ]
 
