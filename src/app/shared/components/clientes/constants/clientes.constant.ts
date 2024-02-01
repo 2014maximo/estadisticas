@@ -1431,6 +1431,97 @@ export const CLIENTES: ClienteModel[] = [
         numeroDocumento:'',
         referenciaUbicacion:'',
         telefono:'3016576809 '
+    },
+    {
+        id:111,
+        nombre:'Valentina Sierra',
+        barrio:'Belén las Violetas',
+        categoriaSector:'',
+        ciudad:'Medellín',
+        departamento:'Antioquia',
+        direccion:'Carrera 89 # 30 B 45 int 201',
+        maps:'https://maps.app.goo.gl/m9FTfr5g3DqFFutL8',
+        numeroDocumento:'',
+        referenciaUbicacion:'En toda una esquina',
+        telefono:'3213426683'
+    },
+    {
+        id:112,
+        nombre:'Natalia Ardila',
+        barrio:'Belén Buena Vista',
+        categoriaSector:'',
+        ciudad:'Medellín',
+        departamento:'Antioquia',
+        direccion:'Calle 19b # 88A 21',
+        maps:'https://maps.app.goo.gl/CcvP2CysYA77m2fo7',
+        numeroDocumento:'',
+        referenciaUbicacion:'',
+        telefono:'3205639848'
+    },
+    {
+        id:113,
+        nombre:'Monica Jurado',
+        barrio:'',
+        categoriaSector:'',
+        ciudad:'Bogotá',
+        departamento:'Cundinamarca',
+        direccion:'Trav 52b # 2-62',
+        maps:'',
+        numeroDocumento:'43556167',
+        referenciaUbicacion:'',
+        telefono:'3118792002'
+    },
+    {
+        id:114,
+        nombre:'Valeria Zapata',
+        barrio:'Castilla',
+        categoriaSector:'',
+        ciudad:'Medellín',
+        departamento:'Antioquia',
+        direccion:'Calle 92F #69-09',
+        maps:'https://maps.app.goo.gl/78cMmLcCFQZvQw6z9',
+        numeroDocumento:'',
+        referenciaUbicacion:'Por el hospital la Maria',
+        telefono:'3026005472'
+    },
+    {
+        id:115,
+        nombre:'Manuela Barrera ',
+        barrio:'Doce de Octubre',
+        categoriaSector:'',
+        ciudad:'Medellín',
+        departamento:'Antioquia',
+        direccion:'Calle 112 # 81-56',
+        maps:'https://maps.app.goo.gl/rrTRnc63yBQwMkst8',
+        numeroDocumento:'',
+        referenciaUbicacion:'Maps lo corre un poquito',
+        telefono:'3104715926'
+    },
+    {
+        id:116,
+        nombre:'Sofia Montes',
+        barrio:'Boyacá las Brisas',
+        categoriaSector:'',
+        ciudad:'Medellín',
+        departamento:'Antioquia',
+        direccion:'Calle 113b # 65-7',
+        maps:'https://maps.app.goo.gl/qkj2KDCKngNRX4Lk7',
+        numeroDocumento:'',
+        referenciaUbicacion:'',
+        telefono:'3016965797'
+    },
+    {
+        id:117,
+        nombre:'Daniela Castro',
+        barrio:'Santa Fé',
+        categoriaSector:'',
+        ciudad:'Medellín',
+        departamento:'Antioquia',
+        direccion:'Calle 20 # 57-53',
+        maps:'https://maps.app.goo.gl/s54cnsngHZp4gk9Q7',
+        numeroDocumento:'',
+        referenciaUbicacion:'Spa manos de Diosa, cerca del zoológico Santa Fé',
+        telefono:'3002246593'
     }
 ]
 
@@ -1618,6 +1709,10 @@ export const SECTOR: ReferenciaModel[]=[
     {
         id:46,
         nombre:'Juan XXIII'
+    },
+    {
+        id:47,
+        nombre:'Santa Fé'
     }
 ]
 
