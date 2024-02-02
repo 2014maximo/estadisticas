@@ -1522,6 +1522,32 @@ export const CLIENTES: ClienteModel[] = [
         numeroDocumento:'',
         referenciaUbicacion:'Spa manos de Diosa, cerca del zoológico Santa Fé',
         telefono:'3002246593'
+    },
+    {
+        id:118,
+        nombre:'Sara Rodriguez',
+        barrio:'Belén Rincón',
+        categoriaSector:'',
+        ciudad:'Medellín',
+        departamento:'Antioquia',
+        direccion:'Cr 79 #1 c 02',
+        maps:'https://maps.app.goo.gl/kt3gn24SaUyhE1bv7',
+        numeroDocumento:'',
+        referenciaUbicacion:'',
+        telefono:'3235264956'
+    },
+    {
+        id:119,
+        nombre:'Valeria Molina',
+        barrio:'Robledo Villa Sofía',
+        categoriaSector:'',
+        ciudad:'Medellín',
+        departamento:'Antioquia',
+        direccion:'Cr 90c # 83-20 301',
+        maps:'https://maps.app.goo.gl/Ter7XyFDiNYYqark6',
+        numeroDocumento:'',
+        referenciaUbicacion:'',
+        telefono:'3216145260'
     }
 ]
 
@@ -1713,6 +1739,14 @@ export const SECTOR: ReferenciaModel[]=[
     {
         id:47,
         nombre:'Santa Fé'
+    },
+    {
+        id:48,
+        nombre:'Robledo Villa Sofía'
+    },
+    {
+        id:49,
+        nombre:'Belén Rincón'
     }
 ]
 
