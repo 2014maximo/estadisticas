@@ -1691,6 +1691,110 @@ export const CLIENTES: ClienteModel[] = [
         numeroDocumento:'',
         referenciaUbicacion:'',
         telefono:'3045982701'
+    },
+    {
+        id:131,
+        nombre:'Daniela Gutiérrez ',
+        barrio:'Juan XXIII',
+        categoriaSector:'',
+        ciudad:'Medellín',
+        departamento:'Antioquia',
+        direccion:'Calle 49 a # 99ab 49',
+        maps:'https://maps.app.goo.gl/kpkWHMVC1T2YNYpD8',
+        numeroDocumento:'',
+        referenciaUbicacion:'',
+        telefono:'3045468781'
+    },
+    {
+        id:132,
+        nombre:'Lina Giraldo',
+        barrio:'Pedregal',
+        categoriaSector:'',
+        ciudad:'Medellín',
+        departamento:'Antioquia',
+        direccion:'Transversal 103a # 74a 70',
+        maps:'https://maps.app.goo.gl/cto8Vo96pX5DXGkE6',
+        numeroDocumento:'',
+        referenciaUbicacion:'',
+        telefono:'3195768278'
+    },
+    {
+        id:133,
+        nombre:'Lina Suarez',
+        barrio:'',
+        categoriaSector:'',
+        ciudad:'Cali',
+        departamento:'Valle',
+        direccion:'Carrera 1 A 13 # 69 -55 b/ metropolitano del norte ',
+        maps:'',
+        numeroDocumento:'67042051',
+        referenciaUbicacion:'',
+        telefono:'3005419630'
+    },
+    {
+        id:134,
+        nombre:'Isabella Roman',
+        barrio:'Caicedo',
+        categoriaSector:'',
+        ciudad:'Medellín',
+        departamento:'Antioquia',
+        direccion:'Calle 53 # 25b 29',
+        maps:'https://maps.app.goo.gl/t3i3HkqR1PBP6SS1A',
+        numeroDocumento:'',
+        referenciaUbicacion:'',
+        telefono:'3024013678'
+    },
+    {
+        id:135,
+        nombre:'Silvia Mesa',
+        barrio:'Loma de las Brujas',
+        categoriaSector:'',
+        ciudad:'Envigado',
+        departamento:'Antioquia',
+        direccion:'Calle 37 B sur # 27 17 apto 1113 T3',
+        maps:'https://maps.app.goo.gl/JSZ2SfQDuqB677Df9',
+        numeroDocumento:'',
+        referenciaUbicacion:'Unidad Brujas Campestre',
+        telefono:'3043759768'
+    },
+    {
+        id:136,
+        nombre:'Samantha Manco',
+        barrio:'Manrique',
+        categoriaSector:'',
+        ciudad:'Medellín',
+        departamento:'',
+        direccion:'Carrera 46 # 86-48',
+        maps:'https://maps.app.goo.gl/iMX7rag4uCDK4eAj6',
+        numeroDocumento:'',
+        referenciaUbicacion:'',
+        telefono:'3217427034'
+    },
+    {
+        id:137,
+        nombre:'Karen Cortes Cardona',
+        barrio:'',
+        categoriaSector:'',
+        ciudad:'Segovia',
+        departamento:'Antioquia',
+        direccion:'',
+        maps:'',
+        numeroDocumento:'1007185487',
+        referenciaUbicacion:'',
+        telefono:'3222363883'
+    },
+    {
+        id:138,
+        nombre:'Natalia Díaz Rojas',
+        barrio:'Entre amigos',
+        categoriaSector:'',
+        ciudad:'Sabaneta',
+        departamento:'Antioquia',
+        direccion:'Calle 72 sur número 46a 56',
+        maps:'https://maps.app.goo.gl/zDf6QMfTNHXtrVRw5',
+        numeroDocumento:'',
+        referenciaUbicacion:'Barrio entre amigos es una casa primer piso al lado de la costa antioqueña',
+        telefono:'3046686678'
     }
 ]
 
@@ -1890,6 +1994,10 @@ export const SECTOR: ReferenciaModel[]=[
     {
         id:49,
         nombre:'Belén Rincón'
+    },
+    {
+        id:50,
+        nombre:'Entre amigos'
     }
 ]
 
