@@ -1795,6 +1795,279 @@ export const CLIENTES: ClienteModel[] = [
         numeroDocumento:'',
         referenciaUbicacion:'Barrio entre amigos es una casa primer piso al lado de la costa antioqueña',
         telefono:'3046686678'
+    },
+    {
+        id:139,
+        nombre:'Zaray Medina',
+        barrio:'',
+        categoriaSector:'',
+        ciudad:'Cucutá',
+        departamento:'Norte de Santander',
+        direccion:'Centro Comercial River Plaza Piso 2, local 220',
+        maps:'',
+        numeroDocumento:'20517093',
+        referenciaUbicacion:'',
+        telefono:'3134580975'
+    },
+    {
+        id:140,
+        nombre:'Katerin Yepes',
+        barrio:'La América',
+        categoriaSector:'',
+        ciudad:'Medellín',
+        departamento:'Antioquia',
+        direccion:'Carrera 86 # 42c 92',
+        maps:'https://maps.app.goo.gl/N7953YRFp9NnhQYP8',
+        numeroDocumento:'',
+        referenciaUbicacion:'',
+        telefono:'3005771568'
+    },
+    {
+        id:141,
+        nombre:'Leidy Ramírez',
+        barrio:'Aranjuez',
+        categoriaSector:'',
+        ciudad:'Medellín',
+        departamento:'Antioquia',
+        direccion:'Carrera 51B # 94-34',
+        maps:'https://maps.app.goo.gl/yDACLM43EZkL6S8VA',
+        numeroDocumento:'',
+        referenciaUbicacion:'',
+        telefono:'3004978505'
+    },
+    {
+        id:142,
+        nombre:'Jennifer Madrid',
+        barrio:'Loreto',
+        categoriaSector:'Centro-alto',
+        ciudad:'Medellín',
+        departamento:'Antioquia',
+        direccion:'Calle 32 # 32 a 70',
+        maps:'https://maps.app.goo.gl/Fup8fNtT6AqtMsrg9',
+        numeroDocumento:'',
+        referenciaUbicacion:'',
+        telefono:'3234313436'
+    },
+    {
+        id:143,
+        nombre:'Claudia Veloza',
+        barrio:'',
+        categoriaSector:'',
+        ciudad:'Medellín',
+        departamento:'Antioquia',
+        direccion:'Carrera 105 B # 34 BB 50 interior 301',
+        maps:'https://maps.app.goo.gl/UccRvkYzjXERY2gJ6',
+        numeroDocumento:'',
+        referenciaUbicacion:'La casa de arriba de la licorera JC',
+        telefono:'3146690566'
+    },
+    {
+        id:144,
+        nombre:'Carolina',
+        barrio:'Manrique',
+        categoriaSector:'',
+        ciudad:'Medellín',
+        departamento:'Antioquia',
+        direccion:'Calle 69 # 43-35 Apt 201',
+        maps:'https://maps.app.goo.gl/PyutGWr5HgRgiSvY7',
+        numeroDocumento:'',
+        referenciaUbicacion:'',
+        telefono:'3215067701'
+    },
+    {
+        id:145,
+        nombre:'Lizbey Gaviria',
+        barrio:'Popular 2',
+        categoriaSector:'',
+        ciudad:'Medellín',
+        departamento:'Antioquia',
+        direccion:'Calle 119 # 43c 18',
+        maps:'',
+        numeroDocumento:'',
+        referenciaUbicacion:'',
+        telefono:'3016102211'
+    },
+    {
+        id:146,
+        nombre:'Melisa Restrepo Álvarez',
+        barrio:'Belencito',
+        categoriaSector:'',
+        ciudad:'Medellín',
+        departamento:'Antioquia',
+        direccion:'Calle 33b # 106-88',
+        maps:'https://maps.app.goo.gl/995ZhsAB3srFBycR6',
+        numeroDocumento:'',
+        referenciaUbicacion:'',
+        telefono:'3044245611'
+    },
+    {
+        id:147,
+        nombre:'Mariana Bohorquez',
+        barrio:'Robledo diamante',
+        categoriaSector:'',
+        ciudad:'Medellín',
+        departamento:'Antioquia',
+        direccion:'Transversal 79c # 80-53',
+        maps:'https://maps.app.goo.gl/nmcTy39cZxZ8YScH8',
+        numeroDocumento:'',
+        referenciaUbicacion:'',
+        telefono:'3006857661'
+    },
+    {
+        id:148,
+        nombre:'Karen Terranova',
+        barrio:'',
+        categoriaSector:'',
+        ciudad:'Armenia',
+        departamento:'Quindio',
+        direccion:'',
+        maps:'',
+        numeroDocumento:'',
+        referenciaUbicacion:'',
+        telefono:'3217996805'
+    },
+    {
+        id:149,
+        nombre:'Tatiana Restrepo',
+        barrio:'',
+        categoriaSector:'',
+        ciudad:'Caldas',
+        departamento:'Antioquia',
+        direccion:'Carrera 49 #135 sur 104 apt 201  barrio hospital',
+        maps:'https://maps.app.goo.gl/PWiFYsmH4SjgWEgQ7',
+        numeroDocumento:'',
+        referenciaUbicacion:'',
+        telefono:'3117504921'
+    },
+    {
+        id:150,
+        nombre:'Jenni',
+        barrio:'Las palmas',
+        categoriaSector:'',
+        ciudad:'Medellín',
+        departamento:'Antioquia',
+        direccion:'Carrera 43 # 41-125',
+        maps:'https://maps.app.goo.gl/XFhebdoYnpfka9BS9',
+        numeroDocumento:'',
+        referenciaUbicacion:'Por todo Girardot hasta llegar a un callejón sin salida',
+        telefono:'318 8639687'
+    },
+    {
+        id:151,
+        nombre:'Leidy Jimenez',
+        barrio:'Campo Valdez',
+        categoriaSector:'',
+        ciudad:'Medellín',
+        departamento:'Antioquia',
+        direccion:'Calle 79 # 49-39',
+        maps:'https://maps.app.goo.gl/ruLTVMfxC5aMGVV2A',
+        numeroDocumento:'',
+        referenciaUbicacion:'',
+        telefono:'3164801082'
+    },
+    {
+        id:152,
+        nombre:'Camila Ramirez',
+        barrio:'',
+        categoriaSector:'',
+        ciudad:'Medellín',
+        departamento:'Antioquia',
+        direccion:'Calle 78 # 71-129',
+        maps:'https://maps.app.goo.gl/KuGK4JDbgy11mTKM7',
+        numeroDocumento:'',
+        referenciaUbicacion:'Bosques de San Pablo, casa primer piso, Al frente del hospital Pablo tobon Uribe',
+        telefono:'3195580658'
+    },
+    {
+        id:153,
+        nombre:'Maryin Rodríguez',
+        barrio:'',
+        categoriaSector:'',
+        ciudad:'Manizales',
+        departamento:'Caldas',
+        direccion:'Calle 15#21-33 local 1 san Antonio',
+        maps:'',
+        numeroDocumento:'21465195',
+        referenciaUbicacion:'',
+        telefono:'3203709218'
+    },
+    {
+        id:154,
+        nombre:'Yuliana Parra',
+        barrio:'Belén',
+        categoriaSector:'',
+        ciudad:'Medellín',
+        departamento:'Antioquia',
+        direccion:'Calle 9AA # 75-52 3 piso',
+        maps:'https://maps.app.goo.gl/vtgxc8dQ89VWH7SdA',
+        numeroDocumento:'',
+        referenciaUbicacion:'',
+        telefono:'3114210267'
+    },
+    {
+        id:155,
+        nombre:'Isabella Tapias',
+        barrio:'Belén',
+        categoriaSector:'',
+        ciudad:'',
+        departamento:'',
+        direccion:'Carrera 76a # 16-12',
+        maps:'https://maps.app.goo.gl/5gAzwXwMunQGsV5M7',
+        numeroDocumento:'',
+        referenciaUbicacion:'',
+        telefono:'3229417270'
+    },
+    {
+        id:156,
+        nombre:'Mariana',
+        barrio:'Belén',
+        categoriaSector:'',
+        ciudad:'Medellín',
+        departamento:'Antioquia',
+        direccion:'Calle 30c # 89 a 26',
+        maps:'https://maps.app.goo.gl/ba4xKoEJrtSdhXQZ9',
+        numeroDocumento:'',
+        referenciaUbicacion:'Tercer piso, al frente del efecty',
+        telefono:'3022001618'
+    },
+    {
+        id:157,
+        nombre:'Camila Suaza',
+        barrio:'Belén',
+        categoriaSector:'',
+        ciudad:'Medellín',
+        departamento:'Antioquia',
+        direccion:'Calle 1 sur 75 DA 191 apto 407',
+        maps:'https://maps.app.goo.gl/E5gs88fVJTn4hvTz7',
+        numeroDocumento:'',
+        referenciaUbicacion:'',
+        telefono:'3017322177'
+    },
+    {
+        id:158,
+        nombre:'Brando Smith',
+        barrio:'El Salvador',
+        categoriaSector:'',
+        ciudad:'Medellín',
+        departamento:'Antioquia',
+        direccion:'Carrera 35a # 39a-29',
+        maps:'https://maps.app.goo.gl/h47Gm4rs7ZDZk3c5A',
+        numeroDocumento:'',
+        referenciaUbicacion:'',
+        telefono:'3014989445'
+    },
+    {
+        id:159,
+        nombre:'Elcy Ramirez',
+        barrio:'Laureles',
+        categoriaSector:'',
+        ciudad:'Medellín',
+        departamento:'Antioquia',
+        direccion:'Carrera 80 # 35-09',
+        maps:'https://maps.app.goo.gl/5B7cR4GPUgtqLAYNA',
+        numeroDocumento:'',
+        referenciaUbicacion:'Abajo del rompoy de don Quijote, Encima de drogas la rebaja, La entrada es al lado de los vestidos de baño',
+        telefono:'3044351802'
     }
 ]
 
@@ -1998,6 +2271,18 @@ export const SECTOR: ReferenciaModel[]=[
     {
         id:50,
         nombre:'Entre amigos'
+    },
+    {
+        id:51,
+        nombre:'La América'
+    },
+    {
+        id:52,
+        nombre:'Popular 2'
+    },
+    {
+        id:53,
+        nombre:'El Salvador'
     }
 ]
 
