@@ -2757,6 +2757,32 @@ export const CLIENTES: ClienteModel[] = [
         numeroDocumento:'',
         referenciaUbicacion:'',
         telefono:'3197384166'
+    },
+    {
+        id:214,
+        nombre:'Laura',
+        barrio:'Manrique',
+        categoriaSector:'',
+        ciudad:'Medellín',
+        departamento:'Antioquia',
+        direccion:'Calle 72 # 44-105 centro comercial gardel plaza primer piso local 103',
+        maps:'https://maps.app.goo.gl/4o7EC4dBrcLofVGVA',
+        numeroDocumento:'',
+        referenciaUbicacion:'',
+        telefono:'3195078393'
+    },
+    {
+        id:215,
+        nombre:'Monica Salas',
+        barrio:'Manrique',
+        categoriaSector:'',
+        ciudad:'Medellín',
+        departamento:'Antioquia',
+        direccion:'Carrera 32 # 84-40 int 364',
+        maps:'https://maps.app.goo.gl/rqFNC4MQq4wNBTrE7',
+        numeroDocumento:'',
+        referenciaUbicacion:'',
+        telefono:'3007544246'
     }
 ]
 
