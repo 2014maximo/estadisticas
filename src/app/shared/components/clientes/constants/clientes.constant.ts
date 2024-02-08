@@ -2992,7 +2992,7 @@ export const CLIENTES: ClienteModel[] = [
         ciudad:'Medellín',
         departamento:'Antioquia',
         direccion:'Carrera 32 # 84-40 int 364',
-        maps:'https://maps.app.goo.gl/rqFNC4MQq4wNBTrE7',
+        maps:' https://waze.com/ul/rqFNC4MQq4wNBTrE7',
         numeroDocumento:'',
         referenciaUbicacion:'',
         valorRuta:'',
