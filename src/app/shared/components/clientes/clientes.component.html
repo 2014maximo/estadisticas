@@ -6,17 +6,20 @@
             <div class="row mb-5">
                 <div class="col-md-2"></div>
                 <div class="col-md-8">
-                    <form class="p-3">
+                    <form class="p-3  f-merriweather">
                         <div class="form-group">
-                          <label for="inp-search" class="text-light">Buscar</label>
-                          <input type="search" class="form-control" (click)="borrarBusqueda($event)" id="inp-search" (keydown)="buscarTermino($event)">
+                            <label for="inp-search" class="text-light">Buscar</label>
+                            <input type="search" class="form-control" (click)="borrarBusqueda($event)" id="inp-search"
+                                (keydown)="buscarTermino($event)">
                         </div>
                     </form>
-                    <div class="form-group col-md-4">
+                    <div class="form-group col-md-4 f-merriweather">
                         <form [formGroup]="formFiltrado">
                             <label for="opciones" class="text-light">Por sector:</label>
-                            <select id="opciones" formControlName="barrio" (change)="busquedaSector()" class="form-control">
-                              <option *ngFor="let opcion of sectores" [value]="opcion.nombre">{{ opcion.nombre }}</option>
+                            <select id="opciones" formControlName="barrio" (change)="busquedaSector()"
+                                class="form-control">
+                                <option *ngFor="let opcion of sectores" [value]="opcion.nombre">{{ opcion.nombre }}
+                                </option>
                             </select>
                         </form>
                     </div>
@@ -25,23 +28,136 @@
             </div>
             <div class="row">
                 <div *ngFor="let cliente of clientes" class="col-md-4 mb-5">
-                    <div class="card">
+                    <div class="card f-merriweather">
                         <div class="card-header">
-                          <b>{{ cliente.barrio }}</b><br>
-                          <span class="text-uppercase text-primary"><small>{{ cliente.ciudad }} - {{ cliente.departamento }}</small> </span>
+                            <p *ngIf="cliente.barrio" class="fs-10 lh-10 m-0 p-0">Barrio:</p>
+                            <p class="m-0 p-0"><b>{{ cliente.barrio }}</b></p>
+                            <p class="fs-10 lh-10 m-0 p-0">Ciudad:</p>
+                            <span class="text-uppercase text-primary"><small>{{ cliente.ciudad }} - {{
+                                    cliente.departamento }}</small> </span>
                         </div>
                         <div class="card-body">
-                          <h5 class="card-title">{{ cliente.nombre }}</h5>
-                          <p class="card-text">{{ cliente.direccion }}</p>
-                          <p class="card-text">{{ cliente.telefono }}</p>
+                            <p class="fs-10 lh-10 m-0 p-0">Nombre:</p>
+                            <h5 class="card-title m-0 p-0">{{ cliente.nombre }}</h5>
+                            <span class="fs-10 lh-10 m-0 p-0">Dirección:</span><br>
+                            <p class="card-text m-0 p-0">{{ cliente.direccion }}</p>
+                            <p class="fs-10 lh-10 m-0 p-0">Teléfono:</p>
+                            <p class="card-text">{{ cliente.telefono }}</p>
 
-                          <a (click)="copiarAlPortapapeles(cliente)" class="btn btn-primary cursor-p">Copiar datos</a>
+                            <a data-toggle="modal" (click)="cargarCliente(cliente)" data-target="#exampleModal" class="btn btn-primary cursor-p">Revisar</a>
                         </div>
-                      </div>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="col-md-1"></div>
     </div>
     <div class="espaciado"></div>
+    <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+    Launch demo modal
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade  f-merriweather" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 *ngIf="clienteSeleccionado.nombre" class="modal-title" id="exampleModalLabel">{{clienteSeleccionado.nombre}}</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="m-0 b-0">
+            <div *ngIf="clienteSeleccionado.barrio" class="row m-0 b-0">
+                <div class="col-md-1 m-0 b-0">
+                    <input type="checkbox" name="" id="" class="m-0 b-0">
+                </div>
+                <div class="col-md-11 m-0 b-0">
+                    <p class="fs-10 lh-10 m-0 p-0">Barrio:</p>
+                    <p class="m-0 p-0">{{ clienteSeleccionado.barrio }}</p>
+                </div>
+            </div>
+            <div *ngIf="clienteSeleccionado.ciudad" class="row m-0 b-0">
+                <div class="col-md-1 m-0 b-0">
+                    <input type="checkbox" name="" id="" class="m-0 b-0">
+                </div>
+                <div class="col-md-11 m-0 b-0">
+                    <p class="fs-10 lh-10 m-0 p-0">Ciudad:</p>
+                    <p class="m-0 p-0">{{ clienteSeleccionado.ciudad }}</p>
+                </div>
+            </div>
+            <div *ngIf="clienteSeleccionado.departamento" class="row m-0 b-0">
+                <div class="col-md-1 m-0 b-0">
+                    <input type="checkbox" name="" id="" class="m-0 b-0">
+                </div>
+                <div class="col-md-11 m-0 b-0">
+                    <p class="fs-10 lh-10 m-0 p-0">Departamento:</p>
+                    <p class="m-0 p-0">{{ clienteSeleccionado.departamento }}</p>
+                </div>
+            </div>
+            <div *ngIf="clienteSeleccionado.direccion" class="row m-0 b-0">
+                <div class="col-md-1 m-0 b-0">
+                    <input type="checkbox" name="" id="" class="m-0 b-0">
+                </div>
+                <div class="col-md-11 m-0 b-0">
+                    <p class="fs-10 lh-10 m-0 p-0">Direccion:</p>
+                    <p class="m-0 p-0">{{ clienteSeleccionado.direccion }}</p>
+                </div>
+            </div>
+            <div *ngIf="clienteSeleccionado.maps" class="row m-0 b-0">
+                <div class="col-md-1 m-0 b-0">
+                    <input type="checkbox" name="" id="" class="m-0 b-0">
+                </div>
+                <div class="col-md-11 m-0 b-0">
+                    <p class="fs-10 lh-10 m-0 p-0">Map:</p>
+                    <p class="m-0 p-0">{{ clienteSeleccionado.maps }}</p>
+                </div>
+            </div>
+            <div *ngIf="clienteSeleccionado.telefono" class="row m-0 b-0">
+                <div class="col-md-1 m-0 b-0">
+                    <input type="checkbox" name="" id="" class="m-0 b-0">
+                </div>
+                <div class="col-md-11 m-0 b-0">
+                    <p class="fs-10 lh-10 m-0 p-0">Teléfono:</p>
+                    <p class="m-0 p-0">{{ clienteSeleccionado.telefono }}</p>
+                </div>
+            </div>
+            <div class="row m-0 b-0">
+                <div class="col-md-1 m-0 b-0">
+                    <input type="checkbox" name="" id="" class="m-0 b-0">
+                </div>
+                <div class="col-md-11 m-0 b-0">
+                    <p class="fs-10 lh-10 m-0 p-0">PAGA:</p>
+                    <input type="text" name="" id="">
+                </div>
+            </div>
+            <div class="row m-0 b-0">
+                <div class="col-md-1 m-0 b-0">
+                    <input type="checkbox" name="" id="" class="m-0 b-0">
+                </div>
+                <div class="col-md-11 m-0 b-0">
+                    <p class="fs-10 lh-10 m-0 p-0">YA PAGÓ:</p>
+                    <input type="text" name="" id="">
+                </div>
+            </div>
+            <div class="row m-0 b-0">
+                <div class="col-md-1 m-0 b-0">
+                    <input type="checkbox" name="" id="" class="m-0 b-0">
+                </div>
+                <div class="col-md-11 m-0 b-0">
+                    <p class="fs-10 lh-10 m-0 p-0">ABONÓ</p>
+                    <input type="text" name="" id="">
+                </div>
+            </div>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+          <a class="btn btn-primary cursor-p">Copiar datos</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
 </div>

@@ -15,6 +15,8 @@ export class ClientesComponent {
 	public sectores = SECTOR;
 	public formFiltrado: FormGroup;
 	public clipboard: string = '';
+	public clienteSeleccionado = new ClienteModel();
+	public datosCliente = new ClienteModel();
 
 	constructor(private fb: FormBuilder) {
 		this.formFiltrado = this.fb.group({
@@ -71,6 +73,14 @@ export class ClientesComponent {
 
 	busquedaSector(){
 		this.clientes = CLIENTES.filter( e => e.barrio === this.formFiltrado.value.barrio);
+	}
+
+	cargarCliente(cliente:ClienteModel){
+		this.clienteSeleccionado = cliente;
+	}
+
+	cargarDatosCliente(referencia: any){
+		
 	}
 	
 
