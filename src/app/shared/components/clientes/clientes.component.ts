@@ -15,8 +15,19 @@ export class ClientesComponent {
 	public sectores = SECTOR;
 	public formFiltrado: FormGroup;
 	public clipboard: string = '';
-	public clienteSeleccionado = new ClienteModel();
-	public datosCliente = new ClienteModel();
+	public clienteSeleccionado = new ClienteModel() as any;
+	public datosCliente = new ClienteModel() as any;
+	public checkboxState: boolean = false;
+	public checkBarrio: boolean = false;
+	public checkCiudad: boolean = false;
+	public checkDepartamento: boolean = false;
+	public checkDireccion: boolean = false;
+	public checkMap: boolean = false;
+	public checkTelefono: boolean = false;
+	public paga:string = '';
+	public yapago:string = '';
+	public abono:string = '';
+	public resta:string = '';
 
 	constructor(private fb: FormBuilder) {
 		this.formFiltrado = this.fb.group({
@@ -24,6 +35,16 @@ export class ClientesComponent {
 		});
 		this.sectores = this.ordenar(SECTOR);
 		this.clientes = this.ordenar(CLIENTES);
+	}
+
+	public inicializarCheckBox(){
+		this.checkBarrio = false;
+		this.checkCiudad = false;
+		this.checkDepartamento = false;
+		this.checkDireccion = false;
+		this.checkMap = false;
+		this.checkTelefono = false;
+		this.paga = this.yapago = this.abono = '';
 	}
 
 	private ordenar(grupo:any){
@@ -62,7 +83,7 @@ export class ClientesComponent {
 	 * Muestra utilidades muy diversas de la función JSON.stringify
 	 */
 
-	public copiarAlPortapapeles(cadenaAlclipboard: ClienteModel) {
+	public copiarAlPortapapeles(cadenaAlclipboard: any) {
 		const jsonString = JSON.stringify(cadenaAlclipboard, null, 2);
 		let limpiarCadena = jsonString.replace("{", "");
 		limpiarCadena = limpiarCadena.replace("}", "");
@@ -79,8 +100,45 @@ export class ClientesComponent {
 		this.clienteSeleccionado = cliente;
 	}
 
-	cargarDatosCliente(referencia: any){
-		
+	cargarDatosCliente(referencia: string, datos?:any){
+		this.datosCliente[referencia] = datos? datos:this.clienteSeleccionado[referencia];
+	}
+
+	pasarValor(valor:any, referencia:string){
+		this.cargarDatosCliente(referencia, valor.srcElement.value)
+	}
+
+	cargarClipboard(){
+		let clienteResumido:any = {
+			nombre: this.clienteSeleccionado.nombre,
+			id:this.clienteSeleccionado.id
+		};
+		let referencias = Object.keys(this.datosCliente);
+
+		for(let i=0; i < referencias.length; i++){
+			let datoActual = this.datosCliente[referencias[i]];
+			console.log(datoActual,'DATO ACTUAL');
+			if(datoActual){
+				clienteResumido[referencias[i]]= datoActual;
+			}
+		}
+		console.log(clienteResumido, 'CLIENTE RESUMIDO');
+		setTimeout(()=>{
+			this.copiarAlPortapapeles(clienteResumido);
+			this.inicializarCheckBox();
+		},100)
+
+	}
+
+	objetoSimplificado(obj:any):any{
+		return Object.entries(obj).reduce((acc:any, [key, value]) => {
+			if (Object.prototype.hasOwnProperty.call(obj, key)) {
+			  if (value !== undefined && value !== null) {
+				acc[key] = value;
+			  }
+			}
+			return acc;
+		  }, {});
 	}
 	
 

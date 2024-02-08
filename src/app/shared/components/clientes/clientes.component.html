@@ -71,72 +71,67 @@
         <div class="m-0">
             <div *ngIf="clienteSeleccionado.barrio" class="pr-3 pl-3">
                 <p class="fs-10 lh-10 m-0 p-0">Barrio:</p>
-                <div class="d-flex">
-                    <input type="checkbox" name="" id="" class="mr-2">
+                <div class="d-flex" (click)="cargarDatosCliente('barrio')">
+                    <input type="checkbox" [(ngModel)]="checkBarrio" name="" id="" class="mr-2">
                     <p class="m-0 p-0">{{ clienteSeleccionado.barrio }}</p>
                 </div>
             </div>
             <div *ngIf="clienteSeleccionado.ciudad" class="pr-3 pl-3">
                 <p class="fs-10 lh-10 m-0 p-0">Ciudad:</p>
-                <div class="d-flex">
-                    <input type="checkbox" name="" id="" class="mr-2">
+                <div class="d-flex" (click)="cargarDatosCliente('ciudad')">
+                    <input type="checkbox" [(ngModel)]="checkCiudad" name="" id="" class="mr-2">
                     <p class="m-0 p-0">{{ clienteSeleccionado.ciudad }}</p>
                 </div>
             </div>
             <div *ngIf="clienteSeleccionado.departamento" class="pr-3 pl-3">
                 <p class="fs-10 lh-10 m-0 p-0">Departamento:</p>
-                <div class="d-flex">
-                    <input type="checkbox" name="" id="" class="mr-2">
+                <div class="d-flex" (click)="cargarDatosCliente('departamento')">
+                    <input type="checkbox" [(ngModel)]="checkDepartamento" name="" id="" class="mr-2">
                     <p class="m-0 p-0">{{ clienteSeleccionado.departamento }}</p>
                 </div>
             </div>
             <div *ngIf="clienteSeleccionado.direccion" class="pr-3 pl-3">
                 <p class="fs-10 lh-10 m-0 p-0">Direccion:</p>
-                <div class="d-flex">
-                    <input type="checkbox" name="" id="" class="mr-2">
+                <div class="d-flex" (click)="cargarDatosCliente('direccion')">
+                    <input type="checkbox" [(ngModel)]="checkDireccion" name="" id="" class="mr-2">
                     <p class="m-0 p-0">{{ clienteSeleccionado.direccion }}</p>
                 </div>
             </div>
             <div *ngIf="clienteSeleccionado.maps" class="pr-3 pl-3">
                 <p class="fs-10 lh-10 m-0 p-0">Map:</p>
-                <div class="d-flex">
-                    <input type="checkbox" name="" id="" class="mr-2">
+                <div class="d-flex" (click)="cargarDatosCliente('maps')">
+                    <input type="checkbox" [(ngModel)]="checkMap" name="" id="" class="mr-2">
                     <p class="m-0 p-0">{{ clienteSeleccionado.maps }}</p>
                 </div>
             </div>
             <div *ngIf="clienteSeleccionado.telefono" class="pr-3 pl-3">
                 <p class="fs-10 lh-10 m-0 p-0">Teléfono:</p>
-                <div class="d-flex">
-                    <input type="checkbox" name="" id="" class="mr-2">
+                <div class="d-flex" (click)="cargarDatosCliente('telefono')">
+                    <input type="checkbox" [(ngModel)]="checkTelefono" name="" id="" class="mr-2">
                     <p class="m-0 p-0">{{ clienteSeleccionado.telefono }}</p>
                 </div>
             </div>
             <div class="pr-3 pl-3">
                 <p class="fs-10 lh-10 m-0 p-0">PAGA:</p>
-                <div class="d-flex">
-                    <input type="checkbox" name="" id="" class="mr-2">
-                    <input type="text" name="" id="">
-                </div>
+                <input type="text" name="" id="" [(ngModel)]="paga" (keyup)="pasarValor($event, 'paga')">
             </div>
             <div class="pr-3 pl-3">
                 <p class="fs-10 lh-10 m-0 p-0">YA PAGÓ:</p>
-                <div class="d-flex">
-                    <input type="checkbox" name="" id="" class="mr-2">
-                    <input type="text" name="" id="">
-                </div>
+                <input type="text" name="" id="" [(ngModel)]="yapago" (keyup)="pasarValor($event, 'yapago')">
             </div>
             <div class="pr-3 pl-3">
-                <p class="fs-10 lh-10 m-0 p-0">ABONÓ</p>
-                <div class="d-flex">
-                    <input type="checkbox" name="" id="" class="mr-2">
-                    <input type="text" name="" id="">
-                </div>
+                <p class="fs-10 lh-10 m-0 p-0">ABONÓ:</p>
+                <input type="text" name="" id="" [(ngModel)]="abono" (keyup)="pasarValor($event, 'abono')">
+            </div>
+            <div class="pr-3 pl-3">
+                <p class="fs-10 lh-10 m-0 p-0">RESTA:</p>
+                <input type="text" name="" id="" [(ngModel)]="resta" (keyup)="pasarValor($event, 'resta')">
             </div>
 
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-          <a class="btn btn-primary cursor-p">Copiar datos</a>
+          <a class="btn btn-primary cursor-p" (click)="cargarClipboard()" data-dismiss="modal">Copiar datos</a>
         </div>
       </div>
     </div>

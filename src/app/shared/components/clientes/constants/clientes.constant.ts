@@ -9,6 +9,7 @@ export const CLIENTES: ClienteModel[] = [
         direccion: 'Carrera 76 # 91 a 22',
         referenciaUbicacion: '',
         barrio: 'Robledo Kenedy',
+        valorRuta:'',
         telefono: '3192323757',
         categoriaSector: 'Lejos-medio',
         ciudad: 'Medellín',
@@ -22,6 +23,7 @@ export const CLIENTES: ClienteModel[] = [
         direccion: 'Carrera 78 # 104 c 14',
         referenciaUbicacion: '',
         barrio: 'Doce de Octubre',
+        valorRuta:'',
         telefono: '3126093901',
         categoriaSector:'Lejos-medio',
         ciudad: 'Medellín',
@@ -36,6 +38,7 @@ export const CLIENTES: ClienteModel[] = [
         ciudad:'Ocaña',
         direccion: 'Calle 15 10a 88',
         referenciaUbicacion: '',
+        valorRuta:'',
         telefono: '3134429501',
         categoriaSector:'',
         barrio:'',
@@ -50,6 +53,7 @@ export const CLIENTES: ClienteModel[] = [
         barrio: 'Barrio Obrero',
         direccion: 'Transversal 34c sur # 33-15',
         referenciaUbicacion: 'Primer piso - El local se llama uñas mágicas',
+        valorRuta:'',
         telefono: '3008828621',
         categoriaSector:'Lejos-normal',
         maps:'https://maps.app.goo.gl/E2yZq7RWqLJAuKr6A'
@@ -61,6 +65,7 @@ export const CLIENTES: ClienteModel[] = [
         barrio: 'San Javier',
         direccion: 'Calle 49 # 102bb 35',
         categoriaSector:'',
+        valorRuta:'',
         telefono:'3042890062',
         ciudad: 'Medellín',
         departamento:'Antioquia',
@@ -78,6 +83,7 @@ export const CLIENTES: ClienteModel[] = [
         direccion:'Carrera 35a # 99-56',
         maps:'https://maps.app.goo.gl/NVAjogztKxkwFA2F7',
         referenciaUbicacion:'',
+        valorRuta:'',
         telefono:'3016056759'
     },
     {
@@ -91,6 +97,7 @@ export const CLIENTES: ClienteModel[] = [
         direccion:'Carrera 28a # 38f 33',
         maps:'https://maps.app.goo.gl/x1UbTyyRf7WJfWbcA',
         referenciaUbicacion:'',
+        valorRuta:'',
         telefono: '3024017191'
     },
     {
@@ -104,6 +111,7 @@ export const CLIENTES: ClienteModel[] = [
         direccion:'',
         maps:'',
         referenciaUbicacion:'puerto Madero Giron',
+        valorRuta:'',
         telefono:'3125416310'
     },
     {
@@ -117,6 +125,7 @@ export const CLIENTES: ClienteModel[] = [
         direccion:'Carrera 51 #95-58 un 4 piso',
         referenciaUbicacion:'4 piso',
         maps:'https://maps.app.goo.gl/zQfGmUrmScjGCHZBA',
+        valorRuta:'',
         telefono:'3022382467'
     },
     {
@@ -130,6 +139,7 @@ export const CLIENTES: ClienteModel[] = [
         direccion:'Carrera 75a #90-05',
         maps:'https://maps.app.goo.gl/ZxyrPUFU1AEsXNuRA',
         referenciaUbicacion:'',
+        valorRuta:'',
         telefono:'3136834739'
     },
     {
@@ -143,6 +153,7 @@ export const CLIENTES: ClienteModel[] = [
         direccion:'Carrera 77e # 114-35',
         maps:'https://maps.app.goo.gl/MvYdL1U1X2RWXHeD6',
         referenciaUbicacion:'',
+        valorRuta:'',
         telefono:'3004935583'
     },
     {
@@ -156,6 +167,7 @@ export const CLIENTES: ClienteModel[] = [
         direccion:'Carrera 81 # 18b-23',
         maps:'https://maps.app.goo.gl/ynFA71SPmjDTba1V9',
         referenciaUbicacion:'Una cuadra arriba de migración colombia',
+        valorRuta:'',
         telefono:'3114294833'
     },
     {
@@ -169,6 +181,7 @@ export const CLIENTES: ClienteModel[] = [
         direccion: 'Calle 14 sur # 58-60 apto 1409 torre 1',
         maps:'https://maps.app.goo.gl/e9M9v3DDu61ZJwaC7',
         referenciaUbicacion:'',
+        valorRuta:'',
         telefono:'3206581210'
     },
     {
@@ -182,6 +195,7 @@ export const CLIENTES: ClienteModel[] = [
         direccion:'Carrera 59#82 sur 88',
         maps:'https://maps.app.goo.gl/8kd14jk4ctSme8SJ8',
         referenciaUbicacion:'',
+        valorRuta:'',
         telefono:'3043765786'
     },
     {
@@ -195,6 +209,7 @@ export const CLIENTES: ClienteModel[] = [
         direccion:'Calle 84 # 39-56',
         maps:'https://maps.app.goo.gl/htp2X4kYexiUuXt59',
         referenciaUbicacion:'',
+        valorRuta:'',
         telefono:'3023982018'
     },
     {
@@ -208,6 +223,7 @@ export const CLIENTES: ClienteModel[] = [
         direccion:'Carrera 28A # 57d 41',
         maps:'https://maps.app.goo.gl/gSMgxLkRN9EoDbok7',
         referenciaUbicacion:'Al lado de la Y. al frente de la julia Agudelo',
+        valorRuta:'',
         telefono:'3013542944'
     },
     {
@@ -221,6 +237,7 @@ export const CLIENTES: ClienteModel[] = [
         direccion:'Calle 108 # 66-27',
         maps:'https://maps.app.goo.gl/i97Are6VWKgcz4TU6',
         referenciaUbicacion:'',
+        valorRuta:'',
         telefono:'3146264292'
     },
     {
@@ -234,6 +251,7 @@ export const CLIENTES: ClienteModel[] = [
         direccion:'Calle 110 # 46-35',
         maps:'https://maps.app.goo.gl/hDZTMFnP2dbuQsNn6',
         referenciaUbicacion:'',
+        valorRuta:'',
         telefono:'3126213542'
     },
     {
@@ -247,6 +265,7 @@ export const CLIENTES: ClienteModel[] = [
         direccion:'Carrera 66 # 94-51',
         maps:'https://maps.app.goo.gl/cY5dJAh6k7rM2TGL9',
         referenciaUbicacion:'',
+        valorRuta:'',
         telefono:'3126201863'
     },
     {
@@ -260,6 +279,7 @@ export const CLIENTES: ClienteModel[] = [
         direccion:'Calle 92 # 77-30',
         maps:'https://maps.app.goo.gl/iXZYn6oHixA4PmDB8',
         referenciaUbicacion:'',
+        valorRuta:'',
         telefono:'3106400070'
     },
     {
@@ -273,6 +293,7 @@ export const CLIENTES: ClienteModel[] = [
         direccion:'Calle 54a 80-13',
         maps:'https://maps.app.goo.gl/v689vQtChNE4ZyGs7',
         referenciaUbicacion:'',
+        valorRuta:'',
         telefono:'3117675208'
     },
     {
@@ -286,6 +307,7 @@ export const CLIENTES: ClienteModel[] = [
         direccion:'Carrera 20 # 20-15 piso 4',
         maps:'',
         referenciaUbicacion:'',
+        valorRuta:'',
         telefono:'3127646908'
     },
     {
@@ -299,6 +321,7 @@ export const CLIENTES: ClienteModel[] = [
         direccion:'Carrera 11 # 19n 50',
         referenciaUbicacion:'CATAY Apto 1',
         maps:'',
+        valorRuta:'',
         telefono:'3044574072 '
     },
     {
@@ -312,6 +335,7 @@ export const CLIENTES: ClienteModel[] = [
         direccion:'Cl. 49 #52-60',
         maps:'https://maps.app.goo.gl/NoeNWwh9BdjbXAqg6',
         referenciaUbicacion:'local 117, Segundo piso preguntar por sol',
+        valorRuta:'',
         telefono:''
     },
     {
@@ -325,6 +349,7 @@ export const CLIENTES: ClienteModel[] = [
         direccion:'Cra 49 b # 95-56 int 401',
         maps:'https://maps.app.goo.gl/JdShTG4mmCFMCAAf8',
         referenciaUbicacion:'',
+        valorRuta:'',
         telefono:'3043961578'
     },
     {
@@ -338,6 +363,7 @@ export const CLIENTES: ClienteModel[] = [
         direccion:'Carrera 27 # 45-51 apt 301',
         maps:'https://maps.app.goo.gl/SxxXYVxM665JkKncA',
         referenciaUbicacion:'',
+        valorRuta:'',
         telefono:'3059168175'
     },
     {
@@ -351,6 +377,7 @@ export const CLIENTES: ClienteModel[] = [
         direccion:'Carrera 79 # 34a 105',
         maps:'https://maps.app.goo.gl/E5XPCqatNHtpXqqh9',
         referenciaUbicacion:'',
+        valorRuta:'',
         telefono:'3002325120'
     },
     {
@@ -364,6 +391,7 @@ export const CLIENTES: ClienteModel[] = [
         direccion:'Carrera 107 # 38-23',
         maps:'https://maps.app.goo.gl/ix2khvQh87NX6a2t6',
         referenciaUbicacion:'',
+        valorRuta:'',
         telefono:'3165864367'
     },
     {
@@ -377,6 +405,7 @@ export const CLIENTES: ClienteModel[] = [
         direccion:'Carrera 35 99-39(interior 201)',
         maps:'https://maps.app.goo.gl/ZTuhQeSa3FfQ5Rgs8',
         referenciaUbicacion:'',
+        valorRuta:'',
         telefono:'3115662684'
     },
     {
@@ -390,6 +419,7 @@ export const CLIENTES: ClienteModel[] = [
         direccion:'Diagonal 17 C cll 56 A 31',
         maps:'https://maps.app.goo.gl/iLw3hGRjHc6ZXwb47',
         referenciaUbicacion:'',
+        valorRuta:'',
         telefono:'3023507294'
     },
     {
@@ -403,6 +433,7 @@ export const CLIENTES: ClienteModel[] = [
         direccion:'Calle 42 #36-31 cabecera',
         maps:'',
         referenciaUbicacion:'',
+        valorRuta:'',
         telefono:'3046453981'
     },
     {
@@ -416,6 +447,7 @@ export const CLIENTES: ClienteModel[] = [
         direccion:'Cll 7 #39-107',
         maps:'https://maps.app.goo.gl/fMosiiA424miygVn7',
         referenciaUbicacion:'Edificio medical',
+        valorRuta:'',
         telefono:'3235264956'
     },
     {
@@ -429,6 +461,7 @@ export const CLIENTES: ClienteModel[] = [
         direccion:'',
         maps:'',
         referenciaUbicacion:'',
+        valorRuta:'',
         telefono:'3145558335'
     },
     {
@@ -442,6 +475,7 @@ export const CLIENTES: ClienteModel[] = [
         direccion:'Carrera 76d # 108a 40',
         maps:'https://maps.app.goo.gl/3RvZzWuxGgM14xKE8',
         referenciaUbicacion:'',
+        valorRuta:'',
         telefono:'3022428375'
     },
     {
@@ -455,6 +489,7 @@ export const CLIENTES: ClienteModel[] = [
         direccion:'Calle 40 # 104-4 apto 401',
         maps:'https://maps.app.goo.gl/iWA8uQt9ujiBUDj88',
         referenciaUbicacion:'',
+        valorRuta:'',
         telefono:'3059060090'
     },
     {
@@ -468,6 +503,7 @@ export const CLIENTES: ClienteModel[] = [
         direccion:'Carrera 50 # 48-18',
         maps:'https://maps.app.goo.gl/DR2WRHRnK9TJbS2c7',
         referenciaUbicacion:'',
+        valorRuta:'',
         telefono:'3116302277'
     },
     {
@@ -481,6 +517,7 @@ export const CLIENTES: ClienteModel[] = [
         direccion:'Calle 34b # 106-83 int 304',
         maps:'https://maps.app.goo.gl/6yi9TaNqccMVK6fx9',
         referenciaUbicacion:'',
+        valorRuta:'',
         telefono:'3136219584'
     },
     {
@@ -494,6 +531,7 @@ export const CLIENTES: ClienteModel[] = [
         direccion:'Calle 29b # 37-07',
         maps:'',
         referenciaUbicacion:'',
+        valorRuta:'',
         telefono:'3125250978'
     },
     {
@@ -507,6 +545,7 @@ export const CLIENTES: ClienteModel[] = [
         direccion:'',
         maps:'',
         referenciaUbicacion:'',
+        valorRuta:'',
         telefono:'3146958231'
     },
     {
@@ -520,6 +559,7 @@ export const CLIENTES: ClienteModel[] = [
         direccion:'Calle 45f # 80-16',
         maps:'https://maps.app.goo.gl/YULqGCytb3AtY7Aq9',
         referenciaUbicacion:'Al frente de las canchas sintéticas',
+        valorRuta:'',
         telefono:'3002020861'
     },
     {
@@ -533,6 +573,7 @@ export const CLIENTES: ClienteModel[] = [
         direccion:'Carrera 89A # 31-39',
         maps:'https://maps.app.goo.gl/DpWU7VWhBGN3BWaX7',
         referenciaUbicacion:'Siempre hay un señor sentado',
+        valorRuta:'',
         telefono:'3023611750'
     },
     {
@@ -546,6 +587,7 @@ export const CLIENTES: ClienteModel[] = [
         direccion:'Calle 19 # 70-75',
         maps:'https://maps.app.goo.gl/mPQfYaegioyDSxgY6',
         referenciaUbicacion:'Diagonal al Aeroparque',
+        valorRuta:'',
         telefono:'3027000905'
     },
     {
@@ -559,6 +601,7 @@ export const CLIENTES: ClienteModel[] = [
         direccion:'Calle 78 # 42-82',
         maps:'https://maps.app.goo.gl/cFUnrJX1Nsx6eXN78',
         referenciaUbicacion:'',
+        valorRuta:'',
         telefono:'3016548352'
     },
     {
@@ -572,6 +615,7 @@ export const CLIENTES: ClienteModel[] = [
         direccion:'Calle 50a # 20-56',
         maps:'https://maps.app.goo.gl/qJQbNNExhqXbXRBu6',
         referenciaUbicacion:'Unidad cerrada, detrás del centro comercial la central',
+        valorRuta:'',
         telefono:'3196347277'
     },
     {
@@ -585,6 +629,7 @@ export const CLIENTES: ClienteModel[] = [
         direccion:'Carrera 40 # 48-95 Local 0169',
         maps:'https://maps.app.goo.gl/2HbfNi1ppixPV4ct7',
         referenciaUbicacion:'En el centro comercial Tranvía Plaza Local 0169',
+        valorRuta:'',
         telefono:'3045239933'
     },
     {
@@ -598,6 +643,7 @@ export const CLIENTES: ClienteModel[] = [
         direccion:'Calle 112a # 64d 60',
         maps:'https://maps.app.goo.gl/T8RLgDiN8zZ35J9F8',
         referenciaUbicacion:'Por la estación de policía carabineros',
+        valorRuta:'',
         telefono:'3128882333'
     },
     {
@@ -611,6 +657,7 @@ export const CLIENTES: ClienteModel[] = [
         direccion:'Calle 48a 81a 50',
         maps:'https://maps.app.goo.gl/3tj9c75pwYRQqzAk9',
         referenciaUbicacion:'En todo el parque John F. Kennedy, parque del amor',
+        valorRuta:'',
         telefono:'3197523370'
     },
     {
@@ -624,6 +671,7 @@ export const CLIENTES: ClienteModel[] = [
         direccion:'Carrera 73 # 30b 17',
         maps:'https://maps.app.goo.gl/cQLvV42VPY9T3cWs9',
         referenciaUbicacion:'',
+        valorRuta:'',
         telefono:'3135282884'
     },
     {
@@ -637,6 +685,7 @@ export const CLIENTES: ClienteModel[] = [
         direccion:'Calle 14 # 7-28 local 4',
         maps:'',
         referenciaUbicacion:'',
+        valorRuta:'',
         telefono:'3204363897'
     },
     {
@@ -650,6 +699,7 @@ export const CLIENTES: ClienteModel[] = [
         maps:'https://maps.app.goo.gl/1AbhmiRrsAPtAuM68',
         numeroDocumento:'',
         referenciaUbicacion:'Cerca del batallón Girardot',
+        valorRuta:'',
         telefono:'3158788669'
     },
     {
@@ -663,6 +713,7 @@ export const CLIENTES: ClienteModel[] = [
         maps:'https://maps.app.goo.gl/ZErUaAVXBYShaUG36',
         numeroDocumento:'',
         referenciaUbicacion:'',
+        valorRuta:'',
         telefono:'3205859204'
     },
     {
@@ -676,6 +727,7 @@ export const CLIENTES: ClienteModel[] = [
         maps:'https://maps.app.goo.gl/W96YcqPLh9rduak1A',
         numeroDocumento:'',
         referenciaUbicacion:'',
+        valorRuta:'',
         telefono:'3007147970'
     },
     {
@@ -689,6 +741,7 @@ export const CLIENTES: ClienteModel[] = [
         maps:'https://maps.app.goo.gl/5CqgVVk8AFAPMuby6',
         numeroDocumento:'',
         referenciaUbicacion:'',
+        valorRuta:'',
         telefono:'3002389085'
     },
     {
@@ -702,6 +755,7 @@ export const CLIENTES: ClienteModel[] = [
         maps:'https://maps.app.goo.gl/ctaA35vaLyFvDDsz7',
         numeroDocumento:'',
         referenciaUbicacion:'',
+        valorRuta:'',
         telefono:'3012975585'
     },
     {
@@ -715,6 +769,7 @@ export const CLIENTES: ClienteModel[] = [
         maps:'https://maps.app.goo.gl/1RNQa6cvLsDzSowE8',
         numeroDocumento:'',
         referenciaUbicacion:'',
+        valorRuta:'',
         telefono:'3003620485'
     },
     {
@@ -728,6 +783,7 @@ export const CLIENTES: ClienteModel[] = [
         maps:'',
         numeroDocumento:'1007222946',
         referenciaUbicacion:'',
+        valorRuta:'',
         telefono:'3116041945'
     },
     {
@@ -741,6 +797,7 @@ export const CLIENTES: ClienteModel[] = [
         maps:'https://maps.app.goo.gl/CC6zuM8Zi2p6BEQK9',
         numeroDocumento:'',
         referenciaUbicacion:'Dos cuadras arriba de la biblioteca',
+        valorRuta:'',
         telefono:'3017442700'
     },
     {
@@ -754,6 +811,7 @@ export const CLIENTES: ClienteModel[] = [
         maps:'https://maps.app.goo.gl/KjReqjB6GoH3CMDLA',
         numeroDocumento:'',
         referenciaUbicacion:'',
+        valorRuta:'',
         telefono:'3006610129'
     },
     {
@@ -767,6 +825,7 @@ export const CLIENTES: ClienteModel[] = [
         maps:'https://maps.app.goo.gl/UZCGdBLdqKQceBWGA',
         numeroDocumento:'',
         referenciaUbicacion:'',
+        valorRuta:'',
         telefono:'3043854791'
     },
     {
@@ -780,6 +839,7 @@ export const CLIENTES: ClienteModel[] = [
         maps:'https://maps.app.goo.gl/e8Eepy9ooxyPaZT48',
         numeroDocumento:'',
         referenciaUbicacion:'',
+        valorRuta:'',
         telefono:'3043881035'
     },
     {
@@ -793,6 +853,7 @@ export const CLIENTES: ClienteModel[] = [
         maps:'https://maps.app.goo.gl/pwfcaGU7mWEpS9Wx8',
         numeroDocumento:'',
         referenciaUbicacion:'A la vuelta de Migración Colombia',
+        valorRuta:'',
         telefono:'3005686921'
     },
     {
@@ -806,6 +867,7 @@ export const CLIENTES: ClienteModel[] = [
         maps:'https://maps.app.goo.gl/uAWrEvVRuHU91KbZ7',
         numeroDocumento:'',
         referenciaUbicacion:'',
+        valorRuta:'',
         telefono:'3016602400'
     },
     {
@@ -819,6 +881,7 @@ export const CLIENTES: ClienteModel[] = [
         maps:'https://maps.app.goo.gl/khtrY2BY1rtLKRN39',
         numeroDocumento:'',
         referenciaUbicacion:'',
+        valorRuta:'',
         telefono:'3002477456'
     },
     {
@@ -832,6 +895,7 @@ export const CLIENTES: ClienteModel[] = [
         maps:'',
         numeroDocumento:'32212568',
         referenciaUbicacion:'',
+        valorRuta:'',
         telefono:'3148503475'
     },
     {
@@ -845,6 +909,7 @@ export const CLIENTES: ClienteModel[] = [
         maps:'https://maps.app.goo.gl/HCrtpFbcA35b6EkNA',
         numeroDocumento:'',
         referenciaUbicacion:'',
+        valorRuta:'',
         telefono:'3006806537'
     },
     {
@@ -858,6 +923,7 @@ export const CLIENTES: ClienteModel[] = [
         maps:'https://maps.app.goo.gl/Nodsa31tPsnuSVeh9',
         numeroDocumento:'',
         referenciaUbicacion:'En toda la cancha de robledo las margaritas',
+        valorRuta:'',
         telefono:'3005497792'
     },
     {
@@ -871,6 +937,7 @@ export const CLIENTES: ClienteModel[] = [
         maps:'https://maps.app.goo.gl/91yPdF5RbZ83Wi8SA',
         numeroDocumento:'',
         referenciaUbicacion:'Al frente de una virgencita',
+        valorRuta:'',
         telefono:'3244720049'
     },
     {
@@ -884,6 +951,7 @@ export const CLIENTES: ClienteModel[] = [
         maps:'https://maps.app.goo.gl/PBB8WVWFrf61KWxo6',
         numeroDocumento:'',
         referenciaUbicacion:'',
+        valorRuta:'',
         telefono:'3112164629'
     },
     {
@@ -897,6 +965,7 @@ export const CLIENTES: ClienteModel[] = [
         maps:'https://maps.app.goo.gl/2Fo2LziZh4JyrbiR8',
         numeroDocumento:'',
         referenciaUbicacion:'',
+        valorRuta:'',
         telefono:'3127307092'
     },
     {
@@ -910,6 +979,7 @@ export const CLIENTES: ClienteModel[] = [
         maps:'https://maps.app.goo.gl/JcJT4nCEaYWhypk8A',
         numeroDocumento:'',
         referenciaUbicacion:'',
+        valorRuta:'',
         telefono:'3044574511'
     },
     {
@@ -923,6 +993,7 @@ export const CLIENTES: ClienteModel[] = [
         maps:'https://maps.app.goo.gl/NwhJpJqXZvDhnfqy8',
         numeroDocumento:'',
         referenciaUbicacion:'',
+        valorRuta:'',
         telefono:'3142014480'
     },
     {
@@ -936,6 +1007,7 @@ export const CLIENTES: ClienteModel[] = [
         maps:'https://maps.app.goo.gl/FEv6x6mvizD9cyvZA',
         numeroDocumento:'',
         referenciaUbicacion:'Frente a la parada de los buses del parque Villa hermosa',
+        valorRuta:'',
         telefono:'3053001863'
     },
     {
@@ -949,6 +1021,7 @@ export const CLIENTES: ClienteModel[] = [
         maps:'https://maps.app.goo.gl/Uv6rArSGHZf1TdvR9',
         numeroDocumento:'',
         referenciaUbicacion:'Simón Bolívar',
+        valorRuta:'',
         telefono:'3186023027'
     },
     {
@@ -962,6 +1035,7 @@ export const CLIENTES: ClienteModel[] = [
         maps:'https://maps.app.goo.gl/xabtfJaVD661uyik9',
         numeroDocumento:'',
         referenciaUbicacion:'',
+        valorRuta:'',
         telefono:'3014219444'
     },
     {
@@ -975,6 +1049,7 @@ export const CLIENTES: ClienteModel[] = [
         maps:'',
         numeroDocumento:'1018423245',
         referenciaUbicacion:'',
+        valorRuta:'',
         telefono:'3028517605'
     },
     {
@@ -988,6 +1063,7 @@ export const CLIENTES: ClienteModel[] = [
         maps:'https://maps.app.goo.gl/oKyKFzNcSBb7at8N9',
         numeroDocumento:'',
         referenciaUbicacion:'Centro Comercial Los Sauces, Bloque A - Consultorio 222, cerca al exito de Colombia',
+        valorRuta:'',
         telefono:'3166517965'
     },
     {
@@ -1001,6 +1077,7 @@ export const CLIENTES: ClienteModel[] = [
         maps:'https://maps.app.goo.gl/etYPwnSDAUusWawd9',
         numeroDocumento:'',
         referenciaUbicacion:'Altos del Castillo etapa 2',
+        valorRuta:'',
         telefono:'3173215402'
     },
     {
@@ -1014,6 +1091,7 @@ export const CLIENTES: ClienteModel[] = [
         maps:'https://maps.app.goo.gl/zEpyqFmBiWH33crk8',
         numeroDocumento:'',
         referenciaUbicacion:'',
+        valorRuta:'',
         telefono:'3054399258'
     },
     {
@@ -1027,6 +1105,7 @@ export const CLIENTES: ClienteModel[] = [
         maps:'https://maps.app.goo.gl/P9Nr3nc37eZCYyVJA',
         numeroDocumento:'',
         referenciaUbicacion:'Unidad Belgica Plaza',
+        valorRuta:'',
         telefono:'3216392558'
     },
     {
@@ -1040,6 +1119,7 @@ export const CLIENTES: ClienteModel[] = [
         maps:'https://maps.app.goo.gl/kLfjgsYzA2ihMCKM7',
         numeroDocumento:'',
         referenciaUbicacion:'Urbanizacion Girasoles ',
+        valorRuta:'',
         telefono:'3126769801'
     },
     {
@@ -1053,6 +1133,7 @@ export const CLIENTES: ClienteModel[] = [
         maps:'https://maps.app.goo.gl/T7NjbSX9id9Lzt6DA',
         numeroDocumento:'',
         referenciaUbicacion:'Sobre toda la avenida 80',
+        valorRuta:'',
         telefono:'3004174080'
     },
     {
@@ -1066,6 +1147,7 @@ export const CLIENTES: ClienteModel[] = [
         maps:'https://maps.app.goo.gl/PjRcLXytMsXuQ2vS9',
         numeroDocumento:'',
         referenciaUbicacion:'',
+        valorRuta:'',
         telefono:'3106634395'
     },
     {
@@ -1079,6 +1161,7 @@ export const CLIENTES: ClienteModel[] = [
         maps:'https://maps.app.goo.gl/86TZjn1no57UvRRX7',
         numeroDocumento:'',
         referenciaUbicacion:'Centro de negocios Prisma',
+        valorRuta:'',
         telefono:'3026414685'
     },
     {
@@ -1092,6 +1175,7 @@ export const CLIENTES: ClienteModel[] = [
         maps:'https://maps.app.goo.gl/FgKSNGbbXkT1gt8V8',
         numeroDocumento:'',
         referenciaUbicacion:'',
+        valorRuta:'',
         telefono:'3186583205'
     },
     {
@@ -1105,6 +1189,7 @@ export const CLIENTES: ClienteModel[] = [
         maps:'https://maps.app.goo.gl/m5a2UhvFTHKAn93KA',
         numeroDocumento:'',
         referenciaUbicacion:'Clienta mala clase',
+        valorRuta:'',
         telefono:'3167460252'
     },
     {
@@ -1118,6 +1203,7 @@ export const CLIENTES: ClienteModel[] = [
         maps:'https://maps.app.goo.gl/irfLynwFmFGbeKCK6',
         numeroDocumento:'',
         referenciaUbicacion:'Al frente del centro comercial los molinos',
+        valorRuta:'',
         telefono:'3245269408'
     },
     {
@@ -1131,6 +1217,7 @@ export const CLIENTES: ClienteModel[] = [
         maps:'https://maps.app.goo.gl/p3UuS3Nzin2RC3Ex9',
         numeroDocumento:'',
         referenciaUbicacion:'',
+        valorRuta:'',
         telefono:'3024527462'
     },
     {
@@ -1144,6 +1231,7 @@ export const CLIENTES: ClienteModel[] = [
         maps:'https://maps.app.goo.gl/5ipWTGejNXdd2ZQZ7',
         numeroDocumento:'',
         referenciaUbicacion:'',
+        valorRuta:'',
         telefono:'3108588028'
     },
     {
@@ -1157,6 +1245,7 @@ export const CLIENTES: ClienteModel[] = [
         maps:'https://maps.app.goo.gl/pb4uowcph5NyvWNx7',
         numeroDocumento:'',
         referenciaUbicacion:'Edificio Guacarí',
+        valorRuta:'',
         telefono:'3013431338'
     },
     {
@@ -1170,6 +1259,7 @@ export const CLIENTES: ClienteModel[] = [
         maps:'https://maps.app.goo.gl/CgziVMNTzazBeLFv9',
         numeroDocumento:'',
         referenciaUbicacion:'Callejones sin acceso a moto',
+        valorRuta:'',
         telefono:'3017742615'
     },
     {
@@ -1183,6 +1273,7 @@ export const CLIENTES: ClienteModel[] = [
         maps:'https://maps.app.goo.gl/RYnqgvKnE6VnHeYY7',
         numeroDocumento:'',
         referenciaUbicacion:'',
+        valorRuta:'',
         telefono:'3193448950'
     },
     {
@@ -1196,6 +1287,7 @@ export const CLIENTES: ClienteModel[] = [
         maps:'https://maps.app.goo.gl/gXTF2erJq2nSXooMA',
         numeroDocumento:'',
         referenciaUbicacion:'manzana p, casa 7 primer piso',
+        valorRuta:'',
         telefono:'3126140431'
     },
     {
@@ -1209,6 +1301,7 @@ export const CLIENTES: ClienteModel[] = [
         maps:'',
         numeroDocumento:'1090364276',
         referenciaUbicacion:'',
+        valorRuta:'',
         telefono:'3118858083'
     },
     {
@@ -1222,6 +1315,7 @@ export const CLIENTES: ClienteModel[] = [
         maps:'https://maps.app.goo.gl/6Tx87V8Wofb8xwbS7',
         numeroDocumento:'',
         referenciaUbicacion:'Misma ubicación de Diana Builes',
+        valorRuta:'',
         telefono:'3244989468'
     },
     {
@@ -1235,6 +1329,7 @@ export const CLIENTES: ClienteModel[] = [
         maps:'https://maps.app.goo.gl/dCKepkqz3N9x97xp7',
         numeroDocumento:'',
         referenciaUbicacion:'En toda una equina de romboy',
+        valorRuta:'',
         telefono:'3003867635'
     },
     {
@@ -1248,6 +1343,7 @@ export const CLIENTES: ClienteModel[] = [
         maps:'https://maps.app.goo.gl/WAPsumFuuRnHQvxi7',
         numeroDocumento:'',
         referenciaUbicacion:'',
+        valorRuta:'',
         telefono:'3126156273'
     },
     {
@@ -1261,6 +1357,7 @@ export const CLIENTES: ClienteModel[] = [
         maps:'https://maps.app.goo.gl/rKyukvXVVbqbSQVa9',
         numeroDocumento:'',
         referenciaUbicacion:'Edificio la plaza del poblado, local 263 segundo piso',
+        valorRuta:'',
         telefono:'3024091201'
     },
     {
@@ -1274,6 +1371,7 @@ export const CLIENTES: ClienteModel[] = [
         maps:'https://maps.app.goo.gl/oj3U4h6v6xLUn3oL9',
         numeroDocumento:'',
         referenciaUbicacion:'Normal en día',
+        valorRuta:'',
         telefono:'3205553559'
     },
     {
@@ -1287,6 +1385,7 @@ export const CLIENTES: ClienteModel[] = [
         maps:'https://maps.app.goo.gl/93QdjxQpc4f79RiB9',
         numeroDocumento:'',
         referenciaUbicacion:'',
+        valorRuta:'',
         telefono:'3233077839'
     },
     {
@@ -1300,6 +1399,7 @@ export const CLIENTES: ClienteModel[] = [
         maps:'https://maps.app.goo.gl/arjAXYyaBcU3vWpb6',
         numeroDocumento:'',
         referenciaUbicacion:'',
+        valorRuta:'',
         telefono:'3196414303'
     },
     {
@@ -1313,6 +1413,7 @@ export const CLIENTES: ClienteModel[] = [
         maps:'https://maps.app.goo.gl/L6HVDgctKuiWTtWt7',
         numeroDocumento:'',
         referenciaUbicacion:'Campo Amor',
+        valorRuta:'',
         telefono:'3245074832'
     },
     {
@@ -1326,6 +1427,7 @@ export const CLIENTES: ClienteModel[] = [
         maps:'https://maps.app.goo.gl/eiN3dZ8mvGgJyc6K9',
         numeroDocumento:'',
         referenciaUbicacion:'Al lado del supermercado de la pastora ',
+        valorRuta:'',
         telefono:''
     },
     {
@@ -1339,6 +1441,7 @@ export const CLIENTES: ClienteModel[] = [
         maps:'https://maps.app.goo.gl/9EAa6nRDfv6jxjR49',
         numeroDocumento:'',
         referenciaUbicacion:'',
+        valorRuta:'',
         telefono:'3194020963'
     },
     {
@@ -1352,6 +1455,7 @@ export const CLIENTES: ClienteModel[] = [
         maps:'https://maps.app.goo.gl/d5upz7vEAiuEfxof8',
         numeroDocumento:'',
         referenciaUbicacion:'',
+        valorRuta:'',
         telefono:'3217698890'
     },
     {
@@ -1365,6 +1469,7 @@ export const CLIENTES: ClienteModel[] = [
         maps:'https://maps.app.goo.gl/KgKEewjKCsJGeaHV8',
         numeroDocumento:'',
         referenciaUbicacion:'',
+        valorRuta:'',
         telefono:'3004575802'
     },
     {
@@ -1378,6 +1483,7 @@ export const CLIENTES: ClienteModel[] = [
         maps:'https://maps.app.goo.gl/uGgcDrEWi9e72tyB6',
         numeroDocumento:'',
         referenciaUbicacion:'Montjuic, al frente del mall Distrito Avignon',
+        valorRuta:'',
         telefono:'3135563868'
     },
     {
@@ -1391,6 +1497,7 @@ export const CLIENTES: ClienteModel[] = [
         maps:'https://maps.app.goo.gl/borJs2Rt2GCxVSk78',
         numeroDocumento:'',
         referenciaUbicacion:'El local se llama Vanidad Divina spa al lado del edificio el candil',
+        valorRuta:'',
         telefono:''
     },
     {
@@ -1404,6 +1511,7 @@ export const CLIENTES: ClienteModel[] = [
         maps:'',
         numeroDocumento:'1193214172',
         referenciaUbicacion:'',
+        valorRuta:'',
         telefono:'3217575996'
     },
     {
@@ -1417,6 +1525,7 @@ export const CLIENTES: ClienteModel[] = [
         maps:'',
         numeroDocumento:'1121930909',
         referenciaUbicacion:'',
+        valorRuta:'',
         telefono:'3142198497'
     },
     {
@@ -1430,6 +1539,7 @@ export const CLIENTES: ClienteModel[] = [
         maps:'https://maps.app.goo.gl/7PuvdjeQMLeaX5kd6',
         numeroDocumento:'',
         referenciaUbicacion:'',
+        valorRuta:'',
         telefono:'3016576809 '
     },
     {
@@ -1443,6 +1553,7 @@ export const CLIENTES: ClienteModel[] = [
         maps:'https://maps.app.goo.gl/m9FTfr5g3DqFFutL8',
         numeroDocumento:'',
         referenciaUbicacion:'En toda una esquina',
+        valorRuta:'',
         telefono:'3213426683'
     },
     {
@@ -1456,6 +1567,7 @@ export const CLIENTES: ClienteModel[] = [
         maps:'https://maps.app.goo.gl/CcvP2CysYA77m2fo7',
         numeroDocumento:'',
         referenciaUbicacion:'',
+        valorRuta:'',
         telefono:'3205639848'
     },
     {
@@ -1469,6 +1581,7 @@ export const CLIENTES: ClienteModel[] = [
         maps:'',
         numeroDocumento:'43556167',
         referenciaUbicacion:'',
+        valorRuta:'',
         telefono:'3118792002'
     },
     {
@@ -1482,6 +1595,7 @@ export const CLIENTES: ClienteModel[] = [
         maps:'https://maps.app.goo.gl/78cMmLcCFQZvQw6z9',
         numeroDocumento:'',
         referenciaUbicacion:'Por el hospital la Maria',
+        valorRuta:'',
         telefono:'3026005472'
     },
     {
@@ -1495,6 +1609,7 @@ export const CLIENTES: ClienteModel[] = [
         maps:'https://maps.app.goo.gl/rrTRnc63yBQwMkst8',
         numeroDocumento:'',
         referenciaUbicacion:'Maps lo corre un poquito',
+        valorRuta:'',
         telefono:'3104715926'
     },
     {
@@ -1508,6 +1623,7 @@ export const CLIENTES: ClienteModel[] = [
         maps:'https://maps.app.goo.gl/qkj2KDCKngNRX4Lk7',
         numeroDocumento:'',
         referenciaUbicacion:'',
+        valorRuta:'',
         telefono:'3016965797'
     },
     {
@@ -1521,6 +1637,7 @@ export const CLIENTES: ClienteModel[] = [
         maps:'https://maps.app.goo.gl/s54cnsngHZp4gk9Q7',
         numeroDocumento:'',
         referenciaUbicacion:'Spa manos de Diosa, cerca del zoológico Santa Fé',
+        valorRuta:'',
         telefono:'3002246593'
     },
     {
@@ -1534,6 +1651,7 @@ export const CLIENTES: ClienteModel[] = [
         maps:'https://maps.app.goo.gl/kt3gn24SaUyhE1bv7',
         numeroDocumento:'',
         referenciaUbicacion:'',
+        valorRuta:'',
         telefono:'3235264956'
     },
     {
@@ -1547,6 +1665,7 @@ export const CLIENTES: ClienteModel[] = [
         maps:'https://maps.app.goo.gl/Ter7XyFDiNYYqark6',
         numeroDocumento:'',
         referenciaUbicacion:'',
+        valorRuta:'',
         telefono:'3216145260'
     },
     {
@@ -1560,6 +1679,7 @@ export const CLIENTES: ClienteModel[] = [
         maps:'https://maps.app.goo.gl/RmuG6AXB2HyWDhr16',
         numeroDocumento:'',
         referenciaUbicacion:'',
+        valorRuta:'',
         telefono:'3127709814'
     },
     {
@@ -1573,6 +1693,7 @@ export const CLIENTES: ClienteModel[] = [
         maps:'https://maps.app.goo.gl/DVKRvAT8FM7KQEsp8',
         numeroDocumento:'',
         referenciaUbicacion:'',
+        valorRuta:'',
         telefono:'3008929819'
     },
     {
@@ -1586,6 +1707,7 @@ export const CLIENTES: ClienteModel[] = [
         maps:'https://maps.app.goo.gl/BeJNXPckyji3iQEt5',
         numeroDocumento:'',
         referenciaUbicacion:'',
+        valorRuta:'',
         telefono:'3136922338'
     },
     {
@@ -1599,6 +1721,7 @@ export const CLIENTES: ClienteModel[] = [
         maps:'https://maps.app.goo.gl/hEdYt3GGgfLZEN5A9',
         numeroDocumento:'',
         referenciaUbicacion:'',
+        valorRuta:'',
         telefono:'3195921730'
     },
     {
@@ -1612,6 +1735,7 @@ export const CLIENTES: ClienteModel[] = [
         maps:'',
         numeroDocumento:'32212568',
         referenciaUbicacion:'',
+        valorRuta:'',
         telefono:'3148503475'
     },
     {
@@ -1625,6 +1749,7 @@ export const CLIENTES: ClienteModel[] = [
         maps:'',
         numeroDocumento:'1053868926',
         referenciaUbicacion:'',
+        valorRuta:'',
         telefono:'3147549555'
     },
     {
@@ -1638,6 +1763,7 @@ export const CLIENTES: ClienteModel[] = [
         maps:'https://maps.app.goo.gl/ayY47xYEkAtCgaVb6',
         numeroDocumento:'',
         referenciaUbicacion:'Urbanización entre colinas etapa 1 Apto 309',
+        valorRuta:'',
         telefono:'3113804847'
     },
     {
@@ -1651,6 +1777,7 @@ export const CLIENTES: ClienteModel[] = [
         maps:'https://maps.app.goo.gl/DSmSmvubXANpF7cR7',
         numeroDocumento:'',
         referenciaUbicacion:'',
+        valorRuta:'',
         telefono:'3172202241'
     },
     {
@@ -1664,6 +1791,7 @@ export const CLIENTES: ClienteModel[] = [
         maps:'https://maps.app.goo.gl/8qTyfgKLAKgFnjYA9',
         numeroDocumento:'',
         referenciaUbicacion:'',
+        valorRuta:'',
         telefono:'3194439433'
     },
     {
@@ -1677,6 +1805,7 @@ export const CLIENTES: ClienteModel[] = [
         maps:'https://maps.app.goo.gl/uaaGwi95nvvp5cYaA',
         numeroDocumento:'',
         referenciaUbicacion:'',
+        valorRuta:'',
         telefono:'3113732392'
     },
     {
@@ -1690,6 +1819,7 @@ export const CLIENTES: ClienteModel[] = [
         maps:'https://maps.app.goo.gl/YGForAggo9wJ9bjV9',
         numeroDocumento:'',
         referenciaUbicacion:'',
+        valorRuta:'',
         telefono:'3045982701'
     },
     {
@@ -1703,6 +1833,7 @@ export const CLIENTES: ClienteModel[] = [
         maps:'https://maps.app.goo.gl/kpkWHMVC1T2YNYpD8',
         numeroDocumento:'',
         referenciaUbicacion:'',
+        valorRuta:'',
         telefono:'3045468781'
     },
     {
@@ -1716,6 +1847,7 @@ export const CLIENTES: ClienteModel[] = [
         maps:'https://maps.app.goo.gl/cto8Vo96pX5DXGkE6',
         numeroDocumento:'',
         referenciaUbicacion:'',
+        valorRuta:'',
         telefono:'3195768278'
     },
     {
@@ -1729,6 +1861,7 @@ export const CLIENTES: ClienteModel[] = [
         maps:'',
         numeroDocumento:'67042051',
         referenciaUbicacion:'',
+        valorRuta:'',
         telefono:'3005419630'
     },
     {
@@ -1742,6 +1875,7 @@ export const CLIENTES: ClienteModel[] = [
         maps:'https://maps.app.goo.gl/t3i3HkqR1PBP6SS1A',
         numeroDocumento:'',
         referenciaUbicacion:'',
+        valorRuta:'',
         telefono:'3024013678'
     },
     {
@@ -1755,6 +1889,7 @@ export const CLIENTES: ClienteModel[] = [
         maps:'https://maps.app.goo.gl/JSZ2SfQDuqB677Df9',
         numeroDocumento:'',
         referenciaUbicacion:'Unidad Brujas Campestre',
+        valorRuta:'',
         telefono:'3043759768'
     },
     {
@@ -1768,6 +1903,7 @@ export const CLIENTES: ClienteModel[] = [
         maps:'https://maps.app.goo.gl/iMX7rag4uCDK4eAj6',
         numeroDocumento:'',
         referenciaUbicacion:'',
+        valorRuta:'',
         telefono:'3217427034'
     },
     {
@@ -1781,6 +1917,7 @@ export const CLIENTES: ClienteModel[] = [
         maps:'',
         numeroDocumento:'1007185487',
         referenciaUbicacion:'',
+        valorRuta:'',
         telefono:'3222363883'
     },
     {
@@ -1794,6 +1931,7 @@ export const CLIENTES: ClienteModel[] = [
         maps:'https://maps.app.goo.gl/zDf6QMfTNHXtrVRw5',
         numeroDocumento:'',
         referenciaUbicacion:'Barrio entre amigos es una casa primer piso al lado de la costa antioqueña',
+        valorRuta:'',
         telefono:'3046686678'
     },
     {
@@ -1807,6 +1945,7 @@ export const CLIENTES: ClienteModel[] = [
         maps:'',
         numeroDocumento:'20517093',
         referenciaUbicacion:'',
+        valorRuta:'',
         telefono:'3134580975'
     },
     {
@@ -1820,6 +1959,7 @@ export const CLIENTES: ClienteModel[] = [
         maps:'https://maps.app.goo.gl/N7953YRFp9NnhQYP8',
         numeroDocumento:'',
         referenciaUbicacion:'',
+        valorRuta:'',
         telefono:'3005771568'
     },
     {
@@ -1833,6 +1973,7 @@ export const CLIENTES: ClienteModel[] = [
         maps:'https://maps.app.goo.gl/yDACLM43EZkL6S8VA',
         numeroDocumento:'',
         referenciaUbicacion:'',
+        valorRuta:'',
         telefono:'3004978505'
     },
     {
@@ -1846,6 +1987,7 @@ export const CLIENTES: ClienteModel[] = [
         maps:'https://maps.app.goo.gl/Fup8fNtT6AqtMsrg9',
         numeroDocumento:'',
         referenciaUbicacion:'',
+        valorRuta:'',
         telefono:'3234313436'
     },
     {
@@ -1859,6 +2001,7 @@ export const CLIENTES: ClienteModel[] = [
         maps:'https://maps.app.goo.gl/UccRvkYzjXERY2gJ6',
         numeroDocumento:'',
         referenciaUbicacion:'La casa de arriba de la licorera JC',
+        valorRuta:'',
         telefono:'3146690566'
     },
     {
@@ -1872,6 +2015,7 @@ export const CLIENTES: ClienteModel[] = [
         maps:'https://maps.app.goo.gl/PyutGWr5HgRgiSvY7',
         numeroDocumento:'',
         referenciaUbicacion:'',
+        valorRuta:'',
         telefono:'3215067701'
     },
     {
@@ -1885,6 +2029,7 @@ export const CLIENTES: ClienteModel[] = [
         maps:'',
         numeroDocumento:'',
         referenciaUbicacion:'',
+        valorRuta:'',
         telefono:'3016102211'
     },
     {
@@ -1898,6 +2043,7 @@ export const CLIENTES: ClienteModel[] = [
         maps:'https://maps.app.goo.gl/995ZhsAB3srFBycR6',
         numeroDocumento:'',
         referenciaUbicacion:'',
+        valorRuta:'',
         telefono:'3044245611'
     },
     {
@@ -1911,6 +2057,7 @@ export const CLIENTES: ClienteModel[] = [
         maps:'https://maps.app.goo.gl/nmcTy39cZxZ8YScH8',
         numeroDocumento:'',
         referenciaUbicacion:'',
+        valorRuta:'',
         telefono:'3006857661'
     },
     {
@@ -1924,6 +2071,7 @@ export const CLIENTES: ClienteModel[] = [
         maps:'',
         numeroDocumento:'',
         referenciaUbicacion:'',
+        valorRuta:'',
         telefono:'3217996805'
     },
     {
@@ -1937,6 +2085,7 @@ export const CLIENTES: ClienteModel[] = [
         maps:'https://maps.app.goo.gl/PWiFYsmH4SjgWEgQ7',
         numeroDocumento:'',
         referenciaUbicacion:'',
+        valorRuta:'',
         telefono:'3117504921'
     },
     {
@@ -1950,6 +2099,7 @@ export const CLIENTES: ClienteModel[] = [
         maps:'https://maps.app.goo.gl/XFhebdoYnpfka9BS9',
         numeroDocumento:'',
         referenciaUbicacion:'Por todo Girardot hasta llegar a un callejón sin salida',
+        valorRuta:'',
         telefono:'318 8639687'
     },
     {
@@ -1963,6 +2113,7 @@ export const CLIENTES: ClienteModel[] = [
         maps:'https://maps.app.goo.gl/ruLTVMfxC5aMGVV2A',
         numeroDocumento:'',
         referenciaUbicacion:'',
+        valorRuta:'',
         telefono:'3164801082'
     },
     {
@@ -1976,6 +2127,7 @@ export const CLIENTES: ClienteModel[] = [
         maps:'https://maps.app.goo.gl/KuGK4JDbgy11mTKM7',
         numeroDocumento:'',
         referenciaUbicacion:'Bosques de San Pablo, casa primer piso, Al frente del hospital Pablo tobon Uribe',
+        valorRuta:'',
         telefono:'3195580658'
     },
     {
@@ -1989,6 +2141,7 @@ export const CLIENTES: ClienteModel[] = [
         maps:'',
         numeroDocumento:'21465195',
         referenciaUbicacion:'',
+        valorRuta:'',
         telefono:'3203709218'
     },
     {
@@ -2002,6 +2155,7 @@ export const CLIENTES: ClienteModel[] = [
         maps:'https://maps.app.goo.gl/vtgxc8dQ89VWH7SdA',
         numeroDocumento:'',
         referenciaUbicacion:'',
+        valorRuta:'',
         telefono:'3114210267'
     },
     {
@@ -2015,6 +2169,7 @@ export const CLIENTES: ClienteModel[] = [
         maps:'https://maps.app.goo.gl/5gAzwXwMunQGsV5M7',
         numeroDocumento:'',
         referenciaUbicacion:'',
+        valorRuta:'',
         telefono:'3229417270'
     },
     {
@@ -2028,6 +2183,7 @@ export const CLIENTES: ClienteModel[] = [
         maps:'https://maps.app.goo.gl/ba4xKoEJrtSdhXQZ9',
         numeroDocumento:'',
         referenciaUbicacion:'Tercer piso, al frente del efecty',
+        valorRuta:'',
         telefono:'3022001618'
     },
     {
@@ -2041,6 +2197,7 @@ export const CLIENTES: ClienteModel[] = [
         maps:'https://maps.app.goo.gl/E5gs88fVJTn4hvTz7',
         numeroDocumento:'',
         referenciaUbicacion:'',
+        valorRuta:'',
         telefono:'3017322177'
     },
     {
@@ -2054,6 +2211,7 @@ export const CLIENTES: ClienteModel[] = [
         maps:'https://maps.app.goo.gl/h47Gm4rs7ZDZk3c5A',
         numeroDocumento:'',
         referenciaUbicacion:'',
+        valorRuta:'',
         telefono:'3014989445'
     },
     {
@@ -2067,6 +2225,7 @@ export const CLIENTES: ClienteModel[] = [
         maps:'https://maps.app.goo.gl/5B7cR4GPUgtqLAYNA',
         numeroDocumento:'',
         referenciaUbicacion:'Abajo del rompoy de don Quijote, Encima de drogas la rebaja, La entrada es al lado de los vestidos de baño',
+        valorRuta:'',
         telefono:'3044351802'
     },
     {
@@ -2080,6 +2239,7 @@ export const CLIENTES: ClienteModel[] = [
         maps:'https://maps.app.goo.gl/qeZkX9Gx7VrLW3qw6',
         numeroDocumento:'',
         referenciaUbicacion:'',
+        valorRuta:'',
         telefono:'3024556290'
     },
     {
@@ -2093,6 +2253,7 @@ export const CLIENTES: ClienteModel[] = [
         maps:'https://maps.app.goo.gl/Yc9Y14fyP2Ci4D126',
         numeroDocumento:'',
         referenciaUbicacion:'',
+        valorRuta:'',
         telefono:'3008917661'
     },
     {
@@ -2106,6 +2267,7 @@ export const CLIENTES: ClienteModel[] = [
         maps:'https://maps.app.goo.gl/Rtdvwt3HQeo2h4Tm6',
         numeroDocumento:'',
         referenciaUbicacion:'',
+        valorRuta:'',
         telefono:'3022753280'
     },
     {
@@ -2119,6 +2281,7 @@ export const CLIENTES: ClienteModel[] = [
         maps:'https://maps.app.goo.gl/5DaA4MuYaG64jH5J8',
         numeroDocumento:'',
         referenciaUbicacion:'',
+        valorRuta:'',
         telefono:'3126079734'
     },
     {
@@ -2132,6 +2295,7 @@ export const CLIENTES: ClienteModel[] = [
         maps:'Carrera 50 #95 a sur 97',
         numeroDocumento:'',
         referenciaUbicacion:'',
+        valorRuta:'',
         telefono:'3104020690'
     },
     {
@@ -2145,6 +2309,7 @@ export const CLIENTES: ClienteModel[] = [
         maps:'https://maps.app.goo.gl/itJrsLPmtTsgNzm87',
         numeroDocumento:'',
         referenciaUbicacion:'',
+        valorRuta:'',
         telefono:'3233053766'
     },
     {
@@ -2158,6 +2323,7 @@ export const CLIENTES: ClienteModel[] = [
         maps:'https://maps.app.goo.gl/ggfRmj6UQ9GYTsnNA',
         numeroDocumento:'',
         referenciaUbicacion:'Casa Kolacho',
+        valorRuta:'',
         telefono:'3008159585'
     },
     {
@@ -2171,6 +2337,7 @@ export const CLIENTES: ClienteModel[] = [
         maps:'https://maps.app.goo.gl/vs6cURsFzuDmCMfT8',
         numeroDocumento:'',
         referenciaUbicacion:'',
+        valorRuta:'',
         telefono:'3052164154'
     },
     {
@@ -2184,6 +2351,7 @@ export const CLIENTES: ClienteModel[] = [
         maps:'https://maps.app.goo.gl/vSZPH8ZDJRhJga629',
         numeroDocumento:'',
         referenciaUbicacion:'',
+        valorRuta:'',
         telefono:'3045823158'
     },
     {
@@ -2197,6 +2365,7 @@ export const CLIENTES: ClienteModel[] = [
         maps:'https://maps.app.goo.gl/6CgVe3iBL1qek8a17',
         numeroDocumento:'',
         referenciaUbicacion:'',
+        valorRuta:'',
         telefono:'3007873878'
     },
     {
@@ -2210,6 +2379,7 @@ export const CLIENTES: ClienteModel[] = [
         maps:'https://maps.app.goo.gl/myztyXLaCdrHYefH6',
         numeroDocumento:'',
         referenciaUbicacion:'',
+        valorRuta:'',
         telefono:'3243714464'
     },
     {
@@ -2223,6 +2393,7 @@ export const CLIENTES: ClienteModel[] = [
         maps:'https://maps.app.goo.gl/qdMjViabntM2ATkh6',
         numeroDocumento:'',
         referenciaUbicacion:'',
+        valorRuta:'',
         telefono:'3044489871'
     },
     {
@@ -2236,6 +2407,7 @@ export const CLIENTES: ClienteModel[] = [
         maps:'https://maps.app.goo.gl/67Rqu7a4uNUFamY16',
         numeroDocumento:'',
         referenciaUbicacion:'',
+        valorRuta:'',
         telefono:'3043751933'
     },
     {
@@ -2249,6 +2421,7 @@ export const CLIENTES: ClienteModel[] = [
         maps:'https://maps.app.goo.gl/RyqVPxLu7fzhpfaD9',
         numeroDocumento:'',
         referenciaUbicacion:'',
+        valorRuta:'',
         telefono:'3166517965'
     },
     {
@@ -2262,6 +2435,7 @@ export const CLIENTES: ClienteModel[] = [
         maps:'https://maps.app.goo.gl/a3JmMm2UYTeDhDN4A',
         numeroDocumento:'',
         referenciaUbicacion:'',
+        valorRuta:'',
         telefono:'3175538762'
     },
     {
@@ -2275,6 +2449,7 @@ export const CLIENTES: ClienteModel[] = [
         maps:'https://maps.app.goo.gl/NM7bQkWCSWcD8eMM7',
         numeroDocumento:'',
         referenciaUbicacion:'',
+        valorRuta:'',
         telefono:'3217571992'
     },
     {
@@ -2288,6 +2463,7 @@ export const CLIENTES: ClienteModel[] = [
         maps:'',
         numeroDocumento:'1067950076',
         referenciaUbicacion:'',
+        valorRuta:'',
         telefono:'3148780471'
     },
     {
@@ -2301,6 +2477,7 @@ export const CLIENTES: ClienteModel[] = [
         maps:'',
         numeroDocumento:'1020106752',
         referenciaUbicacion:'',
+        valorRuta:'',
         telefono:'3148179158'
     },
     {
@@ -2314,6 +2491,7 @@ export const CLIENTES: ClienteModel[] = [
         maps:'',
         numeroDocumento:'1090442692',
         referenciaUbicacion:'',
+        valorRuta:'',
         telefono:'3153980938'
     },
     {
@@ -2327,6 +2505,7 @@ export const CLIENTES: ClienteModel[] = [
         maps:'https://maps.app.goo.gl/Hu9rx1i5AivNzK5P8',
         numeroDocumento:'',
         referenciaUbicacion:'Apartamentos campestres Yerbabuena',
+        valorRuta:'',
         telefono:'3045756960'
     },
     {
@@ -2340,6 +2519,7 @@ export const CLIENTES: ClienteModel[] = [
         maps:'https://maps.app.goo.gl/98VknNjubvDwFbig8',
         numeroDocumento:'',
         referenciaUbicacion:'',
+        valorRuta:'',
         telefono:'3152101615'
     },
     {
@@ -2353,6 +2533,7 @@ export const CLIENTES: ClienteModel[] = [
         maps:'https://maps.app.goo.gl/m1Xjpcz6x1w7JWaj9',
         numeroDocumento:'',
         referenciaUbicacion:'Bolerama mixto una cuadra antes del diamante',
+        valorRuta:'',
         telefono:'3218476213'
     },
     {
@@ -2366,6 +2547,7 @@ export const CLIENTES: ClienteModel[] = [
         maps:'https://maps.app.goo.gl/GTebzeV5Scd8EyYm7',
         numeroDocumento:'',
         referenciaUbicacion:'',
+        valorRuta:'',
         telefono:'3003620485'
     },
     {
@@ -2379,6 +2561,7 @@ export const CLIENTES: ClienteModel[] = [
         maps:'https://maps.app.goo.gl/iAqcdv5yzKJ7TvDD6',
         numeroDocumento:'',
         referenciaUbicacion:'',
+        valorRuta:'',
         telefono:'3186391326'
     },
     {
@@ -2392,6 +2575,7 @@ export const CLIENTES: ClienteModel[] = [
         maps:'https://maps.app.goo.gl/7yLiJ4W1uZcBs4nV7',
         numeroDocumento:'',
         referenciaUbicacion:'Mirador de Arboleda',
+        valorRuta:'',
         telefono:''
     },
     {
@@ -2405,6 +2589,7 @@ export const CLIENTES: ClienteModel[] = [
         maps:'https://maps.app.goo.gl/oEqkqbpXZfKJ2BEq7',
         numeroDocumento:'',
         referenciaUbicacion:'',
+        valorRuta:'',
         telefono:'3196033865'
     },
     {
@@ -2418,6 +2603,7 @@ export const CLIENTES: ClienteModel[] = [
         maps:'https://maps.app.goo.gl/mqjh4BRBY4DcPKuf8',
         numeroDocumento:'',
         referenciaUbicacion:'',
+        valorRuta:'',
         telefono:'3218479690'
     },
     {
@@ -2431,6 +2617,7 @@ export const CLIENTES: ClienteModel[] = [
         maps:'https://maps.app.goo.gl/CuYeurvJDAb8C4X58',
         numeroDocumento:'',
         referenciaUbicacion:'',
+        valorRuta:'',
         telefono:'3243107546'
     },
     {
@@ -2444,6 +2631,7 @@ export const CLIENTES: ClienteModel[] = [
         maps:'https://maps.app.goo.gl/xLRJpn3bQXtBYxtd6',
         numeroDocumento:'',
         referenciaUbicacion:'',
+        valorRuta:'',
         telefono:'3004565911'
     },
     {
@@ -2457,6 +2645,7 @@ export const CLIENTES: ClienteModel[] = [
         maps:'https://maps.app.goo.gl/xz4prCKrrZ8qUtUf6',
         numeroDocumento:'',
         referenciaUbicacion:'',
+        valorRuta:'',
         telefono:'319 4439433'
     },
     {
@@ -2470,6 +2659,7 @@ export const CLIENTES: ClienteModel[] = [
         maps:'https://maps.app.goo.gl/u8mfnQjLvrTddPNv9',
         numeroDocumento:'',
         referenciaUbicacion:'',
+        valorRuta:'',
         telefono:'3234209766'
     },
     {
@@ -2483,6 +2673,7 @@ export const CLIENTES: ClienteModel[] = [
         maps:'https://maps.app.goo.gl/amDRcF3rJz1VxrQBA',
         numeroDocumento:'',
         referenciaUbicacion:'',
+        valorRuta:'',
         telefono:'3233947982'
     },
     {
@@ -2496,6 +2687,7 @@ export const CLIENTES: ClienteModel[] = [
         maps:'https://maps.app.goo.gl/qL1edZ9PioYiX4na7',
         numeroDocumento:'',
         referenciaUbicacion:'',
+        valorRuta:'',
         telefono:'3152261703'
     },
     {
@@ -2509,6 +2701,7 @@ export const CLIENTES: ClienteModel[] = [
         maps:'https://maps.app.goo.gl/SeFGWTJLJRitK2Wa8',
         numeroDocumento:'',
         referenciaUbicacion:'',
+        valorRuta:'',
         telefono:'3044861170'
     },
     {
@@ -2522,6 +2715,7 @@ export const CLIENTES: ClienteModel[] = [
         maps:'https://maps.app.goo.gl/Drf5nRuAKC99d7aW8',
         numeroDocumento:'',
         referenciaUbicacion:'',
+        valorRuta:'',
         telefono:'3508645009'
     },
     {
@@ -2535,6 +2729,7 @@ export const CLIENTES: ClienteModel[] = [
         maps:'https://maps.app.goo.gl/7Ve1J6KFjaUxgRfq9',
         numeroDocumento:'',
         referenciaUbicacion:'',
+        valorRuta:'',
         telefono:'3017440618'
     },
     {
@@ -2548,6 +2743,7 @@ export const CLIENTES: ClienteModel[] = [
         maps:'https://maps.app.goo.gl/pWeaBuSwkRdbC1AB8',
         numeroDocumento:'1001237055',
         referenciaUbicacion:'',
+        valorRuta:'',
         telefono:'3017322177'
     },
     {
@@ -2561,6 +2757,7 @@ export const CLIENTES: ClienteModel[] = [
         maps:'https://maps.app.goo.gl/ost35RiN6Q9E1fgu5',
         numeroDocumento:'',
         referenciaUbicacion:'',
+        valorRuta:'',
         telefono:'3156142264'
     },
     {
@@ -2574,6 +2771,7 @@ export const CLIENTES: ClienteModel[] = [
         maps:'',
         numeroDocumento:'1112105329',
         referenciaUbicacion:'',
+        valorRuta:'',
         telefono:'3185213316'
     },
     {
@@ -2587,6 +2785,7 @@ export const CLIENTES: ClienteModel[] = [
         maps:'https://maps.app.goo.gl/BfiMR56dyH8nbqKX9',
         numeroDocumento:'',
         referenciaUbicacion:'',
+        valorRuta:'',
         telefono:'3502483421'
     },
     {
@@ -2600,6 +2799,7 @@ export const CLIENTES: ClienteModel[] = [
         maps:'https://maps.app.goo.gl/fwFFwGTEboESNzDf9',
         numeroDocumento:'',
         referenciaUbicacion:'',
+        valorRuta:'',
         telefono:'3043658424'
     },
     {
@@ -2613,6 +2813,7 @@ export const CLIENTES: ClienteModel[] = [
         maps:'https://maps.app.goo.gl/TZHcgga3KaNb1aFQ7',
         numeroDocumento:'',
         referenciaUbicacion:'',
+        valorRuta:'',
         telefono:'3017161943'
     },
     {
@@ -2626,6 +2827,7 @@ export const CLIENTES: ClienteModel[] = [
         maps:'https://maps.app.goo.gl/LCqwCq9FWfJp8R3V6',
         numeroDocumento:'',
         referenciaUbicacion:'',
+        valorRuta:'',
         telefono:'3045511058'
     },
     {
@@ -2639,6 +2841,7 @@ export const CLIENTES: ClienteModel[] = [
         maps:'https://maps.app.goo.gl/yt9BuWqGfKvzPSvk8',
         numeroDocumento:'',
         referenciaUbicacion:'',
+        valorRuta:'',
         telefono:'3127778808'
     },
     {
@@ -2652,6 +2855,7 @@ export const CLIENTES: ClienteModel[] = [
         maps:'https://maps.app.goo.gl/wgqfid6Rj4YEF6u2A',
         numeroDocumento:'',
         referenciaUbicacion:'',
+        valorRuta:'',
         telefono:'3117271004'
     },
     {
@@ -2665,6 +2869,7 @@ export const CLIENTES: ClienteModel[] = [
         maps:'https://maps.app.goo.gl/ngHM3EEpe4wnVcAQ8',
         numeroDocumento:'',
         referenciaUbicacion:'',
+        valorRuta:'',
         telefono:'3043881032'
     },
     {
@@ -2678,6 +2883,7 @@ export const CLIENTES: ClienteModel[] = [
         maps:'https://maps.app.goo.gl/EmSG5LUof8LbUKBT7',
         numeroDocumento:'',
         referenciaUbicacion:'',
+        valorRuta:'',
         telefono:'3016006653'
     },
     {
@@ -2691,6 +2897,7 @@ export const CLIENTES: ClienteModel[] = [
         maps:'https://maps.app.goo.gl/KDEfCEVTw5E5t3vf6',
         numeroDocumento:'',
         referenciaUbicacion:'',
+        valorRuta:'',
         telefono:'3046229534'
     },
     {
@@ -2704,6 +2911,7 @@ export const CLIENTES: ClienteModel[] = [
         maps:'https://maps.app.goo.gl/oS3jbQM1FFtUejmRA',
         numeroDocumento:'',
         referenciaUbicacion:'Garaje blanco',
+        valorRuta:'',
         telefono:'3174745237'
     },
     {
@@ -2717,6 +2925,7 @@ export const CLIENTES: ClienteModel[] = [
         maps:'https://maps.app.goo.gl/TavpAXmWVxRDtAZt7',
         numeroDocumento:'',
         referenciaUbicacion:'',
+        valorRuta:'',
         telefono:'3148233997'
     },
     {
@@ -2730,6 +2939,7 @@ export const CLIENTES: ClienteModel[] = [
         maps:'https://maps.app.goo.gl/HZaam8APvbV8ut4x6',
         numeroDocumento:'',
         referenciaUbicacion:'Detrás de la Iglesia La Consolata',
+        valorRuta:'',
         telefono:'3126026299'
     },
     {
@@ -2743,6 +2953,7 @@ export const CLIENTES: ClienteModel[] = [
         maps:'https://maps.app.goo.gl/ueCroYcVfy5S9VUG9',
         numeroDocumento:'',
         referenciaUbicacion:'',
+        valorRuta:'',
         telefono:'3147944085'
     },
     {
@@ -2756,6 +2967,7 @@ export const CLIENTES: ClienteModel[] = [
         maps:'https://maps.app.goo.gl/ftAAoVP8G7jRBk8f9',
         numeroDocumento:'',
         referenciaUbicacion:'',
+        valorRuta:'',
         telefono:'3197384166'
     },
     {
@@ -2769,6 +2981,7 @@ export const CLIENTES: ClienteModel[] = [
         maps:'https://maps.app.goo.gl/4o7EC4dBrcLofVGVA',
         numeroDocumento:'',
         referenciaUbicacion:'',
+        valorRuta:'',
         telefono:'3195078393'
     },
     {
@@ -2782,6 +2995,7 @@ export const CLIENTES: ClienteModel[] = [
         maps:'https://maps.app.goo.gl/rqFNC4MQq4wNBTrE7',
         numeroDocumento:'',
         referenciaUbicacion:'',
+        valorRuta:'',
         telefono:'3007544246'
     }
 ]

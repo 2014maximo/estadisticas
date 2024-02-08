@@ -10,6 +10,11 @@ export class ClienteModel {
     ciudad: string;
     departamento: string;
     maps:string;
+    valorRuta:string;
+    pago?:string;
+    yapago?:string;
+    abono?:string;
+    resta?:string;
 
     constructor(){
         this.id = 0;
@@ -23,5 +28,6 @@ export class ClienteModel {
         this.maps = '';
         this.referenciaUbicacion = '';
         this.numeroDocumento = '';
+        this.valorRuta = '';
     }
 }
