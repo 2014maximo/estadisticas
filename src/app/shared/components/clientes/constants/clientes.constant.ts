@@ -2997,6 +2997,146 @@ export const CLIENTES: ClienteModel[] = [
         referenciaUbicacion:'',
         valorRuta:'',
         telefono:'3007544246'
+    },
+    {
+        id:216,
+        nombre:'Susana Andrea cadavid Galeano',
+        barrio:'',
+        categoriaSector:'',
+        ciudad:'Segovia',
+        departamento:'Antioquia',
+        direccion:'',
+        maps:'',
+        numeroDocumento:'1007551168',
+        referenciaUbicacion:'',
+        telefono:'3215001595 ',
+        valorRuta:''
+    },
+    {
+        id:217,
+        nombre:'Juliana Saldarriaga',
+        barrio:'Manrique',
+        categoriaSector:'Muy arriba - lejos',
+        ciudad:'Medellín',
+        departamento:'Antioquia',
+        direccion:'Carrera 29 # 71a 51',
+        maps:'https://maps.app.goo.gl/jHLZKQCkVke659XR6',
+        numeroDocumento:'',
+        referenciaUbicacion:'En una barbería',
+        telefono:'',
+        valorRuta:''
+    },
+    {
+        id:218,
+        nombre:'',
+        barrio:'Campo Valdes II',
+        categoriaSector:'',
+        ciudad:'Medellín',
+        departamento:'Antioquia',
+        direccion:'Calle 78 # 42-82',
+        maps:'https://maps.app.goo.gl/geL7VGr9uefVHykMA',
+        numeroDocumento:'',
+        referenciaUbicacion:'',
+        telefono:'3016548352 ',
+        valorRuta:''
+    },
+    {
+        id:219,
+        nombre:'Luisa Maya',
+        barrio:'Laureles',
+        categoriaSector:'',
+        ciudad:'',
+        departamento:'',
+        direccion:'Calle 39d # 73-108',
+        maps:'https://maps.app.goo.gl/p27BuDC3cWnvWRSCA',
+        numeroDocumento:'',
+        referenciaUbicacion:'Primer parque de laureles, al lado de doña lechona',
+        telefono:'',
+        valorRuta:''
+    },
+    {
+        id:220,
+        nombre:'Camila Hernández',
+        barrio:'El Salado',
+        categoriaSector:'',
+        ciudad:'Medellín',
+        departamento:'Antioquia',
+        direccion:'Calle 39c # 114-9',
+        maps:'https://maps.app.goo.gl/jstFZzUy1G9sjScx7',
+        numeroDocumento:'',
+        referenciaUbicacion:'',
+        telefono:'3236475723',
+        valorRuta:''
+    },
+    {
+        id:221,
+        nombre:'Yessica Ruiz',
+        barrio:'Belén',
+        categoriaSector:'',
+        ciudad:'Medellín',
+        departamento:'Antioquia',
+        direccion:'Diagonal molinos',
+        maps:'',
+        numeroDocumento:'',
+        referenciaUbicacion:'',
+        telefono:'3052218912',
+        valorRuta:''
+    },
+    {
+        id:222,
+        nombre:'Carolina Zapata',
+        barrio:'Robledo',
+        categoriaSector:'',
+        ciudad:'Medellín',
+        departamento:'Antioquia',
+        direccion:'Carrera 109 # 55-80',
+        maps:'https://maps.app.goo.gl/WdRNi2C7YvERVTNt5',
+        numeroDocumento:'',
+        referenciaUbicacion:'En el puente gris improvisado',
+        telefono:'3118732773',
+        valorRuta:''
+    },
+    {
+        id:223,
+        nombre:'Karen Gonzalez',
+        barrio:'Manrique',
+        categoriaSector:'',
+        ciudad:'Medellín',
+        departamento:'Antioquia',
+        direccion:'Carrera 32 # 68-11',
+        maps:'https://maps.app.goo.gl/C2bK15bpn4esCjq37',
+        numeroDocumento:'',
+        referenciaUbicacion:'',
+        telefono:'3153977623',
+        valorRuta:''
+    },
+    {
+        id:224,
+        nombre:'Catalina Suarez',
+        barrio:'Florencia',
+        categoriaSector:'',
+        ciudad:'Medellín',
+        departamento:'Antioquia',
+        direccion:'Calle 115 # 72a-13 Piso 1',
+        maps:'https://maps.app.goo.gl/7ea5iPnbCTUGy2ao8',
+        numeroDocumento:'',
+        referenciaUbicacion:'',
+        telefono:'3504744925',
+        valorRuta:''
+    },
+    {
+        id:225,
+        nombre:'Catalina Arcilla',
+        barrio:'Pedregal',
+        categoriaSector:'',
+        ciudad:'Medellín',
+        departamento:'Antioquia',
+        direccion:'Calle 105 # 74-5 Piso 1',
+        maps:'https://maps.app.goo.gl/wEaAv5GTDEu4Xyhq5',
+        numeroDocumento:'',
+        referenciaUbicacion:'Al lado de una pilona del Metro Cable',
+        telefono:'3003320399',
+        valorRuta:''
     }
 ]
 
@@ -3256,6 +3396,14 @@ export const SECTOR: ReferenciaModel[]=[
     {
         id:64,
         nombre:'Playa Rica'
+    },
+    {
+        id:65,
+        nombre:'Campo Valdes II'
+    },
+    {
+        id:66,
+        nombre:'El Salado'
     }
 ]
 
@@ -3295,5 +3443,9 @@ export const CATEGORIA_SECTOR: ReferenciaModel[]=[
     {
         id:9,
         nombre:'Arriba alto - normal en día'
+    },
+    {
+        id:10,
+        nombre:'Muy arriba - lejos'
     }
 ]
