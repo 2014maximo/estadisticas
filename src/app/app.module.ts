@@ -21,6 +21,7 @@ import { IngresoDatosComponent } from './shared/components/ingreso-datos/ingreso
 import { SharedModule } from './shared/shared.module';
 import { AnalisisComponent } from './components/analisis/analisis.component';
 import { AstroLunaComponent } from './components/astro-luna/astro-luna.component';
+import { EmpresasDevComponent } from './components/empresas-dev/empresas-dev.component';
 
 
 
@@ -31,7 +32,8 @@ import { AstroLunaComponent } from './components/astro-luna/astro-luna.component
     HomeComponent,
     IngresoDatosComponent,
     AnalisisComponent,
-    AstroLunaComponent
+    AstroLunaComponent,
+    EmpresasDevComponent
   ],
   imports: [
     BrowserModule,

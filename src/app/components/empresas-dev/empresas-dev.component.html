@@ -1,0 +1,130 @@
+<div class="row fondoNegro">
+    <div class="col-md-1"></div>
+    <div class="col-md-10 p-5">
+        <div class="espaciado"></div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="d-flex">
+                    <p _ngcontent-dxb-c29="" class="tc-gray-two f-shadow-into-l fs-20 lh-20 m-0 p-0 texto-lateral m-0">
+                        <small _ngcontent-dxb-c29="">May 7, 2024</small>
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <h1 class="f-bebas tituloPost">EMPRESAS DE DESARROLLO</h1>
+            </div>
+        </div>
+        <div class="espaciado"></div>
+        <div class="row">
+            <div class="col-md-12 p-3">
+                <h2 class="f-yanone fs-30 lh-30 text-light p-0 text-uppercase mb-2">
+                    MEDELLÍN
+                </h2>
+                <div class="overflow-auto">
+                    <table class="table table-striped table-dark f-open-sans-c shadow-three">
+                        <thead>
+                          <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">NOMBRE EMPRESA O RAZÓN</th>
+                            <th scope="col">ENCARGADO</th>
+                            <th scope="col">CARGO ENCARGADO</th>
+                            <th scope="col">DIRECCIÓN</th>
+                            <th scope="col">TELÉFONO</th>
+                            <th scope="col">EMAIL</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr *ngFor="let empresa of empresasLocales; let i=index">
+                            <th scope="row">{{ i + 1 }}</th>
+                            <td>
+                                {{ empresa.nombre }}
+                                <i *ngIf="empresa.nombre" class="ml-3 bi bi-copy cursor-p h-blue tc-yellow-two" (click)="copiarAlPortapapeles(empresa.nombre)"></i>
+                            </td>
+                            <td>
+                                {{ empresa.encargado }}
+                                <i *ngIf="empresa.encargado" class="ml-3 bi bi-copy cursor-p h-blue tc-yellow-two" (click)="copiarAlPortapapeles(empresa.encargado)"></i>
+                            </td>
+                            <td>
+                                {{ empresa.cargoEncargado }}
+                                <i *ngIf="empresa.cargoEncargado" class="ml-3 bi bi-copy cursor-p h-blue tc-yellow-two" (click)="copiarAlPortapapeles(empresa.cargoEncargado)"></i>
+                            </td>
+                            <td>
+                                {{ empresa.direccion }}
+                                <i *ngIf="empresa.direccion" class="ml-3 bi bi-copy cursor-p h-blue tc-yellow-two" (click)="copiarAlPortapapeles(empresa.nombre)"></i>
+                            </td>
+                            <td>
+                                {{ empresa.telefono }}
+                                <i *ngIf="empresa.telefono" class="ml-3 bi bi-copy cursor-p h-blue tc-yellow-two" (click)="copiarAlPortapapeles(empresa.telefono)"></i>
+                            </td>
+                            <td>
+                                {{ empresa.email }}
+                                <i *ngIf="empresa.email" class="ml-3 bi bi-copy cursor-p h-blue tc-yellow-two" (click)="copiarAlPortapapeles(empresa.email)"></i>
+                            </td>
+                          </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="espaciado"></div>
+
+        <div class="row">
+            <div class="col-md-12 p-3">
+                <h2 class="f-yanone fs-30 lh-30 text-light p-0 text-uppercase mb-2">
+                    EXTERNAS - REMOTO
+                </h2>
+                <div class="overflow-auto">
+                    <table class="table table-striped table-dark f-open-sans-c shadow-three">
+                        <thead>
+                          <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">NOMBRE EMPRESA O RAZÓN</th>
+                            <th scope="col">ENCARGADO</th>
+                            <th scope="col">CARGO ENCARGADO</th>
+                            <th scope="col">DIRECCIÓN</th>
+                            <th scope="col">TELÉFONO</th>
+                            <th scope="col">EMAIL</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr *ngFor="let empresa of empresasExternas; let i=index">
+                            <th scope="row">{{ i + 1 }}</th>
+                            <td>
+                                {{ empresa.nombre }}
+                                <i *ngIf="empresa.nombre" class="ml-3 bi bi-copy cursor-p h-blue tc-yellow-two" (click)="copiarAlPortapapeles(empresa.nombre)"></i>
+                                <tr>
+                                    <td>
+                                        PRUEBA
+                                    </td>
+                                  </tr>
+                            </td>
+                            <td>
+                                {{ empresa.encargado }}
+                                <i *ngIf="empresa.encargado" class="ml-3 bi bi-copy cursor-p h-blue tc-yellow-two" (click)="copiarAlPortapapeles(empresa.encargado)"></i>
+                            </td>
+                            <td>
+                                {{ empresa.cargoEncargado }}
+                                <i *ngIf="empresa.cargoEncargado" class="ml-3 bi bi-copy cursor-p h-blue tc-yellow-two" (click)="copiarAlPortapapeles(empresa.cargoEncargado)"></i>
+                            </td>
+                            <td>
+                                {{ empresa.direccion }}
+                                <i *ngIf="empresa.direccion" class="ml-3 bi bi-copy cursor-p h-blue tc-yellow-two" (click)="copiarAlPortapapeles(empresa.nombre)"></i>
+                            </td>
+                            <td>
+                                {{ empresa.telefono }}
+                                <i *ngIf="empresa.telefono" class="ml-3 bi bi-copy cursor-p h-blue tc-yellow-two" (click)="copiarAlPortapapeles(empresa.telefono)"></i>
+                            </td>
+                            <td>
+                                {{ empresa.email }}
+                                <i *ngIf="empresa.email" class="ml-3 bi bi-copy cursor-p h-blue tc-yellow-two" (click)="copiarAlPortapapeles(empresa.email)"></i>
+                            </td>
+                          </tr>
+                          
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-1"></div>
+</div>
