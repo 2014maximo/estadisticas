@@ -15,10 +15,11 @@
             </div>
         </div>
         <div class="espaciado"></div>
+
         <div class="row">
             <div class="col-md-12 p-3">
                 <h2 class="f-yanone fs-30 lh-30 text-light p-0 text-uppercase mb-2">
-                    MEDELLÍN
+                    LOCALES - MEDELLÍN
                 </h2>
                 <div class="overflow-auto">
                     <table class="table table-striped table-dark f-open-sans-c shadow-three">
@@ -39,6 +40,11 @@
                             <td>
                                 {{ empresa.nombre }}
                                 <i *ngIf="empresa.nombre" class="ml-3 bi bi-copy cursor-p h-blue tc-yellow-two" (click)="copiarAlPortapapeles(empresa.nombre)"></i>
+                                <tr *ngIf="empresa.cargos[0]">
+                                    <td *ngFor="let cargo of empresa.cargos">
+                                        {{ empresa.cargos }}
+                                    </td>
+                                </tr>
                             </td>
                             <td>
                                 {{ empresa.encargado }}
@@ -50,28 +56,36 @@
                             </td>
                             <td>
                                 {{ empresa.direccion }}
-                                <i *ngIf="empresa.direccion" class="ml-3 bi bi-copy cursor-p h-blue tc-yellow-two" (click)="copiarAlPortapapeles(empresa.nombre)"></i>
+                                <i *ngIf="empresa.direccion" class="ml-3 bi bi-copy cursor-p h-blue tc-yellow-two" (click)="copiarAlPortapapeles(empresa.direccion)"></i>
                             </td>
                             <td>
-                                {{ empresa.telefono }}
-                                <i *ngIf="empresa.telefono" class="ml-3 bi bi-copy cursor-p h-blue tc-yellow-two" (click)="copiarAlPortapapeles(empresa.telefono)"></i>
+                                <p *ngFor="let tel of empresa.telefono">
+                                    {{ empresa.telefono }}
+                                    <i *ngIf="empresa.telefono" class="ml-3 bi bi-copy cursor-p h-blue tc-yellow-two" (click)="copiarAlPortapapeles(tel)"></i>
+                                </p>
                             </td>
                             <td>
                                 {{ empresa.email }}
                                 <i *ngIf="empresa.email" class="ml-3 bi bi-copy cursor-p h-blue tc-yellow-two" (click)="copiarAlPortapapeles(empresa.email)"></i>
+                                <tr *ngIf="empresa.paginaWeb">
+                                    <td>
+                                        <a href="{{ empresa.paginaWeb }}" target="_blank">{{ empresa.paginaWeb }}</a>
+                                        <i *ngIf="empresa.paginaWeb" class="ml-3 bi bi-copy cursor-p h-blue tc-yellow-two" (click)="copiarAlPortapapeles(empresa.paginaWeb)"></i>
+                                    </td>
+                                </tr>
                             </td>
                           </tr>
+                          
                         </tbody>
                     </table>
                 </div>
             </div>
         </div>
         <div class="espaciado"></div>
-
         <div class="row">
             <div class="col-md-12 p-3">
                 <h2 class="f-yanone fs-30 lh-30 text-light p-0 text-uppercase mb-2">
-                    EXTERNAS - REMOTO
+                    EMPRESAS EXTERNAS
                 </h2>
                 <div class="overflow-auto">
                     <table class="table table-striped table-dark f-open-sans-c shadow-three">
@@ -92,11 +106,11 @@
                             <td>
                                 {{ empresa.nombre }}
                                 <i *ngIf="empresa.nombre" class="ml-3 bi bi-copy cursor-p h-blue tc-yellow-two" (click)="copiarAlPortapapeles(empresa.nombre)"></i>
-                                <tr>
-                                    <td>
-                                        PRUEBA
+                                <tr *ngIf="empresa.cargos[0]">
+                                    <td *ngFor="let cargo of empresa.cargos">
+                                        {{ empresa.cargos }}
                                     </td>
-                                  </tr>
+                                </tr>
                             </td>
                             <td>
                                 {{ empresa.encargado }}
@@ -108,15 +122,23 @@
                             </td>
                             <td>
                                 {{ empresa.direccion }}
-                                <i *ngIf="empresa.direccion" class="ml-3 bi bi-copy cursor-p h-blue tc-yellow-two" (click)="copiarAlPortapapeles(empresa.nombre)"></i>
+                                <i *ngIf="empresa.direccion" class="ml-3 bi bi-copy cursor-p h-blue tc-yellow-two" (click)="copiarAlPortapapeles(empresa.direccion)"></i>
                             </td>
                             <td>
-                                {{ empresa.telefono }}
-                                <i *ngIf="empresa.telefono" class="ml-3 bi bi-copy cursor-p h-blue tc-yellow-two" (click)="copiarAlPortapapeles(empresa.telefono)"></i>
+                                <p *ngFor="let tel of empresa.telefono">
+                                    {{ empresa.telefono }}
+                                    <i *ngIf="empresa.telefono" class="ml-3 bi bi-copy cursor-p h-blue tc-yellow-two" (click)="copiarAlPortapapeles(tel)"></i>
+                                </p>
                             </td>
                             <td>
                                 {{ empresa.email }}
                                 <i *ngIf="empresa.email" class="ml-3 bi bi-copy cursor-p h-blue tc-yellow-two" (click)="copiarAlPortapapeles(empresa.email)"></i>
+                                <tr *ngIf="empresa.paginaWeb">
+                                    <td>
+                                        <a href="{{ empresa.paginaWeb }}" target="_blank">{{ empresa.paginaWeb }}</a>
+                                        <i *ngIf="empresa.paginaWeb" class="ml-3 bi bi-copy cursor-p h-blue tc-yellow-two" (click)="copiarAlPortapapeles(empresa.paginaWeb)"></i>
+                                    </td>
+                                </tr>
                             </td>
                           </tr>
                           
@@ -125,6 +147,7 @@
                 </div>
             </div>
         </div>
+        <div class="espaciado"></div>
     </div>
     <div class="col-md-1"></div>
 </div>

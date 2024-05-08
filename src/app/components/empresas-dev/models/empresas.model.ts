@@ -5,6 +5,7 @@ export interface EMPRESAS {
     cargoEncargado:string;
     direccion: string;
     email:string;
-    telefono: string;
+    paginaWeb:string;
+    telefono: string[];
     cargos: string[];
 }
